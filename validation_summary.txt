@@ -1,0 +1,26 @@
+==============================================================================
+SYNTHETIC VALIDATION SUMMARY — Dual-NLI vs Single-NLI Softmax
+==============================================================================
+Total pairs: 50
+
+Class     N   mean(T)   mean(F)   mean(T+F)   %paraconsistent_dual   %paraconsistent_single
+------------------------------------------------------------------------------
+ENT      10     0.943     0.000       0.943                   0.0%                     0.0%
+CON      10     0.120     0.650       0.770                   0.0%                     0.0%
+NEU      10     0.029     0.065       0.094                   0.0%                     0.0%
+PAR      20     0.464     0.872       1.337                 100.0%                     0.0%
+
+Aggregate:
+  Pairs in paraconsistent regime under dual-NLI:    20/50 (40.0%)
+  Pairs in paraconsistent regime under single-NLI:  0/50 (0.0%)
+
+Theorem 1 verification:
+  CONFIRMED. Single-NLI softmax simulation never produces T + F > 1.
+
+Independence diagnostic:
+  Pearson(T_A, 1 - F_B) = 0.167
+  Interpretation: values close to 0 indicate independence; values close to 1 indicate softmax-like coupling.
+
+Recovery of paraconsistent class items:
+  Of 20 hand-crafted paraconsistent pairs, dual-NLI flagged 20/20 (100.0%) as T + F > 1.
+  Single-NLI softmax simulation flagged 0/20 (0.0%).
