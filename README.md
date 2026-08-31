@@ -1,129 +1,50 @@
 # Hallucination Detection Beyond Softmax
 
-> **Companion code repository for**
-> Leyva-Vázquez, M. Y. & Smarandache, F. (2026).
-> *Hallucination Detection Beyond Softmax: A Theoretical Note and an Open Dual-NLI Protocol.*
-> Preprint v0.5, MIT License.
+Reference implementation, stimuli and raw scores for:
 
-## What this repository contains
+> Leyva-Vázquez, M. Y. & Smarandache, F. (2026). **Hallucination Detection Beyond Softmax:
+> A Measurement-Space Impossibility and a Dual-NLI Protocol.** Preprint v1.2.
 
-A reference implementation of the **dual-NLI protocol** for hallucination
-detection, plus a self-contained synthetic validation that demonstrates the
-core geometric claim of the paper.
+## The claim in one line
 
-The paper's central result (Theorem 1) is that hallucination detectors
-deriving entailment T and contradiction F from the same softmax-normalized
-NLI head satisfy `T + F ≤ 1` by construction, and therefore cannot reach
-the paraconsistent regime `T + F > 1`. The dual-NLI protocol — drawing T
-and F from two independently trained NLI models — removes the constraint
-and makes the upper triangle of the unit square reachable.
+When a detector reads both the entailment probability T and the contradiction probability F
+from one softmax-normalized NLI head (or reads one and treats the other as its complement),
+`T + N + F = 1` implies `T + F <= 1`. The state in which evidence both supports and contradicts a
+claim is unreachable by construction (Theorem 1). Two independently trained NLI models, one per
+channel, remove the constraint; evidence decomposition and a relevance-gated margin rule make
+the recovered region measure conflict rather than artifacts.
 
-## Structure
+## Contents
 
-```
-hallucination-beyond-softmax/
-├── README.md                       — this file
-├── LICENSE                         — MIT
-├── dual_nli.py                     — protocol implementation (stub + HF backends)
-├── synthetic_validation.py         — 50-pair validation, fully reproducible
-├── validation_results.csv          — per-pair scores from the 50 pairs
-├── validation_summary.txt          — aggregate statistics
-└── figures/
-    ├── fig1_softmax_trap.py        — geometric figure for Theorem 1
-    ├── fig1_softmax_trap.png
-    ├── fig2_validation_scatter.py  — scatter of the 50 validation pairs
-    └── fig2_validation_scatter.png
-```
+| File | What it is |
+|---|---|
+| `dual_nli.py` | Protocol implementation (stub backend + Hugging Face backend) |
+| `synthetic_validation.py` | Heuristic pre-study of v0.5 (kept as geometric illustration; source of the 50 Experiment 1 pairs) |
+| `experiment_a_real_models.py` | Experiment 1: Theorem 1 with real models (single vs dual NLI, 50 pairs) |
+| `experiment_a2_conflicting_evidence.py` | Experiment 2: conflicting-evidence stimuli, holistic vs decomposed scoring, 20 items + 20 single-segment controls |
+| `experiment_a3_controls.py` | Experiment 3: controls for decomposition (AGREE-SUP, AGREE-REF, CROSS), threshold sweep, Pearson on NEU+PAR |
+| `experiment_a4_relevance_gate.py` | Experiment 4: relevance gate on the F channel (fixes the CROSS false positives of Experiment 3) |
+| `validation_results_*.csv`, `validation_summary_*.txt` | Per-item scores and summaries for each experiment |
+| `figures/` | Figure scripts and PNGs |
 
-## Quick start (no API keys required)
+Models (public, CPU is enough): Model A `MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli`
+(T channel and relevance probe); Model B `ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli`
+(F channel).
 
-```bash
-# 1. Theorem 1 demonstration (stub backend, instant)
-python dual_nli.py
-
-# 2. Synthetic validation reported in §5 of the paper (50 pairs, instant)
-python synthetic_validation.py
-
-# 3. Regenerate figures
-python figures/fig1_softmax_trap.py
-python figures/fig2_validation_scatter.py
-```
-
-The synthetic validation runs in milliseconds and requires only the
-Python standard library. It produces:
-
-| Class | n | mean(T) | mean(F) | mean(T+F) | % T+F>1 (dual-NLI) | % T+F>1 (single-NLI sim) |
-|--|--|--|--|--|--|--|
-| Entailment | 10 | 0.943 | 0.000 | 0.943 | 0% | 0% |
-| Contradiction | 10 | 0.120 | 0.650 | 0.770 | 0% | 0% |
-| Neutral | 10 | 0.029 | 0.065 | 0.094 | 0% | 0% |
-| Paraconsistent | 20 | 0.464 | 0.872 | 1.337 | 100% | 0% |
-
-The single-NLI softmax simulation flags 0/50 pairs as paraconsistent —
-exactly as Theorem 1 predicts. The dual-NLI protocol recovers all 20
-hand-crafted paraconsistent pairs (100%).
-
-## Running the protocol with real NLI models
+## Reproducing
 
 ```bash
 pip install transformers torch
-
-python -c "
-from dual_nli import DualNLI
-extractor = DualNLI(backend='huggingface')
-score = extractor.score(
-    response='Paris is the capital of France, but it is also not the capital.',
-    ground_truth='Paris is the capital of France.'
-)
-print(f'T = {score.T:.3f}, F = {score.F:.3f}, T+F = {score.sum_TF:.3f}')
-print(f'Paraconsistent: {score.paraconsistent}')
-"
+python experiment_a_real_models.py            # -> validation_results_real.csv
+python experiment_a2_conflicting_evidence.py  # -> validation_results_a2.csv
+python experiment_a3_controls.py              # -> validation_results_a3.csv
+python experiment_a4_relevance_gate.py        # -> validation_results_a4.csv
 ```
 
-Default Models:
-- **Model A** (T from entailment): `MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli`
-- **Model B** (F from contradiction): `ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli`
-
-Both are public Hugging Face checkpoints. First run downloads ~2.5 GB.
-
-## Reproducing the figures and table in the paper
-
-The figures and Table 1 in the paper are generated directly from
-`validation_results.csv`. After running `synthetic_validation.py` and the
-two figure scripts, all paper artifacts are reproducible without any
-external dependency beyond `matplotlib` (only needed for the figures).
-
-## Forthcoming companion paper
-
-Empirical evaluation of the protocol on three frontier LLMs
-(Claude Opus 4.7, GPT-5, Gemini 3) across TruthfulQA, HaluEval, and
-FActScore is the subject of a forthcoming companion paper. That paper
-will report the rate at which real LLM outputs occupy the paraconsistent
-regime and the F1 lift achievable by augmenting standard detectors with
-the dual-NLI feature.
-
-## Citing
-
-If you use this code or the protocol, please cite the paper:
-
-```bibtex
-@unpublished{leyva2026hallucination,
-  author       = {Leyva-V{\'a}zquez, Maikel Yelandi and Smarandache, Florentin},
-  title        = {Hallucination Detection Beyond Softmax: A Theoretical Note
-                  and an Open Dual-NLI Protocol},
-  year         = {2026},
-  note         = {Preprint},
-  url          = {https://github.com/mleyvaz/hallucination-beyond-softmax}
-}
-```
+Each script prints its summary and writes it next to the CSV. All stimuli are inside the
+scripts, verbatim. The `synthetic_validation.py` numbers are heuristic (token overlap) and are
+not used for any headline result.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
-
-## Contact
-
-- Maikel Yelandi Leyva-Vázquez · `mleyvaz@gmail.com` ·
-  ORCID [0000-0002-0569-4932](https://orcid.org/0000-0002-0569-4932)
-- Florentin Smarandache · `smarand@unm.edu` ·
-  ORCID [0000-0002-5560-5926](https://orcid.org/0000-0002-5560-5926)
+MIT.

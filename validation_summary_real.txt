@@ -1,0 +1,28 @@
+====================================================================================
+EXPERIMENT A — Dual-NLI vs Single-NLI with REAL NLI models
+====================================================================================
+Model A (T): MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
+Model B (F): ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli
+Total pairs: 50
+
+Class     N   mean(T)  mean(F_B)   mean(T+F)   %para_dual   %para_single
+------------------------------------------------------------------------------------
+ENT      10     0.997      0.053       1.049        80.0%           0.0%
+CON      10     0.003      0.995       0.998        20.0%           0.0%
+NEU      10     0.070      0.316       0.387        10.0%           0.0%
+PAR      20     0.038      0.010       0.048         0.0%           0.0%
+
+Aggregate:
+  Paraconsistent (T+F>1) under DUAL-NLI:    11/50 (22.0%)
+  Paraconsistent (T+F>1) under SINGLE-NLI:  0/50 (0.0%)
+
+Theorem 1 verification (real models):
+  CONFIRMED. Single-NLI (Model A softmax) never produces T + F > 1.
+
+Independence diagnostic:
+  Pearson(T_A, 1 - F_B) = 0.285
+  (close to 0 => independent; close to 1 => softmax-like coupling)
+
+Recovery of paraconsistent-class items:
+  Of 20 hand-crafted paraconsistent pairs, dual-NLI flagged 0/20 (0.0%) as T+F>1.
+  Single-NLI flagged 0/20 as T+F>1.

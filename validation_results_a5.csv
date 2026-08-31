@@ -1,0 +1,101 @@
+cls,item,T,F_raw,neutral_A_ref,F_soft,F_hard,claim,jaccard
+CONFLICT,1,0.4653,0.1583,0.9239,0.012,0.0,Paris is the capital of France.,1.0
+CONFLICT,2,0.2769,0.9919,0.0265,0.9656,0.9919,Water boils at 100 degrees Celsius at sea level.,0.714
+CONFLICT,3,0.6446,0.6348,0.9546,0.0288,0.0,The Amazon rainforest is located in South America.,1.0
+CONFLICT,4,0.9975,0.6688,0.9549,0.0302,0.0,Einstein developed the theory of general relativity.,1.0
+CONFLICT,5,0.8926,0.0486,0.4063,0.0288,0.0486,Photosynthesis converts sunlight into chemical energy.,1.0
+CONFLICT,6,0.9682,0.31,0.7774,0.069,0.0,The human heart has four chambers.,1.0
+CONFLICT,7,0.997,0.2183,0.9363,0.0139,0.0,Mount Everest is the tallest mountain on Earth.,1.0
+CONFLICT,8,0.6487,0.2232,0.9833,0.0037,0.0,The Pacific is the largest ocean on Earth.,1.0
+CONFLICT,9,0.9371,0.2531,0.2723,0.1841,0.2531,Shakespeare wrote Hamlet.,0.5
+CONFLICT,10,0.9924,0.9821,0.9646,0.0347,0.0,Light travels faster than sound in air.,1.0
+CONFLICT,11,0.7002,0.0287,0.4361,0.0162,0.0287,Cuba is an island nation in the Caribbean.,1.0
+CONFLICT,12,0.949,0.9752,0.9732,0.0261,0.0,Tokyo is the most populous metropolitan area.,1.0
+CONFLICT,13,0.7444,0.7478,0.9335,0.0497,0.0,Gold is denser than iron.,0.75
+CONFLICT,14,0.991,0.245,0.714,0.0701,0.0,Vaccines prevent infectious diseases.,1.0
+CONFLICT,15,0.8789,0.2136,0.9887,0.0024,0.0,The Earth orbits the Sun.,0.5
+CONFLICT,16,0.9942,0.0371,0.129,0.0323,0.0371,Oranges contain vitamin C.,0.75
+CONFLICT,17,0.9936,0.9952,0.0387,0.9566,0.9952,The bridge can support heavy trucks.,0.667
+CONFLICT,18,0.997,0.2305,0.9523,0.011,0.0,Global temperatures rose over the last decade.,0.667
+CONFLICT,19,0.9926,0.9906,0.0405,0.9505,0.9906,The drug reduces blood pressure.,0.8
+CONFLICT,20,0.9944,0.9987,0.3016,0.6975,0.9987,The company paid its taxes in full.,0.6
+AGREE-SUP,1,0.4653,0.0019,0.0146,0.0018,0.0019,Paris is the capital of France.,0.6
+AGREE-SUP,2,0.2769,0.0023,0.0098,0.0023,0.0023,Water boils at 100 degrees Celsius at sea level.,0.857
+AGREE-SUP,3,0.6446,0.0012,0.0011,0.0012,0.0012,The Amazon rainforest is located in South America.,0.833
+AGREE-SUP,4,0.9975,0.0011,0.0017,0.0011,0.0011,Einstein developed the theory of general relativity.,1.0
+AGREE-SUP,5,0.8926,0.0022,0.01,0.0022,0.0022,Photosynthesis converts sunlight into chemical energy.,0.833
+AGREE-SUP,6,0.9682,0.002,0.0098,0.002,0.002,The human heart has four chambers.,0.8
+AGREE-SUP,7,0.997,0.0017,0.0088,0.0017,0.0017,Mount Everest is the tallest mountain on Earth.,0.833
+AGREE-SUP,8,0.6487,0.0015,0.0084,0.0015,0.0015,The Pacific is the largest ocean on Earth.,0.8
+AGREE-SUP,9,0.9371,0.0013,0.0294,0.0013,0.0013,Shakespeare wrote Hamlet.,0.6
+AGREE-SUP,10,0.9924,0.003,0.0052,0.0029,0.003,Light travels faster than sound in air.,0.833
+AGREE-SUP,11,0.7002,0.0018,0.0072,0.0017,0.0018,Cuba is an island nation in the Caribbean.,0.8
+AGREE-SUP,12,0.949,0.0017,0.0074,0.0016,0.0017,Tokyo is the most populous metropolitan area.,0.714
+AGREE-SUP,13,0.7444,0.0019,0.007,0.0019,0.0019,Gold is denser than iron.,0.6
+AGREE-SUP,14,0.991,0.0008,0.0049,0.0008,0.0008,Vaccines prevent infectious diseases.,0.667
+AGREE-SUP,15,0.8789,0.0014,0.0484,0.0013,0.0014,The Earth orbits the Sun.,0.6
+AGREE-SUP,16,0.9942,0.0018,0.0035,0.0018,0.0018,Oranges contain vitamin C.,0.75
+AGREE-SUP,17,0.9936,0.0012,0.0039,0.0012,0.0012,The bridge can support heavy trucks.,0.714
+AGREE-SUP,18,0.997,0.0012,0.0036,0.0012,0.0012,Global temperatures rose over the last decade.,0.714
+AGREE-SUP,19,0.9926,0.0011,0.0033,0.0011,0.0011,The drug reduces blood pressure.,0.8
+AGREE-SUP,20,0.9944,0.0012,0.0084,0.0012,0.0012,The company paid its taxes in full.,0.667
+AGREE-REF,1,0.0748,0.5114,0.9795,0.0105,0.0,Paris is the capital of France.,0.75
+AGREE-REF,2,0.0098,0.9887,0.3191,0.6733,0.9887,Water boils at 100 degrees Celsius at sea level.,0.625
+AGREE-REF,3,0.0146,0.0656,0.0253,0.0639,0.0656,The Amazon rainforest is located in South America.,0.5
+AGREE-REF,4,0.0432,0.1775,0.7133,0.0509,0.0,Einstein developed the theory of general relativity.,0.667
+AGREE-REF,5,0.5883,0.1675,0.3117,0.1153,0.1675,Photosynthesis converts sunlight into chemical energy.,0.833
+AGREE-REF,6,0.2201,0.838,0.9567,0.0362,0.0,The human heart has four chambers.,0.667
+AGREE-REF,7,0.0604,0.2113,0.8908,0.0231,0.0,Mount Everest is the tallest mountain on Earth.,0.833
+AGREE-REF,8,0.0144,0.2115,0.9765,0.005,0.0,The Pacific is the largest ocean on Earth.,0.667
+AGREE-REF,9,0.7242,0.1667,0.9843,0.0026,0.0,Shakespeare wrote Hamlet.,0.4
+AGREE-REF,10,0.019,0.7566,0.8856,0.0866,0.0,Light travels faster than sound in air.,0.833
+AGREE-REF,11,0.5561,0.2789,0.9588,0.0115,0.0,Cuba is an island nation in the Caribbean.,0.667
+AGREE-REF,12,0.0053,0.8527,0.9435,0.0482,0.0,Tokyo is the most populous metropolitan area.,1.0
+AGREE-REF,13,0.0102,0.2905,0.2676,0.2128,0.2905,Gold is denser than iron.,0.75
+AGREE-REF,14,0.2829,0.4812,0.8984,0.0489,0.0,Vaccines prevent infectious diseases.,0.8
+AGREE-REF,15,0.0074,0.1226,0.965,0.0043,0.0,The Earth orbits the Sun.,0.333
+AGREE-REF,16,0.868,0.0083,0.0144,0.0082,0.0083,Oranges contain vitamin C.,0.6
+AGREE-REF,17,0.0122,0.9913,0.1684,0.8243,0.9913,The bridge can support heavy trucks.,0.5
+AGREE-REF,18,0.0431,0.5365,0.9742,0.0139,0.0,Global temperatures rose over the last decade.,0.5
+AGREE-REF,19,0.028,0.9858,0.0513,0.9353,0.9858,The drug reduces blood pressure.,0.8
+AGREE-REF,20,0.0026,0.9851,0.9762,0.0234,0.0,The company paid its taxes in full.,0.429
+CROSS,1,0.4653,0.0085,0.9964,0.0,0.0,Paris is the capital of France.,0.0
+CROSS,2,0.2769,0.3758,0.1626,0.3147,0.3758,Water boils at 100 degrees Celsius at sea level.,0.0
+CROSS,3,0.6446,0.0076,0.9836,0.0001,0.0,The Amazon rainforest is located in South America.,0.0
+CROSS,4,0.9975,0.7791,0.8474,0.1189,0.0,Einstein developed the theory of general relativity.,0.0
+CROSS,5,0.8926,0.3564,0.8485,0.054,0.0,Photosynthesis converts sunlight into chemical energy.,0.0
+CROSS,6,0.9682,0.0366,0.9949,0.0002,0.0,The human heart has four chambers.,0.0
+CROSS,7,0.997,0.5368,0.9955,0.0024,0.0,Mount Everest is the tallest mountain on Earth.,0.125
+CROSS,8,0.6487,0.0777,0.9943,0.0004,0.0,The Pacific is the largest ocean on Earth.,0.0
+CROSS,9,0.9371,0.7702,0.9593,0.0313,0.0,Shakespeare wrote Hamlet.,0.0
+CROSS,10,0.9924,0.1247,0.9513,0.0061,0.0,Light travels faster than sound in air.,0.0
+CROSS,11,0.7002,0.981,0.9913,0.0085,0.0,Cuba is an island nation in the Caribbean.,0.0
+CROSS,12,0.949,0.0266,0.9957,0.0001,0.0,Tokyo is the most populous metropolitan area.,0.0
+CROSS,13,0.7444,0.0057,0.9898,0.0001,0.0,Gold is denser than iron.,0.0
+CROSS,14,0.991,0.6256,0.9405,0.0372,0.0,Vaccines prevent infectious diseases.,0.0
+CROSS,15,0.8789,0.0051,0.7692,0.0012,0.0,The Earth orbits the Sun.,0.0
+CROSS,16,0.9942,0.0031,0.944,0.0002,0.0,Oranges contain vitamin C.,0.0
+CROSS,17,0.9936,0.268,0.9316,0.0183,0.0,The bridge can support heavy trucks.,0.0
+CROSS,18,0.997,0.0859,0.9992,0.0001,0.0,Global temperatures rose over the last decade.,0.0
+CROSS,19,0.9926,0.0171,0.9754,0.0004,0.0,The drug reduces blood pressure.,0.0
+CROSS,20,0.9944,0.5822,0.9684,0.0184,0.0,The company paid its taxes in full.,0.0
+ENT,1,0.9994,0.0025,0.0005,0.0025,0.0025,Paris is the capital of France.,1.0
+ENT,2,0.9841,0.5068,0.0106,0.5015,0.5068,Water boils at 100 degrees at sea level.,0.625
+ENT,3,0.9996,0.0009,0.0003,0.0009,0.0009,The Amazon rainforest is in South America.,0.8
+ENT,4,0.9993,0.0018,0.0005,0.0018,0.0018,Einstein developed general relativity.,0.8
+ENT,5,0.9978,0.0029,0.0017,0.0029,0.0029,Photosynthesis converts sunlight into chemical energy.,0.833
+ENT,6,0.9899,0.0018,0.0086,0.0018,0.0018,The heart has four chambers.,0.75
+ENT,7,0.9985,0.003,0.0013,0.003,0.003,Everest is the tallest mountain on Earth.,0.5
+ENT,8,0.9986,0.001,0.0011,0.001,0.001,The Pacific is the largest ocean.,0.75
+ENT,9,0.9996,0.0017,0.0003,0.0017,0.0017,Shakespeare wrote Hamlet.,0.75
+ENT,10,0.9991,0.0033,0.0006,0.0033,0.0033,Light is faster than sound in air.,0.8
+CON,11,0.0006,0.9958,0.0001,0.9957,0.9958,Paris is not the capital of France.,1.0
+CON,12,0.0027,0.9903,0.0005,0.9898,0.9903,Water does not boil at 100 degrees at sea level.,0.444
+CON,13,0.0015,0.9991,0.0002,0.9989,0.9991,The Amazon rainforest is not in South America.,0.8
+CON,14,0.0002,0.9996,0.0001,0.9996,0.9996,Einstein never developed general relativity.,0.667
+CON,15,0.0005,0.9993,0.0001,0.9992,0.9993,Photosynthesis does not convert sunlight into chemical energy.,1.0
+CON,16,0.013,0.9939,0.0075,0.9865,0.9939,The heart does not have four chambers.,0.75
+CON,17,0.004,0.9861,0.0008,0.9853,0.9861,Everest is not the tallest mountain on Earth.,0.5
+CON,18,0.0044,0.9901,0.0011,0.9891,0.9901,The Pacific is not the largest ocean.,0.75
+CON,19,0.0003,0.9993,0.0001,0.9992,0.9993,Shakespeare did not write Hamlet.,0.4
+CON,20,0.0006,0.9957,0.0001,0.9956,0.9957,Light does not travel faster than sound in air.,1.0

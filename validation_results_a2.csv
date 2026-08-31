@@ -1,0 +1,21 @@
+item,cls,T_holistic,F_holistic,sum_holistic,para_holistic,T_decomp,F_decomp,sum_decomp,para_decomp,claim
+1,PAR-EVID,0.115,0.041,0.156,False,0.4653,0.1583,0.6236,False,Paris is the capital of France.
+2,PAR-EVID,0.0077,0.9438,0.9515,False,0.2769,0.9919,1.2688,True,Water boils at 100 degrees Celsius at sea level.
+3,PAR-EVID,0.2329,0.9752,1.2081,True,0.6446,0.6348,1.2794,True,The Amazon rainforest is located in South America.
+4,PAR-EVID,0.6059,0.0547,0.6606,False,0.9975,0.6688,1.6663,True,Einstein developed the theory of general relativity.
+5,PAR-EVID,0.2902,0.0211,0.3113,False,0.8926,0.0486,0.9412,False,Photosynthesis converts sunlight into chemical energy.
+6,PAR-EVID,0.9094,0.0064,0.9158,False,0.9682,0.31,1.2782,True,The human heart has four chambers.
+7,PAR-EVID,0.3262,0.0284,0.3546,False,0.997,0.2183,1.2153,True,Mount Everest is the tallest mountain on Earth.
+8,PAR-EVID,0.0131,0.0285,0.0416,False,0.6487,0.2232,0.8719,False,The Pacific is the largest ocean on Earth.
+9,PAR-EVID,0.0317,0.289,0.3207,False,0.9371,0.2531,1.1902,True,Shakespeare wrote Hamlet.
+10,PAR-EVID,0.9384,0.0066,0.945,False,0.9924,0.9821,1.9744,True,Light travels faster than sound in air.
+11,PAR-EVID,0.9307,0.0387,0.9695,False,0.7002,0.0287,0.7289,False,Cuba is an island nation in the Caribbean.
+12,PAR-EVID,0.0196,0.379,0.3986,False,0.949,0.9752,1.9242,True,Tokyo is the most populous metropolitan area.
+13,PAR-EVID,0.486,0.9092,1.3951,True,0.7444,0.7478,1.4922,True,Gold is denser than iron.
+14,PAR-EVID,0.7872,0.0025,0.7897,False,0.991,0.245,1.236,True,Vaccines prevent infectious diseases.
+15,PAR-EVID,0.0582,0.0057,0.0638,False,0.8789,0.2136,1.0926,True,The Earth orbits the Sun.
+16,PAR-EVID,0.9703,0.0019,0.9722,False,0.9942,0.0371,1.0312,True,Oranges contain vitamin C.
+17,PAR-EVID,0.9489,0.0668,1.0157,True,0.9936,0.9952,1.9888,True,The bridge can support heavy trucks.
+18,PAR-EVID,0.9708,0.003,0.9739,False,0.997,0.2305,1.2275,True,Global temperatures rose over the last decade.
+19,PAR-EVID,0.282,0.1536,0.4356,False,0.9926,0.9906,1.9832,True,The drug reduces blood pressure.
+20,PAR-EVID,0.5566,0.8311,1.3877,True,0.9944,0.9987,1.9931,True,The company paid its taxes in full.

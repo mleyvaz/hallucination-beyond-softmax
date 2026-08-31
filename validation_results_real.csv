@@ -1,0 +1,51 @@
+pair_id,cls,premise,hypothesis,T_dual,F_dual,sum_TF_dual,paraconsistent_dual,T_single,N_single,F_single,sum_TF_single,paraconsistent_single
+1,ENT,Paris is the capital of France.,Paris is the capital of France.,0.9994,0.0025,1.0019,True,0.9994,0.0005,0.0001,0.9995,False
+2,ENT,Water boils at one hundred degrees Celsius at sea level.,Water boils at 100 degrees at sea level.,0.9841,0.5068,1.491,True,0.9841,0.0106,0.0053,0.9894,False
+3,ENT,The Amazon rainforest is located in South America.,The Amazon rainforest is in South America.,0.9996,0.0009,1.0005,True,0.9996,0.0003,0.0002,0.9997,False
+4,ENT,Albert Einstein developed the theory of general relativity.,Einstein developed general relativity.,0.9993,0.0018,1.0011,True,0.9993,0.0005,0.0002,0.9995,False
+5,ENT,Photosynthesis converts sunlight into chemical energy in plants.,Photosynthesis converts sunlight into chemical energy.,0.9978,0.0029,1.0008,True,0.9978,0.0017,0.0004,0.9983,False
+6,ENT,The human heart has four chambers.,The heart has four chambers.,0.9899,0.0018,0.9917,False,0.9899,0.0086,0.0015,0.9914,False
+7,ENT,Mount Everest is the tallest mountain in the world.,Everest is the tallest mountain on Earth.,0.9985,0.003,1.0015,True,0.9985,0.0013,0.0002,0.9987,False
+8,ENT,The Pacific Ocean is the largest ocean on Earth.,The Pacific is the largest ocean.,0.9986,0.001,0.9996,False,0.9986,0.0011,0.0003,0.9989,False
+9,ENT,Shakespeare wrote the play Hamlet.,Shakespeare wrote Hamlet.,0.9996,0.0017,1.0013,True,0.9996,0.0003,0.0001,0.9997,False
+10,ENT,Light travels faster than sound in air.,Light is faster than sound in air.,0.9991,0.0033,1.0025,True,0.9991,0.0006,0.0002,0.9994,False
+11,CON,Paris is the capital of France.,Paris is not the capital of France.,0.0006,0.9958,0.9964,False,0.0006,0.0001,0.9993,0.9999,False
+12,CON,Water boils at one hundred degrees Celsius at sea level.,Water does not boil at 100 degrees at sea level.,0.0027,0.9903,0.993,False,0.0027,0.0005,0.9968,0.9995,False
+13,CON,The Amazon rainforest is located in South America.,The Amazon rainforest is not in South America.,0.0015,0.9991,1.0006,True,0.0015,0.0002,0.9983,0.9998,False
+14,CON,Albert Einstein developed the theory of general relativity.,Einstein never developed general relativity.,0.0002,0.9996,0.9999,False,0.0002,0.0001,0.9997,0.9999,False
+15,CON,Photosynthesis converts sunlight into chemical energy.,Photosynthesis does not convert sunlight into chemical energy.,0.0005,0.9993,0.9998,False,0.0005,0.0001,0.9994,0.9999,False
+16,CON,The human heart has four chambers.,The heart does not have four chambers.,0.013,0.9939,1.0069,True,0.013,0.0075,0.9795,0.9925,False
+17,CON,Mount Everest is the tallest mountain in the world.,Everest is not the tallest mountain on Earth.,0.004,0.9861,0.9901,False,0.004,0.0008,0.9952,0.9992,False
+18,CON,The Pacific Ocean is the largest ocean on Earth.,The Pacific is not the largest ocean.,0.0044,0.9901,0.9945,False,0.0044,0.0011,0.9945,0.9989,False
+19,CON,Shakespeare wrote the play Hamlet.,Shakespeare did not write Hamlet.,0.0003,0.9993,0.9996,False,0.0003,0.0001,0.9996,0.9999,False
+20,CON,Light travels faster than sound in air.,Light does not travel faster than sound in air.,0.0006,0.9957,0.9964,False,0.0006,0.0001,0.9992,0.9999,False
+21,NEU,Paris is the capital of France.,Bananas grow in tropical climates.,0.0055,0.4451,0.4506,False,0.0055,0.994,0.0005,0.006,False
+22,NEU,Water boils at one hundred degrees Celsius.,The Eiffel Tower was completed in 1889.,0.0194,0.2204,0.2398,False,0.0194,0.9793,0.0013,0.0207,False
+23,NEU,The Amazon rainforest is in South America.,Quantum mechanics describes subatomic phenomena.,0.2678,0.851,1.1188,True,0.2678,0.7293,0.003,0.2707,False
+24,NEU,Einstein developed general relativity.,Whales are mammals that live in the ocean.,0.0162,0.2366,0.2528,False,0.0162,0.981,0.0027,0.019,False
+25,NEU,Photosynthesis converts sunlight to energy.,The stock market opened higher today.,0.0011,0.0333,0.0344,False,0.0011,0.9987,0.0002,0.0013,False
+26,NEU,The heart has four chambers.,Volcanoes can erupt without warning.,0.0306,0.6678,0.6984,False,0.0306,0.9496,0.0198,0.0504,False
+27,NEU,Everest is the tallest mountain.,Beethoven composed nine symphonies.,0.0067,0.0583,0.065,False,0.0067,0.9925,0.0008,0.0075,False
+28,NEU,The Pacific is the largest ocean.,Coffee is grown in many tropical regions.,0.0017,0.082,0.0837,False,0.0017,0.9982,0.0001,0.0018,False
+29,NEU,Shakespeare wrote Hamlet.,Solar panels convert sunlight to electricity.,0.3527,0.3671,0.7198,False,0.3527,0.637,0.0103,0.363,False
+30,NEU,Light is faster than sound.,Bread is made from flour and water.,0.0029,0.2011,0.204,False,0.0029,0.9961,0.001,0.0039,False
+31,PAR,Paris is the capital of France.,"Paris is the capital of France, but it is also not the capital.",0.0548,0.0505,0.1053,False,0.0548,0.5202,0.425,0.4798,False
+32,PAR,Water boils at one hundred degrees at sea level.,"Water boils at 100 degrees at sea level, except when it does not.",0.0138,0.009,0.0227,False,0.0138,0.9731,0.0131,0.0269,False
+33,PAR,The Amazon rainforest is in South America.,"The Amazon rainforest is in South America, although not entirely.",0.0102,0.002,0.0122,False,0.0102,0.9858,0.004,0.0142,False
+34,PAR,Einstein developed general relativity.,"Einstein developed general relativity, but he did not really develop it alone.",0.0012,0.0259,0.0271,False,0.0012,0.9979,0.0008,0.0021,False
+35,PAR,Photosynthesis converts sunlight to chemical energy.,"Photosynthesis converts sunlight to chemical energy, yet it does not convert all light.",0.0371,0.0017,0.0388,False,0.0371,0.9614,0.0015,0.0386,False
+36,PAR,The heart has four chambers.,"The heart has four chambers, although it can be said to not have exactly four.",0.0303,0.0037,0.034,False,0.0303,0.9531,0.0166,0.0469,False
+37,PAR,Everest is the tallest mountain.,"Everest is the tallest mountain, yet it is not the tallest by some measures.",0.0144,0.0044,0.0188,False,0.0144,0.9766,0.009,0.0234,False
+38,PAR,The Pacific is the largest ocean.,"The Pacific is the largest ocean, but it is not the largest body of water.",0.02,0.005,0.025,False,0.02,0.9756,0.0044,0.0244,False
+39,PAR,Shakespeare wrote Hamlet.,"Shakespeare wrote Hamlet, although he did not write it alone.",0.0022,0.0334,0.0356,False,0.0022,0.9973,0.0006,0.0027,False
+40,PAR,Light is faster than sound.,"Light is faster than sound, but light does not always travel faster.",0.0167,0.001,0.0177,False,0.0167,0.9814,0.0019,0.0186,False
+41,PAR,Cuba is an island nation in the Caribbean.,"Cuba is an island nation in the Caribbean, yet it is not just one island.",0.0179,0.0051,0.023,False,0.0179,0.9793,0.0028,0.0207,False
+42,PAR,Ecuador is located on the equator.,"Ecuador is located on the equator, although the equator does not pass through all of it.",0.003,0.0026,0.0056,False,0.003,0.9945,0.0025,0.0055,False
+43,PAR,The sun rises in the east.,"The sun rises in the east, but the sun does not rise from a fixed point.",0.0291,0.0178,0.0469,False,0.0291,0.9675,0.0034,0.0325,False
+44,PAR,Birds can fly using their wings.,"Birds can fly using their wings, although not all birds can fly.",0.0316,0.0002,0.0318,False,0.0316,0.968,0.0004,0.032,False
+45,PAR,Snow is white in color.,"Snow is white, yet snow is not strictly always white.",0.0315,0.0031,0.0346,False,0.0315,0.9681,0.0004,0.0319,False
+46,PAR,The Earth orbits around the Sun.,"The Earth orbits the Sun, but the Sun is not a fixed center.",0.0384,0.0191,0.0575,False,0.0384,0.9576,0.004,0.0424,False
+47,PAR,Cats are domesticated animals.,"Cats are domesticated animals, but not all cats are domesticated.",0.0142,0.0009,0.0151,False,0.0142,0.9833,0.0025,0.0167,False
+48,PAR,Spanish is spoken in Spain.,"Spanish is spoken in Spain, but not exclusively Spanish.",0.0091,0.001,0.0101,False,0.0091,0.9905,0.0004,0.0095,False
+49,PAR,Mathematics is a formal discipline.,"Mathematics is a formal discipline, although it is not purely formal.",0.0121,0.0031,0.0152,False,0.0121,0.9875,0.0004,0.0125,False
+50,PAR,Democracy involves voting by citizens.,"Democracy involves voting, but voting alone does not make democracy.",0.3682,0.0049,0.3731,False,0.3682,0.6313,0.0005,0.3687,False

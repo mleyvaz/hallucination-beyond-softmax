@@ -1,0 +1,47 @@
+================================================================================
+EXPERIMENT A4 - Relevance gate on the F channel
+================================================================================
+Model A (T, gate): MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
+Model B (F): ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli
+
+--- variant F_raw (margin rule tau=0.15)
+  CONFLICT  n=20 mean T=0.853 mean F=0.498 flagged 15/20
+  AGREE-SUP n=20 mean T=0.853 mean F=0.002 flagged 0/20
+  AGREE-REF n=20 mean T=0.179 mean F=0.481 flagged 1/20
+  CROSS     n=20 mean T=0.853 mean F=0.284 flagged 8/20
+  ENT       n=10 mean T=0.997 mean F=0.053 flagged 1/10
+  CON       n=10 mean T=0.003 mean F=0.995 flagged 0/10
+
+--- variant F_soft (margin rule tau=0.15)
+  CONFLICT  n=20 mean T=0.853 mean F=0.209 flagged 5/20
+  AGREE-SUP n=20 mean T=0.853 mean F=0.002 flagged 0/20
+  AGREE-REF n=20 mean T=0.179 mean F=0.160 flagged 0/20
+  CROSS     n=20 mean T=0.853 mean F=0.031 flagged 0/20
+  ENT       n=10 mean T=0.997 mean F=0.052 flagged 1/10
+  CON       n=10 mean T=0.003 mean F=0.994 flagged 0/10
+
+--- variant F_hard (margin rule tau=0.15)
+  CONFLICT  n=20 mean T=0.853 mean F=0.217 flagged 5/20
+  AGREE-SUP n=20 mean T=0.853 mean F=0.002 flagged 0/20
+  AGREE-REF n=20 mean T=0.179 mean F=0.175 flagged 0/20
+  CROSS     n=20 mean T=0.853 mean F=0.019 flagged 0/20
+  ENT       n=10 mean T=0.997 mean F=0.053 flagged 1/10
+  CON       n=10 mean T=0.003 mean F=0.995 flagged 0/10
+
+Mean neutral_A on the refuting segment (topicality probe):
+  CONFLICT  mean neutral_A(ref, claim) = 0.635
+  AGREE-SUP mean neutral_A(ref, claim) = 0.010
+  AGREE-REF mean neutral_A(ref, claim) = 0.663
+  CROSS     mean neutral_A(ref, claim) = 0.912
+  ENT       mean neutral_A(ref, claim) = 0.003
+  CON       mean neutral_A(ref, claim) = 0.001
+
+Threshold sweep with F_soft (recall CONFLICT | FP ENT/CON | FP AGREE-SUP | FP AGREE-REF | FP CROSS)
+  0.00 | 12/20 |  9/20 |  0/20 |  0/20 |  4/20
+  0.05 |  7/20 |  1/20 |  0/20 |  0/20 |  1/20
+  0.10 |  5/20 |  1/20 |  0/20 |  0/20 |  1/20
+  0.15 |  5/20 |  1/20 |  0/20 |  0/20 |  0/20
+  0.20 |  4/20 |  1/20 |  0/20 |  0/20 |  0/20
+  0.25 |  4/20 |  1/20 |  0/20 |  0/20 |  0/20
+  0.30 |  3/20 |  1/20 |  0/20 |  0/20 |  0/20
+  0.40 |  3/20 |  1/20 |  0/20 |  0/20 |  0/20

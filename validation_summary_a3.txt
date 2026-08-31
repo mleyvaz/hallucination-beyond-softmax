@@ -1,0 +1,23 @@
+================================================================================
+EXPERIMENT A3 - Controls for evidence decomposition + threshold sweep
+================================================================================
+Model A (T): MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
+Model B (F): ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli
+
+AGREE-SUP n=20  mean T=0.853  mean F=0.002  mean T+F=0.854  raw T+F>1: 0/20  margin(0.15): 0/20
+AGREE-REF n=20  mean T=0.179  mean F=0.481  mean T+F=0.661  raw T+F>1: 3/20  margin(0.15): 1/20
+CROSS     n=20  mean T=0.853  mean F=0.284  mean T+F=1.136  raw T+F>1: 12/20  margin(0.15): 8/20
+
+Threshold sweep (margin rule: T+F>1 and min(T,F)>=tau)
+  tau |  recall A2-decomp (20) | FP ENT/CON (20) | FP AGREE-SUP (20) | FP AGREE-REF (20) | FP CROSS (20)
+ 0.00 |                  16/20 |           10/20 |              0/20 |              3/20 |         12/20
+ 0.05 |                  15/20 |            1/20 |              0/20 |              1/20 |         10/20
+ 0.10 |                  15/20 |            1/20 |              0/20 |              1/20 |          9/20
+ 0.15 |                  15/20 |            1/20 |              0/20 |              1/20 |          8/20
+ 0.20 |                  15/20 |            1/20 |              0/20 |              1/20 |          8/20
+ 0.25 |                  11/20 |            1/20 |              0/20 |              0/20 |          8/20
+ 0.30 |                   9/20 |            1/20 |              0/20 |              0/20 |          7/20
+ 0.40 |                   8/20 |            1/20 |              0/20 |              0/20 |          6/20
+
+Pearson(T_A, 1-F_B) all 50 pairs of Experiment A: r = 0.285
+Pearson(T_A, 1-F_B) NEU+PAR pairs only (n=30):  r = -0.392

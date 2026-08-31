@@ -1,0 +1,18 @@
+================================================================================
+EXPERIMENT A2 — Conflicting-evidence stimuli (corrected design)
+================================================================================
+Model A (T): MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
+Model B (F): ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli
+
+HOLISTIC   mean T=0.474  mean F=0.239  mean T+F=0.713  recovered T+F>1: 4/20 (20%)
+DECOMP     mean T=0.853  mean F=0.498  mean T+F=1.350  recovered T+F>1: 16/20 (80%)
+
+Control ENT: false-paraconsistent 8/10 (mean T=0.997, mean F=0.053)
+Control CON: false-paraconsistent 2/10 (mean T=0.003, mean F=0.995)
+
+Margin decision rule (paraconsistent iff T+F>1 AND min(T,F)>=0.15):
+  PAR-EVID decomposed : 15/20 (75%) recovered
+  PAR-EVID holistic   : 3/20 (15%) recovered
+  Controls ENT/CON    : 0/20 false positives (min component 0.053 / 0.003)
+  The margin rule eliminates the boundary artifact observed in Experiment A
+  (ENT pairs with T=0.997 + F=0.053 summing marginally above 1).

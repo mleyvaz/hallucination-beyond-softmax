@@ -1,0 +1,22 @@
+================================================================================
+EXPERIMENT A5 - Lexical topicality gate on the F channel
+================================================================================
+
+Mean Jaccard(content words of refuting segment, claim) per family:
+  CONFLICT  mean J = 0.847  min J = 0.500  max J = 1.000
+  AGREE-SUP mean J = 0.751  min J = 0.600  max J = 1.000
+  AGREE-REF mean J = 0.658  min J = 0.333  max J = 1.000
+  CROSS     mean J = 0.006  min J = 0.000  max J = 0.125
+  ENT       mean J = 0.761  min J = 0.500  max J = 1.000
+  CON       mean J = 0.731  min J = 0.400  max J = 1.000
+
+Margin rule tau=0.15 with F_lex = F_raw if J >= theta else 0
+ theta | recall CONFLICT | FP ENT/CON | FP AGREE-SUP | FP AGREE-REF | FP CROSS
+  0.00 |           15/20 |       1/20 |         0/20 |         1/20 |     8/20
+  0.20 |           15/20 |       1/20 |         0/20 |         1/20 |     0/20
+  0.30 |           15/20 |       1/20 |         0/20 |         1/20 |     0/20
+  0.40 |           15/20 |       1/20 |         0/20 |         1/20 |     0/20
+  0.50 |           15/20 |       1/20 |         0/20 |         1/20 |     0/20
+
+Note: the gate is deliberately model-free. It separates 'refutation of another claim' from
+'refutation of this claim' by topical overlap alone; it does not and cannot judge credibility.
