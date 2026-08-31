@@ -13,6 +13,6 @@ Control CON: false-paraconsistent 2/10 (mean T=0.003, mean F=0.995)
 Margin decision rule (paraconsistent iff T+F>1 AND min(T,F)>=0.15):
   PAR-EVID decomposed : 15/20 (75%) recovered
   PAR-EVID holistic   : 3/20 (15%) recovered
-  Controls ENT/CON    : 0/20 false positives (min component 0.053 / 0.003)
+  Controls ENT/CON    : 1/20 false positives per item (ENT pair 2, T=0.984 F=0.507; the earlier 0/20 was computed on class means, corrected 2026-08-31)
   The margin rule eliminates the boundary artifact observed in Experiment A
   (ENT pairs with T=0.997 + F=0.053 summing marginally above 1).

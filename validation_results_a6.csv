@@ -1,0 +1,81 @@
+cls,item,T_swap,F_swap,jaccard,F_swap_lex,claim
+CONFLICT,1,0.9754,0.0013,1.0,0.0013,Paris is the capital of France.
+CONFLICT,2,0.9798,0.9637,0.714,0.9637,Water boils at 100 degrees Celsius at sea level.
+CONFLICT,3,0.9697,0.0307,1.0,0.0307,The Amazon rainforest is located in South America.
+CONFLICT,4,0.9903,0.0019,1.0,0.0019,Einstein developed the theory of general relativity.
+CONFLICT,5,0.9777,0.0054,1.0,0.0054,Photosynthesis converts sunlight into chemical energy.
+CONFLICT,6,0.9859,0.0025,1.0,0.0025,The human heart has four chambers.
+CONFLICT,7,0.9788,0.0033,1.0,0.0033,Mount Everest is the tallest mountain on Earth.
+CONFLICT,8,0.9899,0.0023,1.0,0.0023,The Pacific is the largest ocean on Earth.
+CONFLICT,9,0.8803,0.0034,0.5,0.0034,Shakespeare wrote Hamlet.
+CONFLICT,10,0.9852,0.0164,1.0,0.0164,Light travels faster than sound in air.
+CONFLICT,11,0.9627,0.0078,1.0,0.0078,Cuba is an island nation in the Caribbean.
+CONFLICT,12,0.9902,0.0215,1.0,0.0215,Tokyo is the most populous metropolitan area.
+CONFLICT,13,0.953,0.0563,0.75,0.0563,Gold is denser than iron.
+CONFLICT,14,0.9863,0.0031,1.0,0.0031,Vaccines prevent infectious diseases.
+CONFLICT,15,0.9905,0.0038,0.5,0.0038,The Earth orbits the Sun.
+CONFLICT,16,0.9903,0.003,0.75,0.003,Oranges contain vitamin C.
+CONFLICT,17,0.967,0.9491,0.667,0.9491,The bridge can support heavy trucks.
+CONFLICT,18,0.989,0.0046,0.667,0.0046,Global temperatures rose over the last decade.
+CONFLICT,19,0.9881,0.9315,0.8,0.9315,The drug reduces blood pressure.
+CONFLICT,20,0.9812,0.6958,0.6,0.6958,The company paid its taxes in full.
+AGREE-SUP,1,0.9754,0.0004,0.6,0.0004,Paris is the capital of France.
+AGREE-SUP,2,0.9798,0.0003,0.857,0.0003,Water boils at 100 degrees Celsius at sea level.
+AGREE-SUP,3,0.9697,0.0003,0.833,0.0003,The Amazon rainforest is located in South America.
+AGREE-SUP,4,0.9903,0.0001,1.0,0.0001,Einstein developed the theory of general relativity.
+AGREE-SUP,5,0.9777,0.0004,0.833,0.0004,Photosynthesis converts sunlight into chemical energy.
+AGREE-SUP,6,0.9859,0.0004,0.8,0.0004,The human heart has four chambers.
+AGREE-SUP,7,0.9788,0.0005,0.833,0.0005,Mount Everest is the tallest mountain on Earth.
+AGREE-SUP,8,0.9899,0.0005,0.8,0.0005,The Pacific is the largest ocean on Earth.
+AGREE-SUP,9,0.8803,0.0004,0.6,0.0004,Shakespeare wrote Hamlet.
+AGREE-SUP,10,0.9852,0.0002,0.833,0.0002,Light travels faster than sound in air.
+AGREE-SUP,11,0.9627,0.0003,0.8,0.0003,Cuba is an island nation in the Caribbean.
+AGREE-SUP,12,0.9902,0.0007,0.714,0.0007,Tokyo is the most populous metropolitan area.
+AGREE-SUP,13,0.953,0.0005,0.6,0.0005,Gold is denser than iron.
+AGREE-SUP,14,0.9863,0.0004,0.667,0.0004,Vaccines prevent infectious diseases.
+AGREE-SUP,15,0.9905,0.0004,0.6,0.0004,The Earth orbits the Sun.
+AGREE-SUP,16,0.9903,0.0002,0.75,0.0002,Oranges contain vitamin C.
+AGREE-SUP,17,0.967,0.0005,0.714,0.0005,The bridge can support heavy trucks.
+AGREE-SUP,18,0.989,0.0003,0.714,0.0003,Global temperatures rose over the last decade.
+AGREE-SUP,19,0.9881,0.0005,0.8,0.0005,The drug reduces blood pressure.
+AGREE-SUP,20,0.9812,0.0005,0.667,0.0005,The company paid its taxes in full.
+AGREE-REF,1,0.6078,0.0174,0.75,0.0174,Paris is the capital of France.
+AGREE-REF,2,0.0029,0.6722,0.625,0.6722,Water boils at 100 degrees Celsius at sea level.
+AGREE-REF,3,0.1141,0.0027,0.5,0.0027,The Amazon rainforest is located in South America.
+AGREE-REF,4,0.1087,0.0013,0.667,0.0013,Einstein developed the theory of general relativity.
+AGREE-REF,5,0.8665,0.0052,0.833,0.0052,Photosynthesis converts sunlight into chemical energy.
+AGREE-REF,6,0.4486,0.0096,0.667,0.0096,The human heart has four chambers.
+AGREE-REF,7,0.4676,0.0037,0.833,0.0037,Mount Everest is the tallest mountain on Earth.
+AGREE-REF,8,0.4745,0.01,0.667,0.01,The Pacific is the largest ocean on Earth.
+AGREE-REF,9,0.4604,0.0048,0.4,0.0048,Shakespeare wrote Hamlet.
+AGREE-REF,10,0.0062,0.0097,0.833,0.0097,Light travels faster than sound in air.
+AGREE-REF,11,0.8337,0.0328,0.667,0.0328,Cuba is an island nation in the Caribbean.
+AGREE-REF,12,0.0032,0.0118,1.0,0.0118,Tokyo is the most populous metropolitan area.
+AGREE-REF,13,0.0477,0.013,0.75,0.013,Gold is denser than iron.
+AGREE-REF,14,0.4104,0.0018,0.8,0.0018,Vaccines prevent infectious diseases.
+AGREE-REF,15,0.6417,0.0007,0.333,0.0007,The Earth orbits the Sun.
+AGREE-REF,16,0.7887,0.0019,0.6,0.0019,Oranges contain vitamin C.
+AGREE-REF,17,0.0009,0.8227,0.5,0.8227,The bridge can support heavy trucks.
+AGREE-REF,18,0.2545,0.0025,0.5,0.0025,Global temperatures rose over the last decade.
+AGREE-REF,19,0.0029,0.9268,0.8,0.9268,The drug reduces blood pressure.
+AGREE-REF,20,0.0003,0.0229,0.429,0.0229,The company paid its taxes in full.
+CROSS,1,0.9754,0.0001,0.0,0.0,Paris is the capital of France.
+CROSS,2,0.9798,0.037,0.0,0.0,Water boils at 100 degrees Celsius at sea level.
+CROSS,3,0.9697,0.0006,0.0,0.0,The Amazon rainforest is located in South America.
+CROSS,4,0.9903,0.0029,0.0,0.0,Einstein developed the theory of general relativity.
+CROSS,5,0.9777,0.0086,0.0,0.0,Photosynthesis converts sunlight into chemical energy.
+CROSS,6,0.9859,0.0005,0.0,0.0,The human heart has four chambers.
+CROSS,7,0.9788,0.0019,0.125,0.0,Mount Everest is the tallest mountain on Earth.
+CROSS,8,0.9899,0.001,0.0,0.0,The Pacific is the largest ocean on Earth.
+CROSS,9,0.8803,0.0334,0.0,0.0,Shakespeare wrote Hamlet.
+CROSS,10,0.9852,0.0057,0.0,0.0,Light travels faster than sound in air.
+CROSS,11,0.9627,0.0033,0.0,0.0,Cuba is an island nation in the Caribbean.
+CROSS,12,0.9902,0.0008,0.0,0.0,Tokyo is the most populous metropolitan area.
+CROSS,13,0.953,0.0015,0.0,0.0,Gold is denser than iron.
+CROSS,14,0.9863,0.0023,0.0,0.0,Vaccines prevent infectious diseases.
+CROSS,15,0.9905,0.0016,0.0,0.0,The Earth orbits the Sun.
+CROSS,16,0.9903,0.0007,0.0,0.0,Oranges contain vitamin C.
+CROSS,17,0.967,0.0062,0.0,0.0,The bridge can support heavy trucks.
+CROSS,18,0.989,0.0002,0.0,0.0,Global temperatures rose over the last decade.
+CROSS,19,0.9881,0.0007,0.0,0.0,The drug reduces blood pressure.
+CROSS,20,0.9812,0.0051,0.0,0.0,The company paid its taxes in full.

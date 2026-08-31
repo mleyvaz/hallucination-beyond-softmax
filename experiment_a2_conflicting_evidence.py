@@ -182,6 +182,14 @@ def main():
                  f"(mean T={sum(c['T'] for c in sub)/len(sub):.3f}, "
                  f"mean F={sum(c['F'] for c in sub)/len(sub):.3f})")
     L.append("")
+    # margin rule evaluated PER ITEM (2026-08-31: an earlier summary evaluated it on class means)
+    def margin(t, f):
+        return t + f > 1 and min(t, f) >= 0.15
+    L.append("Margin decision rule (paraconsistent iff T+F>1 AND min(T,F)>=0.15), evaluated PER ITEM:")
+    L.append(f"  PAR-EVID decomposed : {sum(1 for r in rows if margin(r['T_decomp'], r['F_decomp']))}/{n} recovered")
+    L.append(f"  PAR-EVID holistic   : {sum(1 for r in rows if margin(r['T_holistic'], r['F_holistic']))}/{n} recovered")
+    L.append(f"  Controls ENT/CON    : {sum(1 for c in ctrl if margin(c['T'], c['F']))}/{len(ctrl)} false positives")
+    L.append("")
     txt = "\n".join(L)
     with open(OUT_TXT, "w", encoding="utf-8") as fh:
         fh.write(txt)

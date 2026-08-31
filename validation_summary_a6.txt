@@ -1,0 +1,8 @@
+================================================================================
+EXPERIMENT A6 - Model-assignment swap (T from Model B, F from Model A)
+================================================================================
+
+CONFLICT  n=20 mean T=0.976 mean F=0.185 flagged ungated 4/20 | lexical gate 4/20
+AGREE-SUP n=20 mean T=0.976 mean F=0.000 flagged ungated 0/20 | lexical gate 0/20
+AGREE-REF n=20 mean T=0.327 mean F=0.129 flagged ungated 0/20 | lexical gate 0/20
+CROSS     n=20 mean T=0.976 mean F=0.006 flagged ungated 0/20 | lexical gate 0/20
