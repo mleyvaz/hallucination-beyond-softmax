@@ -23,7 +23,7 @@ and a tau sweep. Outputs: validation_results_a4.csv, validation_summary_a4.txt.
 """
 from __future__ import annotations
 import csv, os, sys
-HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
+HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = HERE  # scripts and data live flat in this repo; do not assume a parent directory
 sys.path.insert(0, HERE)
 OUT_CSV = os.path.join(ROOT, "validation_results_a4.csv")
 OUT_TXT = os.path.join(ROOT, "validation_summary_a4.txt")

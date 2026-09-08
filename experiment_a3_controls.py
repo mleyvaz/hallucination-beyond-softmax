@@ -33,7 +33,7 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
+ROOT = HERE  # scripts and data live flat in this repo; do not assume a parent directory
 sys.path.insert(0, HERE)
 OUT_CSV = os.path.join(ROOT, "validation_results_a3.csv")
 OUT_TXT = os.path.join(ROOT, "validation_summary_a3.txt")

@@ -15,7 +15,7 @@ Output: validation_results_a7.csv, validation_summary_a7.txt.
 """
 from __future__ import annotations
 import csv, os, sys
-HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
+HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = HERE  # scripts and data live flat in this repo; do not assume a parent directory
 sys.path.insert(0, HERE)
 from experiment_a2_conflicting_evidence import MODEL_A, MODEL_B, CONFLICT_ITEMS, build_pipe, label_scores
 from experiment_a3_controls import AGREE_SUP_2, AGREE_REF_2, flag

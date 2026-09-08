@@ -37,7 +37,7 @@ Models (public, CPU is enough): Model A `MoritzLaurer/DeBERTa-v3-large-mnli-feve
 ## Reproducing
 
 ```bash
-pip install transformers torch
+pip install -r requirements.txt
 python experiment_a_real_models.py            # -> validation_results_real.csv
 python experiment_a2_conflicting_evidence.py  # -> validation_results_a2.csv
 python experiment_a3_controls.py              # -> validation_results_a3.csv

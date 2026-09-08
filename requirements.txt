@@ -1,0 +1,8 @@
+# Verified working with these versions as of 2026-09-08. The exact library
+# versions used for the original experiment run (models retrieved 2026-08-31,
+# Section "Setup") were not pinned or logged at the time and cannot be
+# reconstructed retroactively -- this is a declared reproducibility gap, not a
+# claim that these are the original versions.
+transformers==5.5.3
+torch==2.11.0
+# Python 3.14.3 used for verification.

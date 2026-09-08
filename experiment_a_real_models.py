@@ -30,7 +30,7 @@ from dataclasses import dataclass, asdict
 from synthetic_validation import PAIRS  # reuse the exact 50 pairs
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
+ROOT = HERE  # scripts and data live flat in this repo; do not assume a parent directory
 OUT_CSV = os.path.join(ROOT, "validation_results_real.csv")
 OUT_TXT = os.path.join(ROOT, "validation_summary_real.txt")
 
