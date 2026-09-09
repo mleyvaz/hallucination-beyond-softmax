@@ -1,0 +1,61 @@
+========================================================================================
+EXPERIMENT A8 - Polarity-blind max-max selection and collapsed difference score
+========================================================================================
+
+Rules: diag = T+F>1 and min(T,F)>=0.15; bil = min(T,F)>=0.15. Gate: contradiction max restricted to segments with J>=0.3.
+
+--- A-only max-max, ungated (HallDetect-style selection)
+  CONFLICT  n=20 meanE=0.853 meanC=0.185 | diag  4/20 | bil  4/20
+  AGREE-SUP n=20 meanE=0.990 meanC=0.001 | diag  0/20 | bil  0/20
+  AGREE-REF n=20 meanE=0.295 meanC=0.188 | diag  0/20 | bil  0/20
+  CROSS     n=20 meanE=0.879 meanC=0.006 | diag  0/20 | bil  0/20
+  ENT       n=10 meanE=0.997 meanC=0.001 | diag  0/10 | bil  0/10
+  CON       n=10 meanE=0.003 meanC=0.996 | diag  0/10 | bil  0/10
+  NEU       n=10 meanE=0.070 meanC=0.004 | diag  0/10 | bil  0/10
+
+--- A-only max-max, gated
+  CONFLICT  n=20 meanE=0.853 meanC=0.185 | diag  4/20 | bil  4/20
+  AGREE-SUP n=20 meanE=0.990 meanC=0.001 | diag  0/20 | bil  0/20
+  AGREE-REF n=20 meanE=0.295 meanC=0.188 | diag  0/20 | bil  0/20
+  CROSS     n=20 meanE=0.879 meanC=0.001 | diag  0/20 | bil  0/20
+  ENT       n=10 meanE=0.997 meanC=0.001 | diag  0/10 | bil  0/10
+  CON       n=10 meanE=0.003 meanC=0.996 | diag  0/10 | bil  0/10
+  NEU       n=10 meanE=0.070 meanC=0.000 | diag  0/10 | bil  0/10
+
+--- dual max-max (E from A, C from B), ungated
+  CONFLICT  n=20 meanE=0.853 meanC=0.498 | diag 15/20 | bil 17/20
+  AGREE-SUP n=20 meanE=0.990 meanC=0.002 | diag  0/20 | bil  0/20
+  AGREE-REF n=20 meanE=0.295 meanC=0.587 | diag  3/20 | bil  8/20
+  CROSS     n=20 meanE=0.879 meanC=0.284 | diag  9/20 | bil  9/20
+  ENT       n=10 meanE=0.997 meanC=0.053 | diag  1/10 | bil  1/10
+  CON       n=10 meanE=0.003 meanC=0.995 | diag  0/10 | bil  0/10
+  NEU       n=10 meanE=0.070 meanC=0.316 | diag  1/10 | bil  2/10
+
+--- dual max-max (E from A, C from B), gated
+  CONFLICT  n=20 meanE=0.853 meanC=0.498 | diag 15/20 | bil 17/20
+  AGREE-SUP n=20 meanE=0.990 meanC=0.002 | diag  0/20 | bil  0/20
+  AGREE-REF n=20 meanE=0.295 meanC=0.587 | diag  3/20 | bil  8/20
+  CROSS     n=20 meanE=0.879 meanC=0.002 | diag  0/20 | bil  0/20
+  ENT       n=10 meanE=0.997 meanC=0.053 | diag  1/10 | bil  1/10
+  CON       n=10 meanE=0.003 meanC=0.995 | diag  0/10 | bil  0/10
+  NEU       n=10 meanE=0.070 meanC=0.000 | diag  0/10 | bil  0/10
+
+--- collapsed D = Emax_A - Cmax_A (one head, HallDetect-style): per-family mean, min, max
+  CONFLICT  n=20 mean=+0.667 min=-0.687 max=+0.996
+  AGREE-SUP n=20 mean=+0.990 min=+0.951 max=+0.998
+  AGREE-REF n=20 mean=+0.107 min=-0.954 max=+0.981
+  CROSS     n=20 mean=+0.873 min=+0.465 max=+0.997
+  ENT       n=10 mean=+0.996 min=+0.979 max=+1.000
+  CON       n=10 mean=-0.993 min=-1.000 max=-0.967
+  NEU       n=10 mean=+0.066 min=+0.001 max=+0.342
+  CONFLICT items with D inside the NEU range [+0.001, +0.342]: 3/20
+
+--- collapsed D = Emax_A - Cmax_B (dual heads): per-family mean, min, max
+  CONFLICT  n=20 mean=+0.355 min=-0.715 max=+0.957
+  AGREE-SUP n=20 mean=+0.988 min=+0.950 max=+0.997
+  AGREE-REF n=20 mean=-0.292 min=-0.996 max=+0.947
+  CROSS     n=20 mean=+0.595 min=-0.281 max=+0.991
+  ENT       n=10 mean=+0.944 min=+0.477 max=+0.999
+  CON       n=10 mean=-0.992 min=-0.999 max=-0.981
+  NEU       n=10 mean=-0.246 min=-0.637 max=-0.014
+  CONFLICT items with D inside the NEU range [-0.637, -0.014]: 1/20

@@ -103,16 +103,11 @@ from synthetic_validation import PAIRS
 CONTROLS = [(c, p, h) for (c, p, h) in PAIRS if c in ("ENT", "CON")]
 
 
-def build_pipe(model_name):
-    from transformers import pipeline
-    return pipeline("text-classification", model=model_name, top_k=None)
+from dual_nli import build_pipe, nli_scores  # single code path with the reference implementation
 
 
 def label_scores(pipe, premise, hypothesis):
-    out = pipe({"text": premise, "text_pair": hypothesis})
-    if out and isinstance(out[0], list):
-        out = out[0]
-    return {d["label"].lower(): float(d["score"]) for d in out}
+    return nli_scores(pipe, premise, hypothesis)
 
 
 def main():

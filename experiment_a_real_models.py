@@ -2,7 +2,7 @@
 Experiment A — Dual-NLI with REAL NLI models (replaces illustrative heuristics).
 
 Runs the SAME 50 hand-crafted pairs from synthetic_validation.py, but scores them
-with two independent, state-of-the-art NLI models instead of the token-overlap /
+with two separately trained NLI models instead of the token-overlap /
 negation-cue heuristics:
 
   - Model A (T = entailment): MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
@@ -88,7 +88,7 @@ def run():
         n_a = a.get("neutral", 0.0)
         f_b = b.get("contradiction", 0.0)
 
-        # Dual-NLI: T from A, F from B (independent softmaxes)
+        # Dual-NLI: T from A, F from B (two separate softmax calls; no shared normalization)
         sum_dual = t_a + f_b
         # Single-NLI: T and F both from Model A's single softmax
         sum_single = t_a + c_a
@@ -173,7 +173,7 @@ def summarize(results) -> str:
     corr = cov / ((vt ** 0.5) * (vo ** 0.5)) if vt > 0 and vo > 0 else float("nan")
     L.append("Independence diagnostic:")
     L.append(f"  Pearson(T_A, 1 - F_B) = {corr:.3f}")
-    L.append("  (close to 0 => independent; close to 1 => softmax-like coupling)")
+    L.append("  (descriptive only: a low correlation on this small, non-random sample does not establish independence)")
     L.append("")
 
     par = [r for r in results if r.cls == "PAR"]

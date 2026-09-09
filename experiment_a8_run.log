@@ -1,0 +1,192 @@
+Loading models...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:  14%|#4        | 57/394 [00:00<00:00, 528.95it/s]Loading weights:  44%|####3     | 173/394 [00:00<00:00, 875.16it/s]Loading weights:  66%|######6   | 262/394 [00:00<00:00, 523.51it/s]Loading weights:  87%|########6 | 341/394 [00:00<00:00, 592.88it/s]Loading weights: 100%|##########| 394/394 [00:00<00:00, 644.90it/s]
+[1mDebertaV2ForSequenceClassification LOAD REPORT[0m from: MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+deberta.embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|##########| 393/393 [00:00<00:00, 10011.43it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli
+Key                         | Status     |  | 
+----------------------------+------------+--+-
+roberta.pooler.dense.weight | UNEXPECTED |  | 
+roberta.pooler.dense.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  CONFLICT  [ 1] EmaxA=0.465 CmaxA=0.001 CmaxB=0.158 D_A=+0.464
+  CONFLICT  [ 2] EmaxA=0.277 CmaxA=0.964 CmaxB=0.992 D_A=-0.687
+  CONFLICT  [ 3] EmaxA=0.645 CmaxA=0.031 CmaxB=0.635 D_A=+0.614
+  CONFLICT  [ 4] EmaxA=0.998 CmaxA=0.002 CmaxB=0.669 D_A=+0.996
+  CONFLICT  [ 5] EmaxA=0.893 CmaxA=0.005 CmaxB=0.049 D_A=+0.887
+  CONFLICT  [ 6] EmaxA=0.968 CmaxA=0.003 CmaxB=0.310 D_A=+0.966
+  CONFLICT  [ 7] EmaxA=0.997 CmaxA=0.003 CmaxB=0.218 D_A=+0.994
+  CONFLICT  [ 8] EmaxA=0.649 CmaxA=0.002 CmaxB=0.223 D_A=+0.646
+  CONFLICT  [ 9] EmaxA=0.937 CmaxA=0.003 CmaxB=0.253 D_A=+0.934
+  CONFLICT  [10] EmaxA=0.992 CmaxA=0.016 CmaxB=0.982 D_A=+0.976
+  CONFLICT  [11] EmaxA=0.700 CmaxA=0.008 CmaxB=0.029 D_A=+0.692
+  CONFLICT  [12] EmaxA=0.949 CmaxA=0.021 CmaxB=0.975 D_A=+0.927
+  CONFLICT  [13] EmaxA=0.744 CmaxA=0.056 CmaxB=0.748 D_A=+0.688
+  CONFLICT  [14] EmaxA=0.991 CmaxA=0.003 CmaxB=0.245 D_A=+0.988
+  CONFLICT  [15] EmaxA=0.879 CmaxA=0.004 CmaxB=0.214 D_A=+0.875
+  CONFLICT  [16] EmaxA=0.994 CmaxA=0.003 CmaxB=0.037 D_A=+0.991
+  CONFLICT  [17] EmaxA=0.994 CmaxA=0.949 CmaxB=0.995 D_A=+0.044
+  CONFLICT  [18] EmaxA=0.997 CmaxA=0.005 CmaxB=0.231 D_A=+0.992
+  CONFLICT  [19] EmaxA=0.993 CmaxA=0.931 CmaxB=0.991 D_A=+0.061
+  CONFLICT  [20] EmaxA=0.994 CmaxA=0.696 CmaxB=0.999 D_A=+0.299
+  AGREE-SUP [ 1] EmaxA=0.985 CmaxA=0.001 CmaxB=0.003 D_A=+0.984
+  AGREE-SUP [ 2] EmaxA=0.990 CmaxA=0.001 CmaxB=0.003 D_A=+0.989
+  AGREE-SUP [ 3] EmaxA=0.999 CmaxA=0.001 CmaxB=0.003 D_A=+0.998
+  AGREE-SUP [ 4] EmaxA=0.998 CmaxA=0.000 CmaxB=0.002 D_A=+0.998
+  AGREE-SUP [ 5] EmaxA=0.990 CmaxA=0.001 CmaxB=0.003 D_A=+0.989
+  AGREE-SUP [ 6] EmaxA=0.990 CmaxA=0.001 CmaxB=0.002 D_A=+0.989
+  AGREE-SUP [ 7] EmaxA=0.997 CmaxA=0.001 CmaxB=0.002 D_A=+0.997
+  AGREE-SUP [ 8] EmaxA=0.991 CmaxA=0.001 CmaxB=0.002 D_A=+0.991
+  AGREE-SUP [ 9] EmaxA=0.970 CmaxA=0.001 CmaxB=0.004 D_A=+0.969
+  AGREE-SUP [10] EmaxA=0.995 CmaxA=0.000 CmaxB=0.003 D_A=+0.994
+  AGREE-SUP [11] EmaxA=0.993 CmaxA=0.001 CmaxB=0.003 D_A=+0.992
+  AGREE-SUP [12] EmaxA=0.992 CmaxA=0.001 CmaxB=0.002 D_A=+0.991
+  AGREE-SUP [13] EmaxA=0.992 CmaxA=0.001 CmaxB=0.004 D_A=+0.991
+  AGREE-SUP [14] EmaxA=0.995 CmaxA=0.000 CmaxB=0.001 D_A=+0.994
+  AGREE-SUP [15] EmaxA=0.951 CmaxA=0.000 CmaxB=0.002 D_A=+0.951
+  AGREE-SUP [16] EmaxA=0.996 CmaxA=0.000 CmaxB=0.002 D_A=+0.996
+  AGREE-SUP [17] EmaxA=0.996 CmaxA=0.001 CmaxB=0.002 D_A=+0.995
+  AGREE-SUP [18] EmaxA=0.997 CmaxA=0.000 CmaxB=0.001 D_A=+0.997
+  AGREE-SUP [19] EmaxA=0.996 CmaxA=0.001 CmaxB=0.001 D_A=+0.996
+  AGREE-SUP [20] EmaxA=0.994 CmaxA=0.001 CmaxB=0.002 D_A=+0.994
+  AGREE-REF [ 1] EmaxA=0.075 CmaxA=0.017 CmaxB=0.511 D_A=+0.057
+  AGREE-REF [ 2] EmaxA=0.010 CmaxA=0.964 CmaxB=0.992 D_A=-0.954
+  AGREE-REF [ 3] EmaxA=0.972 CmaxA=0.031 CmaxB=0.635 D_A=+0.941
+  AGREE-REF [ 4] EmaxA=0.285 CmaxA=0.002 CmaxB=0.669 D_A=+0.283
+  AGREE-REF [ 5] EmaxA=0.683 CmaxA=0.005 CmaxB=0.168 D_A=+0.678
+  AGREE-REF [ 6] EmaxA=0.220 CmaxA=0.010 CmaxB=0.838 D_A=+0.210
+  AGREE-REF [ 7] EmaxA=0.105 CmaxA=0.004 CmaxB=0.218 D_A=+0.102
+  AGREE-REF [ 8] EmaxA=0.014 CmaxA=0.010 CmaxB=0.223 D_A=+0.004
+  AGREE-REF [ 9] EmaxA=0.724 CmaxA=0.005 CmaxB=0.253 D_A=+0.719
+  AGREE-REF [10] EmaxA=0.105 CmaxA=0.016 CmaxB=0.982 D_A=+0.088
+  AGREE-REF [11] EmaxA=0.556 CmaxA=0.033 CmaxB=0.279 D_A=+0.523
+  AGREE-REF [12] EmaxA=0.045 CmaxA=0.021 CmaxB=0.975 D_A=+0.023
+  AGREE-REF [13] EmaxA=0.719 CmaxA=0.056 CmaxB=0.748 D_A=+0.663
+  AGREE-REF [14] EmaxA=0.283 CmaxA=0.003 CmaxB=0.481 D_A=+0.280
+  AGREE-REF [15] EmaxA=0.034 CmaxA=0.004 CmaxB=0.214 D_A=+0.030
+  AGREE-REF [16] EmaxA=0.984 CmaxA=0.003 CmaxB=0.037 D_A=+0.981
+  AGREE-REF [17] EmaxA=0.012 CmaxA=0.949 CmaxB=0.995 D_A=-0.937
+  AGREE-REF [18] EmaxA=0.043 CmaxA=0.005 CmaxB=0.536 D_A=+0.038
+  AGREE-REF [19] EmaxA=0.028 CmaxA=0.931 CmaxB=0.991 D_A=-0.903
+  AGREE-REF [20] EmaxA=0.003 CmaxA=0.696 CmaxB=0.999 D_A=-0.693
+  CROSS     [ 1] EmaxA=0.465 CmaxA=0.001 CmaxB=0.009 D_A=+0.465
+  CROSS     [ 2] EmaxA=0.800 CmaxA=0.037 CmaxB=0.376 D_A=+0.763
+  CROSS     [ 3] EmaxA=0.645 CmaxA=0.001 CmaxB=0.008 D_A=+0.644
+  CROSS     [ 4] EmaxA=0.998 CmaxA=0.003 CmaxB=0.779 D_A=+0.995
+  CROSS     [ 5] EmaxA=0.893 CmaxA=0.009 CmaxB=0.356 D_A=+0.884
+  CROSS     [ 6] EmaxA=0.968 CmaxA=0.001 CmaxB=0.037 D_A=+0.968
+  CROSS     [ 7] EmaxA=0.997 CmaxA=0.002 CmaxB=0.537 D_A=+0.995
+  CROSS     [ 8] EmaxA=0.649 CmaxA=0.001 CmaxB=0.078 D_A=+0.648
+  CROSS     [ 9] EmaxA=0.937 CmaxA=0.033 CmaxB=0.770 D_A=+0.904
+  CROSS     [10] EmaxA=0.992 CmaxA=0.006 CmaxB=0.125 D_A=+0.987
+  CROSS     [11] EmaxA=0.700 CmaxA=0.003 CmaxB=0.981 D_A=+0.697
+  CROSS     [12] EmaxA=0.949 CmaxA=0.001 CmaxB=0.027 D_A=+0.948
+  CROSS     [13] EmaxA=0.744 CmaxA=0.002 CmaxB=0.006 D_A=+0.743
+  CROSS     [14] EmaxA=0.991 CmaxA=0.002 CmaxB=0.626 D_A=+0.989
+  CROSS     [15] EmaxA=0.879 CmaxA=0.002 CmaxB=0.005 D_A=+0.877
+  CROSS     [16] EmaxA=0.994 CmaxA=0.001 CmaxB=0.003 D_A=+0.994
+  CROSS     [17] EmaxA=0.994 CmaxA=0.006 CmaxB=0.268 D_A=+0.987
+  CROSS     [18] EmaxA=0.997 CmaxA=0.000 CmaxB=0.086 D_A=+0.997
+  CROSS     [19] EmaxA=0.993 CmaxA=0.001 CmaxB=0.017 D_A=+0.992
+  CROSS     [20] EmaxA=0.994 CmaxA=0.005 CmaxB=0.582 D_A=+0.989
+  ENT       [ 1] EmaxA=0.999 CmaxA=0.000 CmaxB=0.003 D_A=+0.999
+  ENT       [ 2] EmaxA=0.984 CmaxA=0.005 CmaxB=0.507 D_A=+0.979
+  ENT       [ 3] EmaxA=1.000 CmaxA=0.000 CmaxB=0.001 D_A=+0.999
+  ENT       [ 4] EmaxA=0.999 CmaxA=0.000 CmaxB=0.002 D_A=+0.999
+  ENT       [ 5] EmaxA=0.998 CmaxA=0.000 CmaxB=0.003 D_A=+0.997
+  ENT       [ 6] EmaxA=0.990 CmaxA=0.002 CmaxB=0.002 D_A=+0.988
+  ENT       [ 7] EmaxA=0.999 CmaxA=0.000 CmaxB=0.003 D_A=+0.998
+  ENT       [ 8] EmaxA=0.999 CmaxA=0.000 CmaxB=0.001 D_A=+0.998
+  ENT       [ 9] EmaxA=1.000 CmaxA=0.000 CmaxB=0.002 D_A=+1.000
+  ENT       [10] EmaxA=0.999 CmaxA=0.000 CmaxB=0.003 D_A=+0.999
+  CON       [ 1] EmaxA=0.001 CmaxA=0.999 CmaxB=0.996 D_A=-0.999
+  CON       [ 2] EmaxA=0.003 CmaxA=0.997 CmaxB=0.990 D_A=-0.994
+  CON       [ 3] EmaxA=0.002 CmaxA=0.998 CmaxB=0.999 D_A=-0.997
+  CON       [ 4] EmaxA=0.000 CmaxA=1.000 CmaxB=1.000 D_A=-1.000
+  CON       [ 5] EmaxA=0.001 CmaxA=0.999 CmaxB=0.999 D_A=-0.999
+  CON       [ 6] EmaxA=0.013 CmaxA=0.980 CmaxB=0.994 D_A=-0.967
+  CON       [ 7] EmaxA=0.004 CmaxA=0.995 CmaxB=0.986 D_A=-0.991
+  CON       [ 8] EmaxA=0.004 CmaxA=0.995 CmaxB=0.990 D_A=-0.990
+  CON       [ 9] EmaxA=0.000 CmaxA=1.000 CmaxB=0.999 D_A=-0.999
+  CON       [10] EmaxA=0.001 CmaxA=0.999 CmaxB=0.996 D_A=-0.999
+  NEU       [ 1] EmaxA=0.005 CmaxA=0.001 CmaxB=0.445 D_A=+0.005
+  NEU       [ 2] EmaxA=0.019 CmaxA=0.001 CmaxB=0.220 D_A=+0.018
+  NEU       [ 3] EmaxA=0.268 CmaxA=0.003 CmaxB=0.851 D_A=+0.265
+  NEU       [ 4] EmaxA=0.016 CmaxA=0.003 CmaxB=0.237 D_A=+0.013
+  NEU       [ 5] EmaxA=0.001 CmaxA=0.000 CmaxB=0.033 D_A=+0.001
+  NEU       [ 6] EmaxA=0.031 CmaxA=0.020 CmaxB=0.668 D_A=+0.011
+  NEU       [ 7] EmaxA=0.007 CmaxA=0.001 CmaxB=0.058 D_A=+0.006
+  NEU       [ 8] EmaxA=0.002 CmaxA=0.000 CmaxB=0.082 D_A=+0.002
+  NEU       [ 9] EmaxA=0.353 CmaxA=0.010 CmaxB=0.367 D_A=+0.342
+  NEU       [10] EmaxA=0.003 CmaxA=0.001 CmaxB=0.201 D_A=+0.002
+
+========================================================================================
+EXPERIMENT A8 - Polarity-blind max-max selection and collapsed difference score
+========================================================================================
+
+Rules: diag = T+F>1 and min(T,F)>=0.15; bil = min(T,F)>=0.15. Gate: contradiction max restricted to segments with J>=0.3.
+
+--- A-only max-max, ungated (HallDetect-style selection)
+  CONFLICT  n=20 meanE=0.853 meanC=0.185 | diag  4/20 | bil  4/20
+  AGREE-SUP n=20 meanE=0.990 meanC=0.001 | diag  0/20 | bil  0/20
+  AGREE-REF n=20 meanE=0.295 meanC=0.188 | diag  0/20 | bil  0/20
+  CROSS     n=20 meanE=0.879 meanC=0.006 | diag  0/20 | bil  0/20
+  ENT       n=10 meanE=0.997 meanC=0.001 | diag  0/10 | bil  0/10
+  CON       n=10 meanE=0.003 meanC=0.996 | diag  0/10 | bil  0/10
+  NEU       n=10 meanE=0.070 meanC=0.004 | diag  0/10 | bil  0/10
+
+--- A-only max-max, gated
+  CONFLICT  n=20 meanE=0.853 meanC=0.185 | diag  4/20 | bil  4/20
+  AGREE-SUP n=20 meanE=0.990 meanC=0.001 | diag  0/20 | bil  0/20
+  AGREE-REF n=20 meanE=0.295 meanC=0.188 | diag  0/20 | bil  0/20
+  CROSS     n=20 meanE=0.879 meanC=0.001 | diag  0/20 | bil  0/20
+  ENT       n=10 meanE=0.997 meanC=0.001 | diag  0/10 | bil  0/10
+  CON       n=10 meanE=0.003 meanC=0.996 | diag  0/10 | bil  0/10
+  NEU       n=10 meanE=0.070 meanC=0.000 | diag  0/10 | bil  0/10
+
+--- dual max-max (E from A, C from B), ungated
+  CONFLICT  n=20 meanE=0.853 meanC=0.498 | diag 15/20 | bil 17/20
+  AGREE-SUP n=20 meanE=0.990 meanC=0.002 | diag  0/20 | bil  0/20
+  AGREE-REF n=20 meanE=0.295 meanC=0.587 | diag  3/20 | bil  8/20
+  CROSS     n=20 meanE=0.879 meanC=0.284 | diag  9/20 | bil  9/20
+  ENT       n=10 meanE=0.997 meanC=0.053 | diag  1/10 | bil  1/10
+  CON       n=10 meanE=0.003 meanC=0.995 | diag  0/10 | bil  0/10
+  NEU       n=10 meanE=0.070 meanC=0.316 | diag  1/10 | bil  2/10
+
+--- dual max-max (E from A, C from B), gated
+  CONFLICT  n=20 meanE=0.853 meanC=0.498 | diag 15/20 | bil 17/20
+  AGREE-SUP n=20 meanE=0.990 meanC=0.002 | diag  0/20 | bil  0/20
+  AGREE-REF n=20 meanE=0.295 meanC=0.587 | diag  3/20 | bil  8/20
+  CROSS     n=20 meanE=0.879 meanC=0.002 | diag  0/20 | bil  0/20
+  ENT       n=10 meanE=0.997 meanC=0.053 | diag  1/10 | bil  1/10
+  CON       n=10 meanE=0.003 meanC=0.995 | diag  0/10 | bil  0/10
+  NEU       n=10 meanE=0.070 meanC=0.000 | diag  0/10 | bil  0/10
+
+--- collapsed D = Emax_A - Cmax_A (one head, HallDetect-style): per-family mean, min, max
+  CONFLICT  n=20 mean=+0.667 min=-0.687 max=+0.996
+  AGREE-SUP n=20 mean=+0.990 min=+0.951 max=+0.998
+  AGREE-REF n=20 mean=+0.107 min=-0.954 max=+0.981
+  CROSS     n=20 mean=+0.873 min=+0.465 max=+0.997
+  ENT       n=10 mean=+0.996 min=+0.979 max=+1.000
+  CON       n=10 mean=-0.993 min=-1.000 max=-0.967
+  NEU       n=10 mean=+0.066 min=+0.001 max=+0.342
+  CONFLICT items with D inside the NEU range [+0.001, +0.342]: 3/20
+
+--- collapsed D = Emax_A - Cmax_B (dual heads): per-family mean, min, max
+  CONFLICT  n=20 mean=+0.355 min=-0.715 max=+0.957
+  AGREE-SUP n=20 mean=+0.988 min=+0.950 max=+0.997
+  AGREE-REF n=20 mean=-0.292 min=-0.996 max=+0.947
+  CROSS     n=20 mean=+0.595 min=-0.281 max=+0.991
+  ENT       n=10 mean=+0.944 min=+0.477 max=+0.999
+  CON       n=10 mean=-0.992 min=-0.999 max=-0.981
+  NEU       n=10 mean=-0.246 min=-0.637 max=-0.014
+  CONFLICT items with D inside the NEU range [-0.637, -0.014]: 1/20
+

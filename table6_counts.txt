@@ -1,0 +1,14 @@
+Table 6 rebuilt from CSV (lexical gate theta=0.3, tau=0.15)
+
+family       n                      R_diag (published)                     R_bil (no diagonal)                    R_F (single-channel)     R_rect (post hoc: T>=0.60, F>=0.20)
+CONFLICT    20                                   15/20                                   17/20                                   17/20                                   15/20
+AGREE-SUP   20                                    0/20                                    0/20                                    0/20                                    0/20
+AGREE-REF   20                                    1/20                                    5/20                                   17/20                                    0/20
+CROSS       20                                    0/20                                    0/20                                    0/20                                    0/20
+ENT         10                                    1/10                                    1/10                                    1/10                                    1/10
+CON         10                                    0/10                                    0/10                                   10/10                                    0/10
+
+R_diag (published)                       TP=15/20  FP= 2/80  precision=15/17  recall=15/20
+R_bil (no diagonal)                      TP=17/20  FP= 6/80  precision=17/23  recall=17/20
+R_F (single-channel)                     TP=17/20  FP=28/80  precision=17/45  recall=17/20
+R_rect (post hoc: T>=0.60, F>=0.20)      TP=15/20  FP= 1/80  precision=15/16  recall=15/20

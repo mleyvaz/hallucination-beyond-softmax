@@ -27,25 +27,7 @@ A4 = os.path.join(ROOT, "validation_results_a4.csv")
 OUT_TXT = os.path.join(ROOT, "validation_summary_a5.txt")
 OUT_CSV = os.path.join(ROOT, "validation_results_a5.csv")
 
-STOP = set("""a an the of in on at to for from by with and or but however that this these those is are was were be been
-being has have had does do did not no nor it its as than then there here into over under about which who whom whose
-also states state claims claim reports report concludes conclude asserts assert argues argue insists insist maintains
-maintain holds hold contends contend denies deny declares declare confirms confirm documents document certifies certify
-teaches teach indicates indicate finds find shows show explains explain describes describe lists list attributes
-attribute establishes establish affirms affirm verifies verify warns warn suggests suggest places place records record
-according official disputed pamphlet blog post essay site treatise almanac newsletter theory forum flyer worksheet
-leaflet op-ed study trial memo ledger textbook manual survey institute archive handbook entry bureau reference
-guideline course curriculum agency audit biography atlas encyclopedia revisionist pseudoscientific outdated rival
-amateur fringe confused erroneous competing flawed conspiracy geocentric retracted whistleblower denialist follow-up
-leaked physics city lab""".split())
-
-def content(s):
-    toks = re.findall(r"[a-z]+", s.lower())
-    return {t[:6] for t in toks if t not in STOP and len(t) > 2}
-
-def jacc(a, b):
-    A, B = content(a), content(b)
-    return len(A & B) / len(A | B) if (A | B) else 0.0
+from dual_nli import STOP, content, jaccard as jacc  # single code path with the reference implementation
 
 
 def main():
