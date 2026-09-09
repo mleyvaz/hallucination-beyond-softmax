@@ -1,0 +1,47 @@
+Interval search on the collapsed scalar D (A8, 110 items: 20 CONFLICT vs 90 controls)
+
+--- D_AB published = Emax_A - Cmax_B (UNGATED)
+  max F1                 : TP=18/20 FP=18/90 F1=0.6429 interval=[-0.0262, 0.844]
+  max TP with FP <=  0   : TP= 6/20 FP= 0/90 F1=0.4615 interval=[-0.0043, 0.0103]
+  max TP with FP <=  1   : TP= 7/20 FP= 1/90 F1=0.5000 interval=[-0.0262, 0.0103]
+  max TP with FP <=  2   : TP= 8/20 FP= 2/90 F1=0.5333 interval=[0.6582, 0.844]
+  max TP with FP <=  4   : TP= 9/20 FP= 4/90 F1=0.5455 interval=[-0.0262, 0.3287]
+  max TP with FP <= 90   : TP=20/20 FP=44/90 F1=0.4762 interval=[-0.715, 0.9571]
+  full recall, min FP    : TP=20/20 FP=44/90 F1=0.4762 interval=[-0.715, 0.9571]
+
+--- D_AB gated     = Emax_A - Cmax_B_gated (same pair as the 2-D rule)
+  max F1                 : TP=18/20 FP=21/90 F1=0.6102 interval=[-0.0262, 0.8440]
+  max TP with FP <=  0   : TP= 4/20 FP= 0/90 F1=0.3333 interval=[-0.0262, -0.0016]
+  max TP with FP <=  1   : TP= 4/20 FP= 0/90 F1=0.3333 interval=[-0.0262, -0.0016]
+  max TP with FP <=  2   : TP= 7/20 FP= 2/90 F1=0.4828 interval=[0.6582, 0.7787]
+  max TP with FP <=  4   : TP= 8/20 FP= 3/90 F1=0.5161 interval=[0.6582, 0.8440]
+  max TP with FP <= 90   : TP=20/20 FP=36/90 F1=0.5263 interval=[-0.7150, 0.9571]
+  full recall, min FP    : TP=20/20 FP=36/90 F1=0.5263 interval=[-0.7150, 0.9571]
+
+--- D_A  published = Emax_A - Cmax_A (one head, UNGATED)
+  max F1                 : TP=12/20 FP=19/90 F1=0.4706 interval=[0.2986, 0.976]
+  max TP with FP <=  0   : TP= 2/20 FP= 0/90 F1=0.1818 interval=[0.6881, 0.6924]
+  max TP with FP <=  1   : TP= 3/20 FP= 1/90 F1=0.2500 interval=[0.8872, 0.9337]
+  max TP with FP <=  2   : TP= 3/20 FP= 1/90 F1=0.2500 interval=[0.8872, 0.9337]
+  max TP with FP <=  4   : TP= 4/20 FP= 3/90 F1=0.2963 interval=[0.8751, 0.9337]
+  max TP with FP <= 90   : TP=20/20 FP=62/90 F1=0.3922 interval=[-0.6868, 0.9956]
+  full recall, min FP    : TP=20/20 FP=62/90 F1=0.3922 interval=[-0.6868, 0.9956]
+
+--- D_A  gated     = Emax_A - Cmax_A_gated
+  max F1                 : TP=13/20 FP=22/90 F1=0.4727 interval=[0.2986, 0.9879]
+  max TP with FP <=  0   : TP= 2/20 FP= 0/90 F1=0.1818 interval=[0.6881, 0.6924]
+  max TP with FP <=  1   : TP= 3/20 FP= 1/90 F1=0.2500 interval=[0.8872, 0.9337]
+  max TP with FP <=  2   : TP= 4/20 FP= 2/90 F1=0.3077 interval=[0.8751, 0.9337]
+  max TP with FP <=  4   : TP= 4/20 FP= 2/90 F1=0.3077 interval=[0.8751, 0.9337]
+  max TP with FP <= 90   : TP=20/20 FP=60/90 F1=0.4000 interval=[-0.6868, 0.9956]
+  full recall, min FP    : TP=20/20 FP=60/90 F1=0.4000 interval=[-0.6868, 0.9956]
+
+--- two-coordinate rules on the same pairs (for reference at a common treatment)
+  dual ungated    diag  TP=15/20 FP=14/90
+  dual ungated    bil   TP=17/20 FP=20/90
+  dual gated      diag  TP=15/20 FP= 4/90
+  dual gated      bil   TP=17/20 FP= 9/90
+  A-only ungated  diag  TP= 4/20 FP= 0/90
+  A-only ungated  bil   TP= 4/20 FP= 0/90
+  A-only gated    diag  TP= 4/20 FP= 0/90
+  A-only gated    bil   TP= 4/20 FP= 0/90

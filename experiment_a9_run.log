@@ -1,0 +1,279 @@
+Loading models...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:   7%|7         | 28/394 [00:00<00:01, 279.03it/s]Loading weights:  17%|#6        | 66/394 [00:00<00:01, 276.16it/s]Loading weights:  39%|###9      | 154/394 [00:00<00:00, 509.11it/s]Loading weights:  53%|#####2    | 207/394 [00:00<00:00, 362.91it/s]Loading weights:  64%|######3   | 251/394 [00:00<00:00, 383.16it/s]Loading weights:  75%|#######4  | 294/394 [00:00<00:00, 373.01it/s]Loading weights:  85%|########4 | 334/394 [00:00<00:00, 352.88it/s]Loading weights: 100%|##########| 394/394 [00:00<00:00, 406.04it/s]
+[1mDebertaV2ForSequenceClassification LOAD REPORT[0m from: MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+deberta.embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|##########| 393/393 [00:00<00:00, 11343.06it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli
+Key                         | Status     |  | 
+----------------------------+------------+--+-
+roberta.pooler.dense.weight | UNEXPECTED |  | 
+roberta.pooler.dense.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  [ 1] X    bare      entA=0.999 neuA=0.001 conB=0.003
+  [ 1] X    claims    entA=0.027 neuA=0.973 conB=0.056
+  [ 1] X    confirms  entA=0.987 neuA=0.013 conB=0.003
+  [ 1] X    according entA=0.212 neuA=0.787 conB=0.004
+  [ 1] X    official  entA=0.784 neuA=0.215 conB=0.003
+  [ 1] X    pamphlet  entA=0.003 neuA=0.984 conB=0.420
+  [ 1] notX bare      entA=0.000 neuA=0.000 conB=0.998
+  [ 1] notX claims    entA=0.007 neuA=0.983 conB=0.584
+  [ 1] notX confirms  entA=0.004 neuA=0.004 conB=0.997
+  [ 1] notX according entA=0.004 neuA=0.949 conB=0.994
+  [ 1] notX official  entA=0.005 neuA=0.943 conB=0.996
+  [ 1] notX pamphlet  entA=0.019 neuA=0.980 conB=0.179
+  [ 2] X    bare      entA=0.998 neuA=0.002 conB=0.008
+  [ 2] X    claims    entA=0.119 neuA=0.881 conB=0.014
+  [ 2] X    confirms  entA=0.992 neuA=0.008 conB=0.003
+  [ 2] X    according entA=0.456 neuA=0.543 conB=0.004
+  [ 2] X    official  entA=0.720 neuA=0.279 conB=0.003
+  [ 2] X    pamphlet  entA=0.011 neuA=0.983 conB=0.499
+  [ 2] notX bare      entA=0.002 neuA=0.000 conB=0.990
+  [ 2] notX claims    entA=0.011 neuA=0.926 conB=0.978
+  [ 2] notX confirms  entA=0.008 neuA=0.006 conB=0.990
+  [ 2] notX according entA=0.008 neuA=0.146 conB=0.992
+  [ 2] notX official  entA=0.010 neuA=0.711 conB=0.990
+  [ 2] notX pamphlet  entA=0.066 neuA=0.925 conB=0.663
+  [ 3] X    bare      entA=1.000 neuA=0.000 conB=0.002
+  [ 3] X    claims    entA=0.133 neuA=0.866 conB=0.030
+  [ 3] X    confirms  entA=0.997 neuA=0.003 conB=0.002
+  [ 3] X    according entA=0.547 neuA=0.452 conB=0.002
+  [ 3] X    official  entA=0.893 neuA=0.106 conB=0.002
+  [ 3] X    pamphlet  entA=0.028 neuA=0.968 conB=0.442
+  [ 3] notX bare      entA=0.001 neuA=0.000 conB=0.998
+  [ 3] notX claims    entA=0.021 neuA=0.968 conB=0.545
+  [ 3] notX confirms  entA=0.008 neuA=0.009 conB=0.998
+  [ 3] notX according entA=0.008 neuA=0.925 conB=0.996
+  [ 3] notX official  entA=0.027 neuA=0.912 conB=0.996
+  [ 3] notX pamphlet  entA=0.191 neuA=0.801 conB=0.137
+  [ 4] X    bare      entA=1.000 neuA=0.000 conB=0.002
+  [ 4] X    claims    entA=0.070 neuA=0.929 conB=0.041
+  [ 4] X    confirms  entA=0.997 neuA=0.003 conB=0.002
+  [ 4] X    according entA=0.633 neuA=0.366 conB=0.002
+  [ 4] X    official  entA=0.542 neuA=0.457 conB=0.002
+  [ 4] X    pamphlet  entA=0.004 neuA=0.991 conB=0.506
+  [ 4] notX bare      entA=0.000 neuA=0.000 conB=0.999
+  [ 4] notX claims    entA=0.118 neuA=0.875 conB=0.906
+  [ 4] notX confirms  entA=0.001 neuA=0.001 conB=0.999
+  [ 4] notX according entA=0.015 neuA=0.949 conB=0.998
+  [ 4] notX official  entA=0.123 neuA=0.864 conB=0.997
+  [ 4] notX pamphlet  entA=0.288 neuA=0.712 conB=0.212
+  [ 5] X    bare      entA=0.999 neuA=0.001 conB=0.003
+  [ 5] X    claims    entA=0.213 neuA=0.786 conB=0.009
+  [ 5] X    confirms  entA=0.996 neuA=0.004 conB=0.003
+  [ 5] X    according entA=0.915 neuA=0.084 conB=0.003
+  [ 5] X    official  entA=0.853 neuA=0.146 conB=0.002
+  [ 5] X    pamphlet  entA=0.021 neuA=0.961 conB=0.196
+  [ 5] notX bare      entA=0.001 neuA=0.000 conB=0.998
+  [ 5] notX claims    entA=0.015 neuA=0.936 conB=0.812
+  [ 5] notX confirms  entA=0.003 neuA=0.001 conB=0.996
+  [ 5] notX according entA=0.006 neuA=0.081 conB=0.996
+  [ 5] notX official  entA=0.010 neuA=0.894 conB=0.995
+  [ 5] notX pamphlet  entA=0.064 neuA=0.926 conB=0.194
+  [ 6] X    bare      entA=0.999 neuA=0.001 conB=0.003
+  [ 6] X    claims    entA=0.036 neuA=0.963 conB=0.031
+  [ 6] X    confirms  entA=0.986 neuA=0.013 conB=0.002
+  [ 6] X    according entA=0.150 neuA=0.849 conB=0.003
+  [ 6] X    official  entA=0.149 neuA=0.849 conB=0.002
+  [ 6] X    pamphlet  entA=0.004 neuA=0.989 conB=0.363
+  [ 6] notX bare      entA=0.001 neuA=0.000 conB=0.994
+  [ 6] notX claims    entA=0.008 neuA=0.978 conB=0.519
+  [ 6] notX confirms  entA=0.006 neuA=0.005 conB=0.993
+  [ 6] notX according entA=0.006 neuA=0.944 conB=0.988
+  [ 6] notX official  entA=0.005 neuA=0.958 conB=0.990
+  [ 6] notX pamphlet  entA=0.012 neuA=0.987 conB=0.082
+  [ 7] X    bare      entA=0.999 neuA=0.000 conB=0.003
+  [ 7] X    claims    entA=0.042 neuA=0.958 conB=0.052
+  [ 7] X    confirms  entA=0.992 neuA=0.007 conB=0.002
+  [ 7] X    according entA=0.356 neuA=0.643 conB=0.003
+  [ 7] X    official  entA=0.935 neuA=0.064 conB=0.003
+  [ 7] X    pamphlet  entA=0.004 neuA=0.979 conB=0.449
+  [ 7] notX bare      entA=0.001 neuA=0.000 conB=0.990
+  [ 7] notX claims    entA=0.010 neuA=0.974 conB=0.345
+  [ 7] notX confirms  entA=0.002 neuA=0.001 conB=0.997
+  [ 7] notX according entA=0.006 neuA=0.926 conB=0.979
+  [ 7] notX official  entA=0.007 neuA=0.847 conB=0.957
+  [ 7] notX pamphlet  entA=0.261 neuA=0.736 conB=0.125
+  [ 8] X    bare      entA=0.999 neuA=0.001 conB=0.002
+  [ 8] X    claims    entA=0.029 neuA=0.971 conB=0.031
+  [ 8] X    confirms  entA=0.988 neuA=0.012 conB=0.002
+  [ 8] X    according entA=0.272 neuA=0.728 conB=0.002
+  [ 8] X    official  entA=0.884 neuA=0.115 conB=0.002
+  [ 8] X    pamphlet  entA=0.003 neuA=0.985 conB=0.279
+  [ 8] notX bare      entA=0.001 neuA=0.000 conB=0.992
+  [ 8] notX claims    entA=0.009 neuA=0.984 conB=0.364
+  [ 8] notX confirms  entA=0.003 neuA=0.003 conB=0.995
+  [ 8] notX according entA=0.005 neuA=0.947 conB=0.979
+  [ 8] notX official  entA=0.008 neuA=0.937 conB=0.942
+  [ 8] notX pamphlet  entA=0.094 neuA=0.905 conB=0.102
+  [ 9] X    bare      entA=1.000 neuA=0.000 conB=0.002
+  [ 9] X    claims    entA=0.027 neuA=0.973 conB=0.059
+  [ 9] X    confirms  entA=0.996 neuA=0.004 conB=0.002
+  [ 9] X    according entA=0.679 neuA=0.321 conB=0.002
+  [ 9] X    official  entA=0.399 neuA=0.601 conB=0.002
+  [ 9] X    pamphlet  entA=0.002 neuA=0.995 conB=0.429
+  [ 9] notX bare      entA=0.000 neuA=0.000 conB=0.999
+  [ 9] notX claims    entA=0.009 neuA=0.979 conB=0.336
+  [ 9] notX confirms  entA=0.001 neuA=0.001 conB=0.997
+  [ 9] notX according entA=0.005 neuA=0.900 conB=0.995
+  [ 9] notX official  entA=0.006 neuA=0.959 conB=0.989
+  [ 9] notX pamphlet  entA=0.009 neuA=0.989 conB=0.090
+  [10] X    bare      entA=0.999 neuA=0.001 conB=0.004
+  [10] X    claims    entA=0.084 neuA=0.915 conB=0.008
+  [10] X    confirms  entA=0.995 neuA=0.005 conB=0.004
+  [10] X    according entA=0.599 neuA=0.400 conB=0.004
+  [10] X    official  entA=0.897 neuA=0.102 conB=0.003
+  [10] X    pamphlet  entA=0.005 neuA=0.978 conB=0.064
+  [10] notX bare      entA=0.001 neuA=0.000 conB=0.998
+  [10] notX claims    entA=0.004 neuA=0.932 conB=0.995
+  [10] notX confirms  entA=0.004 neuA=0.002 conB=0.998
+  [10] notX according entA=0.006 neuA=0.080 conB=0.998
+  [10] notX official  entA=0.007 neuA=0.173 conB=0.998
+  [10] notX pamphlet  entA=0.016 neuA=0.978 conB=0.919
+  [11] X    bare      entA=0.999 neuA=0.001 conB=0.001
+  [11] X    claims    entA=0.057 neuA=0.942 conB=0.041
+  [11] X    confirms  entA=0.994 neuA=0.006 conB=0.002
+  [11] X    according entA=0.403 neuA=0.597 conB=0.002
+  [11] X    official  entA=0.860 neuA=0.139 conB=0.002
+  [11] X    pamphlet  entA=0.006 neuA=0.980 conB=0.233
+  [11] notX bare      entA=0.001 neuA=0.000 conB=0.996
+  [11] notX claims    entA=0.005 neuA=0.946 conB=0.604
+  [11] notX confirms  entA=0.006 neuA=0.005 conB=0.996
+  [11] notX according entA=0.006 neuA=0.747 conB=0.992
+  [11] notX official  entA=0.010 neuA=0.576 conB=0.993
+  [11] notX pamphlet  entA=0.009 neuA=0.985 conB=0.170
+  [12] X    bare      entA=0.999 neuA=0.001 conB=0.003
+  [12] X    claims    entA=0.031 neuA=0.968 conB=0.038
+  [12] X    confirms  entA=0.987 neuA=0.012 conB=0.002
+  [12] X    according entA=0.449 neuA=0.550 conB=0.002
+  [12] X    official  entA=0.945 neuA=0.054 conB=0.002
+  [12] X    pamphlet  entA=0.004 neuA=0.991 conB=0.327
+  [12] notX bare      entA=0.001 neuA=0.000 conB=0.996
+  [12] notX claims    entA=0.007 neuA=0.972 conB=0.826
+  [12] notX confirms  entA=0.004 neuA=0.002 conB=0.996
+  [12] notX according entA=0.005 neuA=0.843 conB=0.995
+  [12] notX official  entA=0.008 neuA=0.828 conB=0.994
+  [12] notX pamphlet  entA=0.054 neuA=0.943 conB=0.253
+  [13] X    bare      entA=0.999 neuA=0.001 conB=0.002
+  [13] X    claims    entA=0.042 neuA=0.958 conB=0.025
+  [13] X    confirms  entA=0.989 neuA=0.011 conB=0.002
+  [13] X    according entA=0.465 neuA=0.534 conB=0.002
+  [13] X    official  entA=0.452 neuA=0.547 conB=0.002
+  [13] X    pamphlet  entA=0.004 neuA=0.985 conB=0.258
+  [13] notX bare      entA=0.003 neuA=0.000 conB=0.996
+  [13] notX claims    entA=0.006 neuA=0.943 conB=0.758
+  [13] notX confirms  entA=0.009 neuA=0.006 conB=0.994
+  [13] notX according entA=0.008 neuA=0.810 conB=0.993
+  [13] notX official  entA=0.006 neuA=0.896 conB=0.989
+  [13] notX pamphlet  entA=0.010 neuA=0.985 conB=0.174
+  [14] X    bare      entA=0.999 neuA=0.001 conB=0.001
+  [14] X    claims    entA=0.061 neuA=0.939 conB=0.009
+  [14] X    confirms  entA=0.995 neuA=0.005 conB=0.001
+  [14] X    according entA=0.912 neuA=0.087 conB=0.001
+  [14] X    official  entA=0.826 neuA=0.174 conB=0.001
+  [14] X    pamphlet  entA=0.005 neuA=0.977 conB=0.290
+  [14] notX bare      entA=0.001 neuA=0.000 conB=0.997
+  [14] notX claims    entA=0.010 neuA=0.969 conB=0.932
+  [14] notX confirms  entA=0.004 neuA=0.005 conB=0.997
+  [14] notX according entA=0.004 neuA=0.158 conB=0.997
+  [14] notX official  entA=0.005 neuA=0.868 conB=0.997
+  [14] notX pamphlet  entA=0.049 neuA=0.946 conB=0.544
+  [15] X    bare      entA=0.999 neuA=0.001 conB=0.001
+  [15] X    claims    entA=0.051 neuA=0.948 conB=0.021
+  [15] X    confirms  entA=0.983 neuA=0.017 conB=0.001
+  [15] X    according entA=0.243 neuA=0.757 conB=0.002
+  [15] X    official  entA=0.353 neuA=0.647 conB=0.001
+  [15] X    pamphlet  entA=0.003 neuA=0.994 conB=0.593
+  [15] notX bare      entA=0.001 neuA=0.000 conB=0.999
+  [15] notX claims    entA=0.006 neuA=0.991 conB=0.575
+  [15] notX confirms  entA=0.007 neuA=0.011 conB=0.999
+  [15] notX according entA=0.004 neuA=0.965 conB=0.998
+  [15] notX official  entA=0.006 neuA=0.963 conB=0.998
+  [15] notX pamphlet  entA=0.009 neuA=0.991 conB=0.113
+  [16] X    bare      entA=1.000 neuA=0.000 conB=0.002
+  [16] X    claims    entA=0.067 neuA=0.932 conB=0.014
+  [16] X    confirms  entA=0.996 neuA=0.004 conB=0.002
+  [16] X    according entA=0.819 neuA=0.181 conB=0.002
+  [16] X    official  entA=0.915 neuA=0.084 conB=0.002
+  [16] X    pamphlet  entA=0.007 neuA=0.985 conB=0.185
+  [16] notX bare      entA=0.001 neuA=0.000 conB=0.998
+  [16] notX claims    entA=0.016 neuA=0.964 conB=0.319
+  [16] notX confirms  entA=0.007 neuA=0.009 conB=0.996
+  [16] notX according entA=0.005 neuA=0.852 conB=0.996
+  [16] notX official  entA=0.005 neuA=0.920 conB=0.991
+  [16] notX pamphlet  entA=0.177 neuA=0.820 conB=0.052
+  [17] X    bare      entA=0.999 neuA=0.001 conB=0.001
+  [17] X    claims    entA=0.038 neuA=0.961 conB=0.009
+  [17] X    confirms  entA=0.989 neuA=0.010 conB=0.002
+  [17] X    according entA=0.633 neuA=0.366 conB=0.002
+  [17] X    official  entA=0.833 neuA=0.166 conB=0.002
+  [17] X    pamphlet  entA=0.003 neuA=0.993 conB=0.042
+  [17] notX bare      entA=0.005 neuA=0.001 conB=0.999
+  [17] notX claims    entA=0.003 neuA=0.953 conB=0.992
+  [17] notX confirms  entA=0.032 neuA=0.007 conB=0.998
+  [17] notX according entA=0.025 neuA=0.347 conB=0.999
+  [17] notX official  entA=0.024 neuA=0.500 conB=0.998
+  [17] notX pamphlet  entA=0.004 neuA=0.990 conB=0.509
+  [18] X    bare      entA=0.999 neuA=0.001 conB=0.002
+  [18] X    claims    entA=0.072 neuA=0.927 conB=0.009
+  [18] X    confirms  entA=0.996 neuA=0.003 conB=0.002
+  [18] X    according entA=0.764 neuA=0.236 conB=0.002
+  [18] X    official  entA=0.906 neuA=0.093 conB=0.002
+  [18] X    pamphlet  entA=0.003 neuA=0.987 conB=0.103
+  [18] notX bare      entA=0.001 neuA=0.000 conB=0.998
+  [18] notX claims    entA=0.004 neuA=0.956 conB=0.918
+  [18] notX confirms  entA=0.001 neuA=0.001 conB=0.998
+  [18] notX according entA=0.003 neuA=0.122 conB=0.997
+  [18] notX official  entA=0.003 neuA=0.637 conB=0.997
+  [18] notX pamphlet  entA=0.004 neuA=0.983 conB=0.126
+  [19] X    bare      entA=0.999 neuA=0.001 conB=0.001
+  [19] X    claims    entA=0.054 neuA=0.946 conB=0.017
+  [19] X    confirms  entA=0.988 neuA=0.011 conB=0.002
+  [19] X    according entA=0.587 neuA=0.413 conB=0.002
+  [19] X    official  entA=0.853 neuA=0.146 conB=0.002
+  [19] X    pamphlet  entA=0.003 neuA=0.992 conB=0.242
+  [19] notX bare      entA=0.004 neuA=0.001 conB=0.996
+  [19] notX claims    entA=0.004 neuA=0.950 conB=0.876
+  [19] notX confirms  entA=0.016 neuA=0.008 conB=0.996
+  [19] notX according entA=0.010 neuA=0.446 conB=0.995
+  [19] notX official  entA=0.006 neuA=0.866 conB=0.993
+  [19] notX pamphlet  entA=0.009 neuA=0.986 conB=0.169
+  [20] X    bare      entA=0.999 neuA=0.001 conB=0.002
+  [20] X    claims    entA=0.017 neuA=0.983 conB=0.013
+  [20] X    confirms  entA=0.991 neuA=0.009 conB=0.001
+  [20] X    according entA=0.389 neuA=0.610 conB=0.002
+  [20] X    official  entA=0.678 neuA=0.321 conB=0.002
+  [20] X    pamphlet  entA=0.003 neuA=0.992 conB=0.202
+  [20] notX bare      entA=0.001 neuA=0.000 conB=0.999
+  [20] notX claims    entA=0.002 neuA=0.839 conB=0.999
+  [20] notX confirms  entA=0.003 neuA=0.002 conB=0.999
+  [20] notX according entA=0.008 neuA=0.162 conB=0.999
+  [20] notX official  entA=0.004 neuA=0.676 conB=0.999
+  [20] notX pamphlet  entA=0.002 neuA=0.972 conB=0.669
+
+================================================================================================
+EXPERIMENT A9 - Attribution-frame control (content fixed, frame varied), n=20 items per cell
+================================================================================================
+
+polarity frame         entA    neuA    conA    entB    conB  conB>=.15  entA>=.15
+X     bare         0.999   0.001   0.000   0.989   0.002       0/20      20/20
+X     claims       0.063   0.936   0.001   0.614   0.026       0/20       1/20
+X     confirms     0.992   0.008   0.000   0.983   0.002       0/20      20/20
+X     according    0.524   0.475   0.001   0.984   0.002       0/20      20/20
+X     official     0.734   0.265   0.001   0.981   0.002       0/20      19/20
+X     pamphlet     0.006   0.984   0.009   0.260   0.306      17/20       0/20
+
+notX  bare         0.001   0.000   0.998   0.002   0.996      20/20       0/20
+notX  claims       0.014   0.951   0.035   0.155   0.709      20/20       0/20
+notX  confirms     0.006   0.005   0.989   0.001   0.996      20/20       0/20
+notX  according    0.007   0.615   0.378   0.002   0.994      20/20       0/20
+notX  official     0.014   0.796   0.189   0.003   0.990      20/20       0/20
+notX  pamphlet     0.067   0.927   0.006   0.408   0.274      12/20       4/20
+

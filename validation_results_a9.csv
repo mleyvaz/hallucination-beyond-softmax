@@ -1,0 +1,241 @@
+item,polarity,frame,sentence,claim,entA,neuA,conA,entB,neuB,conB
+1,X,bare,Paris is the capital of France.,Paris is the capital of France.,0.9994,0.0005,0.0001,0.9909,0.0066,0.0025
+1,X,claims,The document claims that Paris is the capital of France.,Paris is the capital of France.,0.0266,0.9727,0.0007,0.2716,0.6725,0.0559
+1,X,confirms,The document confirms that Paris is the capital of France.,Paris is the capital of France.,0.9866,0.0131,0.0004,0.9817,0.0158,0.0025
+1,X,according,"According to the document, Paris is the capital of France.",Paris is the capital of France.,0.2117,0.7875,0.0008,0.9783,0.0182,0.0035
+1,X,official,The official record states that Paris is the capital of France.,Paris is the capital of France.,0.7842,0.2148,0.001,0.9776,0.0196,0.0028
+1,X,pamphlet,A disputed pamphlet states that Paris is the capital of France.,Paris is the capital of France.,0.0025,0.9844,0.0131,0.1533,0.4262,0.4205
+1,notX,bare,Paris is not the capital of France.,Paris is the capital of France.,0.0004,0.0002,0.9994,0.0008,0.0016,0.9976
+1,notX,claims,The document claims that Paris is not the capital of France.,Paris is the capital of France.,0.0069,0.9832,0.01,0.2273,0.189,0.5837
+1,notX,confirms,The document confirms that Paris is not the capital of France.,Paris is the capital of France.,0.0037,0.0039,0.9924,0.0006,0.0021,0.9973
+1,notX,according,"According to the document, Paris is not the capital of France.",Paris is the capital of France.,0.0037,0.9488,0.0476,0.001,0.005,0.994
+1,notX,official,The official record states that Paris is not the capital of France.,Paris is the capital of France.,0.005,0.9425,0.0525,0.0008,0.0031,0.996
+1,notX,pamphlet,A disputed pamphlet states that Paris is not the capital of France.,Paris is the capital of France.,0.019,0.9796,0.0014,0.4986,0.322,0.1795
+2,X,bare,Water boils at 100 degrees Celsius at sea level.,Water boils at 100 degrees Celsius at sea level.,0.9981,0.0016,0.0003,0.9743,0.0181,0.0077
+2,X,claims,The document claims that water boils at 100 degrees Celsius at sea level.,Water boils at 100 degrees Celsius at sea level.,0.1187,0.8806,0.0007,0.9175,0.0687,0.0138
+2,X,confirms,The document confirms that water boils at 100 degrees Celsius at sea level.,Water boils at 100 degrees Celsius at sea level.,0.9915,0.0081,0.0003,0.9823,0.0145,0.0031
+2,X,according,"According to the document, water boils at 100 degrees Celsius at sea level.",Water boils at 100 degrees Celsius at sea level.,0.4558,0.5434,0.0007,0.9815,0.0147,0.0038
+2,X,official,The official record states that water boils at 100 degrees Celsius at sea level.,Water boils at 100 degrees Celsius at sea level.,0.7201,0.279,0.0009,0.981,0.0162,0.0028
+2,X,pamphlet,A disputed pamphlet states that water boils at 100 degrees Celsius at sea level.,Water boils at 100 degrees Celsius at sea level.,0.0105,0.9829,0.0066,0.3042,0.1968,0.4989
+2,notX,bare,Water does not boil at 100 degrees Celsius at sea level.,Water boils at 100 degrees Celsius at sea level.,0.0019,0.0003,0.9978,0.0051,0.0052,0.9898
+2,notX,claims,The document claims that water does not boil at 100 degrees Celsius at sea level.,Water boils at 100 degrees Celsius at sea level.,0.0111,0.9264,0.0625,0.0072,0.0152,0.9776
+2,notX,confirms,The document confirms that water does not boil at 100 degrees Celsius at sea level.,Water boils at 100 degrees Celsius at sea level.,0.0082,0.0065,0.9853,0.0039,0.0056,0.9904
+2,notX,according,"According to the document, water does not boil at 100 degrees Celsius at sea level.",Water boils at 100 degrees Celsius at sea level.,0.0083,0.1462,0.8456,0.0029,0.0048,0.9923
+2,notX,official,The official record states that water does not boil at 100 degrees Celsius at sea level.,Water boils at 100 degrees Celsius at sea level.,0.0102,0.7109,0.2789,0.0035,0.0062,0.9903
+2,notX,pamphlet,A disputed pamphlet states that water does not boil at 100 degrees Celsius at sea level.,Water boils at 100 degrees Celsius at sea level.,0.0664,0.9247,0.0089,0.1673,0.1696,0.6631
+3,X,bare,The Amazon rainforest is located in South America.,The Amazon rainforest is located in South America.,0.9995,0.0003,0.0001,0.9901,0.0081,0.0018
+3,X,claims,The document claims that the Amazon rainforest is located in South America.,The Amazon rainforest is located in South America.,0.1331,0.866,0.0008,0.4526,0.5177,0.0297
+3,X,confirms,The document confirms that the Amazon rainforest is located in South America.,The Amazon rainforest is located in South America.,0.9967,0.003,0.0003,0.9822,0.0162,0.0016
+3,X,according,"According to the document, the Amazon rainforest is located in South America.",The Amazon rainforest is located in South America.,0.5475,0.4517,0.0008,0.9835,0.0147,0.0019
+3,X,official,The official record states that the Amazon rainforest is located in South America.,The Amazon rainforest is located in South America.,0.8926,0.1063,0.0011,0.9771,0.0212,0.0018
+3,X,pamphlet,A disputed pamphlet states that the Amazon rainforest is located in South America.,The Amazon rainforest is located in South America.,0.0284,0.9679,0.0038,0.1325,0.4255,0.442
+3,notX,bare,The Amazon rainforest is not located in South America.,The Amazon rainforest is located in South America.,0.001,0.0002,0.9989,0.0012,0.0011,0.9977
+3,notX,claims,The document claims that the Amazon rainforest is not located in South America.,The Amazon rainforest is located in South America.,0.0211,0.9684,0.0105,0.2255,0.2291,0.5454
+3,notX,confirms,The document confirms that the Amazon rainforest is not located in South America.,The Amazon rainforest is located in South America.,0.0081,0.0093,0.9826,0.0006,0.0011,0.9983
+3,notX,according,"According to the document, the Amazon rainforest is not located in South America.",The Amazon rainforest is located in South America.,0.0077,0.9254,0.0669,0.0012,0.0033,0.9955
+3,notX,official,The official record states that the Amazon rainforest is not located in South America.,The Amazon rainforest is located in South America.,0.0272,0.9124,0.0604,0.0008,0.003,0.9961
+3,notX,pamphlet,A disputed pamphlet states that the Amazon rainforest is not located in South America.,The Amazon rainforest is located in South America.,0.1909,0.8013,0.0078,0.5656,0.2976,0.1368
+4,X,bare,Einstein developed the theory of general relativity.,Einstein developed the theory of general relativity.,0.9995,0.0004,0.0001,0.9918,0.0063,0.0019
+4,X,claims,The document claims that Einstein developed the theory of general relativity.,Einstein developed the theory of general relativity.,0.0704,0.929,0.0006,0.5846,0.3748,0.0406
+4,X,confirms,The document confirms that Einstein developed the theory of general relativity.,Einstein developed the theory of general relativity.,0.9967,0.003,0.0003,0.9881,0.0105,0.0015
+4,X,according,"According to the document, Einstein developed the theory of general relativity.",Einstein developed the theory of general relativity.,0.6335,0.3659,0.0006,0.9908,0.0077,0.0015
+4,X,official,The official record states that Einstein developed the theory of general relativity.,Einstein developed the theory of general relativity.,0.5423,0.4571,0.0007,0.988,0.0104,0.0016
+4,X,pamphlet,A disputed pamphlet states that Einstein developed the theory of general relativity.,Einstein developed the theory of general relativity.,0.0044,0.9912,0.0043,0.1548,0.3395,0.5057
+4,notX,bare,Einstein did not develop the theory of general relativity.,Einstein developed the theory of general relativity.,0.0003,0.0002,0.9996,0.0003,0.0007,0.999
+4,notX,claims,The document claims that Einstein did not develop the theory of general relativity.,Einstein developed the theory of general relativity.,0.1184,0.8754,0.0062,0.0275,0.0664,0.9061
+4,notX,confirms,The document confirms that Einstein did not develop the theory of general relativity.,Einstein developed the theory of general relativity.,0.0006,0.001,0.9983,0.0003,0.0008,0.9989
+4,notX,according,"According to the document, Einstein did not develop the theory of general relativity.",Einstein developed the theory of general relativity.,0.0155,0.9489,0.0356,0.0005,0.0014,0.9981
+4,notX,official,The official record states that Einstein did not develop the theory of general relativity.,Einstein developed the theory of general relativity.,0.1232,0.8642,0.0126,0.0008,0.0022,0.997
+4,notX,pamphlet,A disputed pamphlet states that Einstein did not develop the theory of general relativity.,Einstein developed the theory of general relativity.,0.2877,0.7115,0.0008,0.4293,0.3582,0.2125
+5,X,bare,Photosynthesis converts sunlight into chemical energy.,Photosynthesis converts sunlight into chemical energy.,0.9991,0.0007,0.0002,0.9781,0.0185,0.0034
+5,X,claims,The document claims that photosynthesis converts sunlight into chemical energy.,Photosynthesis converts sunlight into chemical energy.,0.2128,0.7862,0.001,0.939,0.0522,0.0088
+5,X,confirms,The document confirms that photosynthesis converts sunlight into chemical energy.,Photosynthesis converts sunlight into chemical energy.,0.9958,0.0038,0.0004,0.9804,0.0168,0.0028
+5,X,according,"According to the document, photosynthesis converts sunlight into chemical energy.",Photosynthesis converts sunlight into chemical energy.,0.9154,0.0836,0.001,0.9834,0.014,0.0027
+5,X,official,The official record states that photosynthesis converts sunlight into chemical energy.,Photosynthesis converts sunlight into chemical energy.,0.8527,0.1461,0.0012,0.9817,0.0159,0.0024
+5,X,pamphlet,A disputed pamphlet states that photosynthesis converts sunlight into chemical energy.,Photosynthesis converts sunlight into chemical energy.,0.0205,0.9614,0.0181,0.6303,0.1737,0.1961
+5,notX,bare,Photosynthesis does not convert sunlight into chemical energy.,Photosynthesis converts sunlight into chemical energy.,0.0005,0.0001,0.9994,0.0008,0.0016,0.9976
+5,notX,claims,The document claims that photosynthesis does not convert sunlight into chemical energy.,Photosynthesis converts sunlight into chemical energy.,0.015,0.9357,0.0493,0.0773,0.1111,0.8116
+5,notX,confirms,The document confirms that photosynthesis does not convert sunlight into chemical energy.,Photosynthesis converts sunlight into chemical energy.,0.0026,0.0014,0.996,0.0012,0.0032,0.9956
+5,notX,according,"According to the document, photosynthesis does not convert sunlight into chemical energy.",Photosynthesis converts sunlight into chemical energy.,0.0063,0.0813,0.9123,0.0011,0.0029,0.996
+5,notX,official,The official record states that photosynthesis does not convert sunlight into chemical energy.,Photosynthesis converts sunlight into chemical energy.,0.01,0.8942,0.0958,0.0012,0.0033,0.9954
+5,notX,pamphlet,A disputed pamphlet states that photosynthesis does not convert sunlight into chemical energy.,Photosynthesis converts sunlight into chemical energy.,0.0641,0.9257,0.0102,0.5035,0.3029,0.1936
+6,X,bare,The human heart has four chambers.,The human heart has four chambers.,0.9991,0.0007,0.0002,0.9856,0.0119,0.0025
+6,X,claims,The document claims that the human heart has four chambers.,The human heart has four chambers.,0.0361,0.9632,0.0007,0.6415,0.3273,0.0311
+6,X,confirms,The document confirms that the human heart has four chambers.,The human heart has four chambers.,0.9863,0.0133,0.0005,0.981,0.0168,0.0022
+6,X,according,"According to the document, the human heart has four chambers.",The human heart has four chambers.,0.1502,0.8487,0.001,0.9828,0.0147,0.0025
+6,X,official,The official record states that the human heart has four chambers.,The human heart has four chambers.,0.1492,0.8488,0.0019,0.9809,0.017,0.0021
+6,X,pamphlet,A disputed pamphlet states that the human heart has four chambers.,The human heart has four chambers.,0.0037,0.9891,0.0073,0.2596,0.3771,0.3633
+6,notX,bare,The human heart does not have four chambers.,The human heart has four chambers.,0.0012,0.0003,0.9985,0.003,0.0032,0.9938
+6,notX,claims,The document claims that the human heart does not have four chambers.,The human heart has four chambers.,0.0077,0.9781,0.0143,0.2465,0.2342,0.5193
+6,notX,confirms,The document confirms that the human heart does not have four chambers.,The human heart has four chambers.,0.0063,0.0049,0.9888,0.0018,0.0048,0.9933
+6,notX,according,"According to the document, the human heart does not have four chambers.",The human heart has four chambers.,0.0056,0.9443,0.0501,0.0035,0.008,0.9884
+6,notX,official,The official record states that the human heart does not have four chambers.,The human heart has four chambers.,0.0047,0.9584,0.0369,0.0031,0.0069,0.99
+6,notX,pamphlet,A disputed pamphlet states that the human heart does not have four chambers.,The human heart has four chambers.,0.0117,0.9868,0.0016,0.6899,0.2276,0.0824
+7,X,bare,Mount Everest is the tallest mountain on Earth.,Mount Everest is the tallest mountain on Earth.,0.9994,0.0004,0.0002,0.9897,0.0075,0.0028
+7,X,claims,The document claims that Mount Everest is the tallest mountain on Earth.,Mount Everest is the tallest mountain on Earth.,0.0416,0.9578,0.0006,0.1944,0.7535,0.0521
+7,X,confirms,The document confirms that Mount Everest is the tallest mountain on Earth.,Mount Everest is the tallest mountain on Earth.,0.9922,0.0073,0.0005,0.9852,0.0128,0.002
+7,X,according,"According to the document, Mount Everest is the tallest mountain on Earth.",Mount Everest is the tallest mountain on Earth.,0.3564,0.6428,0.0008,0.975,0.0218,0.0032
+7,X,official,The official record states that Mount Everest is the tallest mountain on Earth.,Mount Everest is the tallest mountain on Earth.,0.9353,0.0639,0.0008,0.976,0.0214,0.0025
+7,X,pamphlet,A disputed pamphlet states that Mount Everest is the tallest mountain on Earth.,Mount Everest is the tallest mountain on Earth.,0.0036,0.9789,0.0175,0.1304,0.4209,0.4486
+7,notX,bare,Mount Everest is not the tallest mountain on Earth.,Mount Everest is the tallest mountain on Earth.,0.0011,0.0003,0.9986,0.0026,0.0071,0.9903
+7,notX,claims,The document claims that Mount Everest is not the tallest mountain on Earth.,Mount Everest is the tallest mountain on Earth.,0.0097,0.974,0.0163,0.3932,0.2614,0.3454
+7,notX,confirms,The document confirms that Mount Everest is not the tallest mountain on Earth.,Mount Everest is the tallest mountain on Earth.,0.002,0.0013,0.9966,0.0009,0.0027,0.9965
+7,notX,according,"According to the document, Mount Everest is not the tallest mountain on Earth.",Mount Everest is the tallest mountain on Earth.,0.0063,0.9258,0.0679,0.0041,0.0169,0.979
+7,notX,official,The official record states that Mount Everest is not the tallest mountain on Earth.,Mount Everest is the tallest mountain on Earth.,0.0074,0.8467,0.146,0.01,0.0331,0.9569
+7,notX,pamphlet,A disputed pamphlet states that Mount Everest is not the tallest mountain on Earth.,Mount Everest is the tallest mountain on Earth.,0.2612,0.7364,0.0025,0.5464,0.3286,0.125
+8,X,bare,The Pacific is the largest ocean on Earth.,The Pacific is the largest ocean on Earth.,0.9991,0.0007,0.0002,0.9922,0.0061,0.0017
+8,X,claims,The document claims that the Pacific is the largest ocean on Earth.,The Pacific is the largest ocean on Earth.,0.029,0.9705,0.0005,0.393,0.5756,0.0314
+8,X,confirms,The document confirms that the Pacific is the largest ocean on Earth.,The Pacific is the largest ocean on Earth.,0.9878,0.0117,0.0005,0.9855,0.0129,0.0017
+8,X,according,"According to the document, the Pacific is the largest ocean on Earth.",The Pacific is the largest ocean on Earth.,0.2718,0.7275,0.0007,0.9829,0.015,0.0021
+8,X,official,The official record states that the Pacific is the largest ocean on Earth.,The Pacific is the largest ocean on Earth.,0.8845,0.1146,0.0009,0.9801,0.018,0.0019
+8,X,pamphlet,A disputed pamphlet states that the Pacific is the largest ocean on Earth.,The Pacific is the largest ocean on Earth.,0.0032,0.9845,0.0123,0.2156,0.5053,0.2791
+8,notX,bare,The Pacific is not the largest ocean on Earth.,The Pacific is the largest ocean on Earth.,0.001,0.0003,0.9987,0.0022,0.0057,0.9922
+8,notX,claims,The document claims that the Pacific is not the largest ocean on Earth.,The Pacific is the largest ocean on Earth.,0.0086,0.9835,0.0079,0.3246,0.311,0.3644
+8,notX,confirms,The document confirms that the Pacific is not the largest ocean on Earth.,The Pacific is the largest ocean on Earth.,0.0034,0.0025,0.9941,0.0012,0.0035,0.9953
+8,notX,according,"According to the document, the Pacific is not the largest ocean on Earth.",The Pacific is the largest ocean on Earth.,0.0052,0.9468,0.0479,0.0039,0.0171,0.979
+8,notX,official,The official record states that the Pacific is not the largest ocean on Earth.,The Pacific is the largest ocean on Earth.,0.0079,0.9366,0.0555,0.0115,0.0467,0.9418
+8,notX,pamphlet,A disputed pamphlet states that the Pacific is not the largest ocean on Earth.,The Pacific is the largest ocean on Earth.,0.0944,0.9046,0.001,0.5596,0.3386,0.1018
+9,X,bare,Shakespeare wrote Hamlet.,Shakespeare wrote Hamlet.,0.9997,0.0003,0.0001,0.9926,0.0052,0.0021
+9,X,claims,The document claims that Shakespeare wrote Hamlet.,Shakespeare wrote Hamlet.,0.0271,0.9726,0.0004,0.397,0.5439,0.0591
+9,X,confirms,The document confirms that Shakespeare wrote Hamlet.,Shakespeare wrote Hamlet.,0.996,0.0038,0.0002,0.9795,0.0186,0.0019
+9,X,according,"According to the document, Shakespeare wrote Hamlet.",Shakespeare wrote Hamlet.,0.6786,0.3208,0.0006,0.9879,0.0106,0.0015
+9,X,official,The official record states that Shakespeare wrote Hamlet.,Shakespeare wrote Hamlet.,0.3986,0.6007,0.0007,0.9792,0.0187,0.0021
+9,X,pamphlet,A disputed pamphlet states that Shakespeare wrote Hamlet.,Shakespeare wrote Hamlet.,0.0024,0.9951,0.0025,0.1392,0.4313,0.4295
+9,notX,bare,Shakespeare did not write Hamlet.,Shakespeare wrote Hamlet.,0.0003,0.0002,0.9995,0.0006,0.0008,0.9986
+9,notX,claims,The document claims that Shakespeare did not write Hamlet.,Shakespeare wrote Hamlet.,0.0087,0.979,0.0123,0.4894,0.1744,0.3362
+9,notX,confirms,The document confirms that Shakespeare did not write Hamlet.,Shakespeare wrote Hamlet.,0.0009,0.0006,0.9985,0.0006,0.0021,0.9973
+9,notX,according,"According to the document, Shakespeare did not write Hamlet.",Shakespeare wrote Hamlet.,0.0046,0.9005,0.0949,0.0014,0.0033,0.9953
+9,notX,official,The official record states that Shakespeare did not write Hamlet.,Shakespeare wrote Hamlet.,0.0059,0.9593,0.0348,0.0033,0.0078,0.989
+9,notX,pamphlet,A disputed pamphlet states that Shakespeare did not write Hamlet.,Shakespeare wrote Hamlet.,0.0095,0.9887,0.0018,0.6936,0.2166,0.0898
+10,X,bare,Light travels faster than sound in air.,Light travels faster than sound in air.,0.9988,0.001,0.0002,0.9827,0.0131,0.0042
+10,X,claims,The document claims that light travels faster than sound in air.,Light travels faster than sound in air.,0.0841,0.9151,0.0008,0.9574,0.0344,0.0082
+10,X,confirms,The document confirms that light travels faster than sound in air.,Light travels faster than sound in air.,0.9951,0.0046,0.0003,0.9824,0.014,0.0036
+10,X,according,"According to the document, light travels faster than sound in air.",Light travels faster than sound in air.,0.5993,0.3996,0.001,0.9841,0.0117,0.0042
+10,X,official,The official record states that light travels faster than sound in air.,Light travels faster than sound in air.,0.8973,0.102,0.0008,0.9841,0.0126,0.0034
+10,X,pamphlet,A disputed pamphlet states that light travels faster than sound in air.,Light travels faster than sound in air.,0.0054,0.9783,0.0163,0.8086,0.1278,0.0637
+10,notX,bare,Light does not travel faster than sound in air.,Light travels faster than sound in air.,0.0011,0.0002,0.9987,0.0013,0.0009,0.9978
+10,notX,claims,The document claims that light does not travel faster than sound in air.,Light travels faster than sound in air.,0.0045,0.9324,0.0631,0.0018,0.0035,0.9947
+10,notX,confirms,The document confirms that light does not travel faster than sound in air.,Light travels faster than sound in air.,0.0042,0.002,0.9937,0.0008,0.0011,0.9981
+10,notX,according,"According to the document, light does not travel faster than sound in air.",Light travels faster than sound in air.,0.0063,0.0801,0.9136,0.0007,0.0009,0.9984
+10,notX,official,The official record states that light does not travel faster than sound in air.,Light travels faster than sound in air.,0.0073,0.1733,0.8194,0.0007,0.001,0.9983
+10,notX,pamphlet,A disputed pamphlet states that light does not travel faster than sound in air.,Light travels faster than sound in air.,0.016,0.9776,0.0065,0.0294,0.0515,0.9191
+11,X,bare,Cuba is an island nation in the Caribbean.,Cuba is an island nation in the Caribbean.,0.9991,0.0007,0.0002,0.9911,0.0075,0.0014
+11,X,claims,The document claims that Cuba is an island nation in the Caribbean.,Cuba is an island nation in the Caribbean.,0.0569,0.9421,0.001,0.4043,0.5545,0.0412
+11,X,confirms,The document confirms that Cuba is an island nation in the Caribbean.,Cuba is an island nation in the Caribbean.,0.9936,0.0061,0.0003,0.9826,0.0157,0.0018
+11,X,according,"According to the document, Cuba is an island nation in the Caribbean.",Cuba is an island nation in the Caribbean.,0.4026,0.5967,0.0007,0.9849,0.0132,0.0019
+11,X,official,The official record states that Cuba is an island nation in the Caribbean.,Cuba is an island nation in the Caribbean.,0.8602,0.1389,0.0009,0.9822,0.016,0.0018
+11,X,pamphlet,A disputed pamphlet states that Cuba is an island nation in the Caribbean.,Cuba is an island nation in the Caribbean.,0.0063,0.9801,0.0136,0.2407,0.5267,0.2326
+11,notX,bare,Cuba is not an island nation in the Caribbean.,Cuba is an island nation in the Caribbean.,0.0013,0.0004,0.9983,0.0022,0.0021,0.9957
+11,notX,claims,The document claims that Cuba is not an island nation in the Caribbean.,Cuba is an island nation in the Caribbean.,0.0052,0.9462,0.0486,0.223,0.1731,0.6039
+11,notX,confirms,The document confirms that Cuba is not an island nation in the Caribbean.,Cuba is an island nation in the Caribbean.,0.0058,0.0055,0.9886,0.0015,0.003,0.9955
+11,notX,according,"According to the document, Cuba is not an island nation in the Caribbean.",Cuba is an island nation in the Caribbean.,0.0064,0.7469,0.2467,0.0022,0.0058,0.992
+11,notX,official,The official record states that Cuba is not an island nation in the Caribbean.,Cuba is an island nation in the Caribbean.,0.0099,0.576,0.4141,0.002,0.0049,0.9932
+11,notX,pamphlet,A disputed pamphlet states that Cuba is not an island nation in the Caribbean.,Cuba is an island nation in the Caribbean.,0.0086,0.9845,0.0069,0.5505,0.2798,0.1697
+12,X,bare,Tokyo is the most populous metropolitan area.,Tokyo is the most populous metropolitan area.,0.9986,0.0012,0.0002,0.9899,0.0077,0.0025
+12,X,claims,The document claims that Tokyo is the most populous metropolitan area.,Tokyo is the most populous metropolitan area.,0.0313,0.9682,0.0005,0.3851,0.5764,0.0384
+12,X,confirms,The document confirms that Tokyo is the most populous metropolitan area.,Tokyo is the most populous metropolitan area.,0.9873,0.0121,0.0006,0.9815,0.0163,0.0022
+12,X,according,"According to the document, Tokyo is the most populous metropolitan area.",Tokyo is the most populous metropolitan area.,0.4492,0.5499,0.0009,0.9842,0.0135,0.0023
+12,X,official,The official record states that Tokyo is the most populous metropolitan area.,Tokyo is the most populous metropolitan area.,0.9453,0.0537,0.001,0.9797,0.018,0.0023
+12,X,pamphlet,A disputed pamphlet states that Tokyo is the most populous metropolitan area.,Tokyo is the most populous metropolitan area.,0.0038,0.9908,0.0054,0.1472,0.5261,0.3266
+12,notX,bare,Tokyo is not the most populous metropolitan area.,Tokyo is the most populous metropolitan area.,0.0014,0.0004,0.9982,0.0011,0.0031,0.9957
+12,notX,claims,The document claims that Tokyo is not the most populous metropolitan area.,Tokyo is the most populous metropolitan area.,0.0067,0.9719,0.0214,0.0243,0.1499,0.8258
+12,notX,confirms,The document confirms that Tokyo is not the most populous metropolitan area.,Tokyo is the most populous metropolitan area.,0.0036,0.0021,0.9943,0.0007,0.0032,0.996
+12,notX,according,"According to the document, Tokyo is not the most populous metropolitan area.",Tokyo is the most populous metropolitan area.,0.0055,0.8429,0.1516,0.0009,0.0041,0.995
+12,notX,official,The official record states that Tokyo is not the most populous metropolitan area.,Tokyo is the most populous metropolitan area.,0.0082,0.8284,0.1634,0.0012,0.0049,0.9939
+12,notX,pamphlet,A disputed pamphlet states that Tokyo is not the most populous metropolitan area.,Tokyo is the most populous metropolitan area.,0.054,0.9429,0.003,0.2571,0.4898,0.2532
+13,X,bare,Gold is denser than iron.,Gold is denser than iron.,0.9991,0.0008,0.0001,0.9904,0.0077,0.0019
+13,X,claims,The document claims that gold is denser than iron.,Gold is denser than iron.,0.0415,0.9579,0.0006,0.5561,0.4193,0.0246
+13,X,confirms,The document confirms that gold is denser than iron.,Gold is denser than iron.,0.9889,0.0105,0.0005,0.978,0.0196,0.0024
+13,X,according,"According to the document, gold is denser than iron.",Gold is denser than iron.,0.4654,0.5336,0.001,0.9841,0.0136,0.0023
+13,X,official,The official record states that gold is denser than iron.,Gold is denser than iron.,0.4518,0.5466,0.0016,0.9764,0.0212,0.0024
+13,X,pamphlet,A disputed pamphlet states that gold is denser than iron.,Gold is denser than iron.,0.0043,0.9852,0.0105,0.1549,0.5868,0.2583
+13,notX,bare,Gold is not denser than iron.,Gold is denser than iron.,0.0027,0.0004,0.9969,0.0022,0.0022,0.9956
+13,notX,claims,The document claims that gold is not denser than iron.,Gold is denser than iron.,0.0059,0.9428,0.0513,0.0604,0.1817,0.7579
+13,notX,confirms,The document confirms that gold is not denser than iron.,Gold is denser than iron.,0.0094,0.0058,0.9848,0.0021,0.0042,0.9937
+13,notX,according,"According to the document, gold is not denser than iron.",Gold is denser than iron.,0.0077,0.8101,0.1822,0.0023,0.0046,0.9931
+13,notX,official,The official record states that gold is not denser than iron.,Gold is denser than iron.,0.0058,0.8965,0.0977,0.0034,0.0073,0.9893
+13,notX,pamphlet,A disputed pamphlet states that gold is not denser than iron.,Gold is denser than iron.,0.0096,0.985,0.0054,0.2969,0.5288,0.1743
+14,X,bare,Vaccines prevent infectious diseases.,Vaccines prevent infectious diseases.,0.9992,0.0007,0.0001,0.9896,0.0089,0.0014
+14,X,claims,The document claims that vaccines prevent infectious diseases.,Vaccines prevent infectious diseases.,0.0609,0.9385,0.0006,0.8541,0.1366,0.0093
+14,X,confirms,The document confirms that vaccines prevent infectious diseases.,Vaccines prevent infectious diseases.,0.9946,0.0051,0.0003,0.9862,0.0128,0.001
+14,X,according,"According to the document, vaccines prevent infectious diseases.",Vaccines prevent infectious diseases.,0.9125,0.0868,0.0006,0.9888,0.0101,0.0011
+14,X,official,The official record states that vaccines prevent infectious diseases.,Vaccines prevent infectious diseases.,0.8257,0.1738,0.0005,0.9873,0.0117,0.001
+14,X,pamphlet,A disputed pamphlet states that vaccines prevent infectious diseases.,Vaccines prevent infectious diseases.,0.0047,0.9771,0.0182,0.2285,0.4814,0.2901
+14,notX,bare,Vaccines do not prevent infectious diseases.,Vaccines prevent infectious diseases.,0.0007,0.0002,0.999,0.0014,0.0017,0.9968
+14,notX,claims,The document claims that vaccines do not prevent infectious diseases.,Vaccines prevent infectious diseases.,0.0102,0.9685,0.0213,0.0192,0.0486,0.9322
+14,notX,confirms,The document confirms that vaccines do not prevent infectious diseases.,Vaccines prevent infectious diseases.,0.004,0.0046,0.9913,0.001,0.0022,0.9968
+14,notX,according,"According to the document, vaccines do not prevent infectious diseases.",Vaccines prevent infectious diseases.,0.0037,0.1581,0.8382,0.0009,0.0019,0.9973
+14,notX,official,The official record states that vaccines do not prevent infectious diseases.,Vaccines prevent infectious diseases.,0.005,0.8675,0.1275,0.0009,0.002,0.9972
+14,notX,pamphlet,A disputed pamphlet states that vaccines do not prevent infectious diseases.,Vaccines prevent infectious diseases.,0.049,0.9464,0.0046,0.2185,0.2375,0.5441
+15,X,bare,The Earth orbits the Sun.,The Earth orbits the Sun.,0.9992,0.0006,0.0002,0.9929,0.0057,0.0014
+15,X,claims,The document claims that the Earth orbits the Sun.,The Earth orbits the Sun.,0.0512,0.9483,0.0004,0.5627,0.4161,0.0212
+15,X,confirms,The document confirms that the Earth orbits the Sun.,The Earth orbits the Sun.,0.983,0.0165,0.0005,0.9892,0.0094,0.0014
+15,X,according,"According to the document, the Earth orbits the Sun.",The Earth orbits the Sun.,0.2428,0.7566,0.0006,0.9895,0.0089,0.0016
+15,X,official,The official record states that the Earth orbits the Sun.,The Earth orbits the Sun.,0.3526,0.6467,0.0007,0.9892,0.0096,0.0012
+15,X,pamphlet,A disputed pamphlet states that the Earth orbits the Sun.,The Earth orbits the Sun.,0.0032,0.9937,0.0032,0.1159,0.2914,0.5928
+15,notX,bare,The Earth does not orbit the Sun.,The Earth orbits the Sun.,0.001,0.0002,0.9988,0.0009,0.0006,0.9985
+15,notX,claims,The document claims that the Earth does not orbit the Sun.,The Earth orbits the Sun.,0.0065,0.9906,0.0029,0.2964,0.1285,0.5752
+15,notX,confirms,The document confirms that the Earth does not orbit the Sun.,The Earth orbits the Sun.,0.0074,0.0109,0.9817,0.0005,0.0007,0.9988
+15,notX,according,"According to the document, the Earth does not orbit the Sun.",The Earth orbits the Sun.,0.004,0.9649,0.0311,0.001,0.0012,0.9978
+15,notX,official,The official record states that the Earth does not orbit the Sun.,The Earth orbits the Sun.,0.006,0.9626,0.0314,0.0011,0.0014,0.9975
+15,notX,pamphlet,A disputed pamphlet states that the Earth does not orbit the Sun.,The Earth orbits the Sun.,0.0087,0.9905,0.0007,0.6995,0.1873,0.1132
+16,X,bare,Oranges contain vitamin C.,Oranges contain vitamin C.,0.9995,0.0004,0.0001,0.991,0.0075,0.0015
+16,X,claims,The document claims that oranges contain vitamin C.,Oranges contain vitamin C.,0.0674,0.9321,0.0005,0.7737,0.212,0.0143
+16,X,confirms,The document confirms that oranges contain vitamin C.,Oranges contain vitamin C.,0.9955,0.0042,0.0003,0.9848,0.0134,0.0018
+16,X,according,"According to the document, oranges contain vitamin C.",Oranges contain vitamin C.,0.8185,0.1809,0.0006,0.9886,0.0096,0.0017
+16,X,official,The official record states that oranges contain vitamin C.,Oranges contain vitamin C.,0.9153,0.0841,0.0006,0.9857,0.0125,0.0018
+16,X,pamphlet,A disputed pamphlet states that oranges contain vitamin C.,Oranges contain vitamin C.,0.0073,0.9847,0.008,0.304,0.5107,0.1853
+16,notX,bare,Oranges do not contain vitamin C.,Oranges contain vitamin C.,0.0005,0.0001,0.9994,0.0009,0.0014,0.9977
+16,notX,claims,The document claims that oranges do not contain vitamin C.,Oranges contain vitamin C.,0.016,0.9635,0.0206,0.4083,0.2727,0.319
+16,notX,confirms,The document confirms that oranges do not contain vitamin C.,Oranges contain vitamin C.,0.0075,0.0094,0.9831,0.001,0.0027,0.9963
+16,notX,according,"According to the document, oranges do not contain vitamin C.",Oranges contain vitamin C.,0.0047,0.8518,0.1435,0.0012,0.0028,0.996
+16,notX,official,The official record states that oranges do not contain vitamin C.,Oranges contain vitamin C.,0.0053,0.9196,0.0752,0.0028,0.0061,0.9912
+16,notX,pamphlet,A disputed pamphlet states that oranges do not contain vitamin C.,Oranges contain vitamin C.,0.1775,0.8197,0.0028,0.6975,0.25,0.0525
+17,X,bare,The bridge can support heavy trucks.,The bridge can support heavy trucks.,0.9992,0.0007,0.0001,0.988,0.0109,0.0011
+17,X,claims,The document claims that the bridge can support heavy trucks.,The bridge can support heavy trucks.,0.0383,0.9613,0.0004,0.753,0.2385,0.0085
+17,X,confirms,The document confirms that the bridge can support heavy trucks.,The bridge can support heavy trucks.,0.9889,0.0104,0.0007,0.9759,0.0227,0.0015
+17,X,according,"According to the document, the bridge can support heavy trucks.",The bridge can support heavy trucks.,0.6333,0.3661,0.0006,0.98,0.0185,0.0015
+17,X,official,The official record states that the bridge can support heavy trucks.,The bridge can support heavy trucks.,0.8329,0.1663,0.0008,0.9722,0.0262,0.0016
+17,X,pamphlet,A disputed pamphlet states that the bridge can support heavy trucks.,The bridge can support heavy trucks.,0.0031,0.9926,0.0042,0.3559,0.6025,0.0416
+17,notX,bare,The bridge cannot support heavy trucks.,The bridge can support heavy trucks.,0.0049,0.0005,0.9947,0.0004,0.0007,0.9989
+17,notX,claims,The document claims that the bridge cannot support heavy trucks.,The bridge can support heavy trucks.,0.0034,0.9525,0.0441,0.0011,0.0068,0.9921
+17,notX,confirms,The document confirms that the bridge cannot support heavy trucks.,The bridge can support heavy trucks.,0.032,0.0075,0.9605,0.0006,0.0011,0.9982
+17,notX,according,"According to the document, the bridge cannot support heavy trucks.",The bridge can support heavy trucks.,0.0253,0.3466,0.6282,0.0004,0.0011,0.9985
+17,notX,official,The official record states that the bridge cannot support heavy trucks.,The bridge can support heavy trucks.,0.0238,0.5005,0.4757,0.0005,0.0014,0.9981
+17,notX,pamphlet,A disputed pamphlet states that the bridge cannot support heavy trucks.,The bridge can support heavy trucks.,0.0039,0.9896,0.0065,0.0723,0.419,0.5087
+18,X,bare,Global temperatures rose over the last decade.,Global temperatures rose over the last decade.,0.9988,0.001,0.0002,0.9896,0.0087,0.0018
+18,X,claims,The document claims that global temperatures rose over the last decade.,Global temperatures rose over the last decade.,0.0721,0.9274,0.0005,0.8656,0.1258,0.0085
+18,X,confirms,The document confirms that global temperatures rose over the last decade.,Global temperatures rose over the last decade.,0.9963,0.0033,0.0004,0.985,0.0133,0.0016
+18,X,according,"According to the document, global temperatures rose over the last decade.",Global temperatures rose over the last decade.,0.7638,0.2357,0.0006,0.9864,0.0117,0.0018
+18,X,official,The official record states that global temperatures rose over the last decade.,Global temperatures rose over the last decade.,0.9062,0.0928,0.001,0.9863,0.0121,0.0016
+18,X,pamphlet,A disputed pamphlet states that global temperatures rose over the last decade.,Global temperatures rose over the last decade.,0.0034,0.9868,0.0098,0.3045,0.5923,0.1032
+18,notX,bare,Global temperatures did not rise over the last decade.,Global temperatures rose over the last decade.,0.0005,0.0002,0.9993,0.0008,0.0008,0.9984
+18,notX,claims,The document claims that global temperatures did not rise over the last decade.,Global temperatures rose over the last decade.,0.0038,0.9563,0.04,0.0124,0.0695,0.9181
+18,notX,confirms,The document confirms that global temperatures did not rise over the last decade.,Global temperatures rose over the last decade.,0.0014,0.0011,0.9974,0.0007,0.0012,0.9981
+18,notX,according,"According to the document, global temperatures did not rise over the last decade.",Global temperatures rose over the last decade.,0.0028,0.1224,0.8748,0.0011,0.0016,0.9973
+18,notX,official,The official record states that global temperatures did not rise over the last decade.,Global temperatures rose over the last decade.,0.0032,0.6366,0.3602,0.0012,0.002,0.9968
+18,notX,pamphlet,A disputed pamphlet states that global temperatures did not rise over the last decade.,Global temperatures rose over the last decade.,0.004,0.9832,0.0128,0.3625,0.5118,0.1257
+19,X,bare,The drug reduces blood pressure.,The drug reduces blood pressure.,0.999,0.0009,0.0002,0.9896,0.009,0.0014
+19,X,claims,The document claims that the drug reduces blood pressure.,The drug reduces blood pressure.,0.0538,0.9458,0.0004,0.5981,0.3848,0.017
+19,X,confirms,The document confirms that the drug reduces blood pressure.,The drug reduces blood pressure.,0.9882,0.011,0.0009,0.9801,0.0182,0.0017
+19,X,according,"According to the document, the drug reduces blood pressure.",The drug reduces blood pressure.,0.5866,0.4127,0.0007,0.9831,0.0152,0.0017
+19,X,official,The official record states that the drug reduces blood pressure.,The drug reduces blood pressure.,0.8528,0.1463,0.0009,0.9697,0.028,0.0023
+19,X,pamphlet,A disputed pamphlet states that the drug reduces blood pressure.,The drug reduces blood pressure.,0.0026,0.9924,0.005,0.1347,0.6236,0.2417
+19,notX,bare,The drug does not reduce blood pressure.,The drug reduces blood pressure.,0.0037,0.0007,0.9956,0.002,0.0018,0.9962
+19,notX,claims,The document claims that the drug does not reduce blood pressure.,The drug reduces blood pressure.,0.0035,0.9495,0.047,0.0283,0.0961,0.8756
+19,notX,confirms,The document confirms that the drug does not reduce blood pressure.,The drug reduces blood pressure.,0.0157,0.0081,0.9762,0.0016,0.0027,0.9957
+19,notX,according,"According to the document, the drug does not reduce blood pressure.",The drug reduces blood pressure.,0.0103,0.4457,0.544,0.002,0.0033,0.9948
+19,notX,official,The official record states that the drug does not reduce blood pressure.,The drug reduces blood pressure.,0.0061,0.8659,0.128,0.0024,0.0046,0.993
+19,notX,pamphlet,A disputed pamphlet states that the drug does not reduce blood pressure.,The drug reduces blood pressure.,0.0085,0.9863,0.0052,0.2858,0.5448,0.1693
+20,X,bare,The company paid its taxes in full.,The company paid its taxes in full.,0.9987,0.0011,0.0002,0.9899,0.0082,0.002
+20,X,claims,The document claims that the company paid its taxes in full.,The company paid its taxes in full.,0.0169,0.9827,0.0004,0.7726,0.2139,0.0135
+20,X,confirms,The document confirms that the company paid its taxes in full.,The company paid its taxes in full.,0.991,0.0086,0.0004,0.9871,0.0115,0.0014
+20,X,according,"According to the document, the company paid its taxes in full.",The company paid its taxes in full.,0.3891,0.6104,0.0005,0.9867,0.0115,0.0017
+20,X,official,The official record states that the company paid its taxes in full.,The company paid its taxes in full.,0.6779,0.3212,0.0009,0.9862,0.0121,0.0017
+20,X,pamphlet,A disputed pamphlet states that the company paid its taxes in full.,The company paid its taxes in full.,0.0026,0.9917,0.0058,0.2805,0.5177,0.2017
+20,notX,bare,The company did not pay its taxes in full.,The company paid its taxes in full.,0.0007,0.0004,0.999,0.0004,0.0005,0.9991
+20,notX,claims,The document claims that the company did not pay its taxes in full.,The company paid its taxes in full.,0.002,0.8391,0.1588,0.0002,0.0012,0.9987
+20,notX,confirms,The document confirms that the company did not pay its taxes in full.,The company paid its taxes in full.,0.0026,0.0024,0.995,0.0002,0.0006,0.9992
+20,notX,according,"According to the document, the company did not pay its taxes in full.",The company paid its taxes in full.,0.0076,0.1621,0.8303,0.0002,0.0005,0.9994
+20,notX,official,The official record states that the company did not pay its taxes in full.,The company paid its taxes in full.,0.0045,0.6761,0.3194,0.0002,0.0006,0.9991
+20,notX,pamphlet,A disputed pamphlet states that the company did not pay its taxes in full.,The company paid its taxes in full.,0.0023,0.9717,0.026,0.0387,0.2918,0.6694
