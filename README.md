@@ -4,7 +4,7 @@ Reference implementation, stimuli and raw scores for:
 
 > Leyva-Vázquez, M. Y., Piñero Pérez, P. Y., Pérez Pupo, I. & Smarandache, F. (2026).
 > **Measuring Conflicting Evidence with Decomposed NLI: A Controlled Diagnostic Study of a
-> Measurement-Space Constraint in Hallucination Detection.** Manuscript v1.11.
+> Measurement-Space Constraint in Hallucination Detection.** Manuscript v1.13, submitted.
 
 ## The claim in one line
 
@@ -33,12 +33,11 @@ with a margin make the recovered region measure conflict rather than artifacts. 
 | `audit_a8_intervals.py` | Exhaustive interval search on the collapsed scalar D (gated and ungated) under stated objectives and FP budgets; output `audit_a8_intervals.txt` |
 | `experiment_a9_attribution_frames.py` | Experiment 8: attribution-frame control (content fixed; bare / claims / confirms / according / official / pamphlet) |
 | `make_table6.py` | Rebuilds Table 6 and Figure 1, the (T, F) scatter, from the CSV files; no model needed |
-| `experiment_a10_crossed_frames.py` | Experiment 9: pre-registered crossed design, source noun x adjective x verb (12 templates, 480 sentences), two resumable passes (`--pass A`, `--pass B`, `--merge`), `--from-csv` for the summary |
+| `experiment_a10_crossed_frames.py` | Experiment 9: pre-registered crossed design, source noun x adjective x verb (12 templates, 480 sentences), two resumable passes (`--pass A` then `--pass B`), `--from-csv` for the summary |
 | `experiment_a11_source_intervention.py` | Experiment 10: pre-registered intervention on the released stimuli (source noun phrase replaced by "The document"; verb and content verbatim), four arms, decomposed and holistic |
-| `PREREGISTRATION_A10_A11.md` | Predictions and decision rules registered before the first inference of Experiment 9 and of the crossed design below |
-| `experiment_a10_crossed_frames.py` | Crossed design (source noun x adjective x reporting verb, 480 sentences), registered in the same document. **Not run: no results are reported from it and the paper states this.** Included so the registered design can be read and executed as specified |
+| `PREREGISTRATION_A10_A11.md` | Contrasts, decision rules and predictions registered before the first inference of Experiments 9 and 10 below |
 | `make_fig_frames.py` | Rebuilds Figure 2, the per-item paired differences of Experiment 8; no model needed |
-| `make_fig_intervention.py` | Draws the Experiment 9 intervention per item, and the crossed contrasts if the crossed design is ever run; no model needed |
+| `make_fig_intervention.py` | Optional extra figure: the Experiment 10 intervention per item and the crossed contrasts. Not used in the manuscript |
 | `table6_counts.txt` | Output of `make_table6.py` |
 | `validation_results_*.csv`, `validation_summary_*.txt` | Per-item scores and summaries for each experiment |
 | `figures/` | `fig_tf_scatter.{pdf,png}` (paper figure) plus earlier illustration scripts |
@@ -61,13 +60,9 @@ Models (public, CPU is enough): Model A `MoritzLaurer/DeBERTa-v3-large-mnli-feve
 8c. `experiment_a11_source_intervention.py` (Experiment 10, 2026-09-10; predictions registered first)
 9. `make_table6.py` (Table 6 and Figure 1 from the CSV files; no model)
 
-The crossed design `experiment_a10_crossed_frames.py` was registered on 2026-09-10 together with
-Experiment 9 and was **not run**, so nothing in the paper rests on it. Its scoring is resumable:
-each score is appended to `a10_partial_{A,B}.jsonl` as it is produced and the two heads can be
-run separately with `--pass A` and `--pass B`. It needs roughly 3 GB of free memory.
-
 Dates and model revisions. The two checkpoints were downloaded once, on 2026-07-13, when
-Experiments 1-2 were run. Experiments 3-6 (2026-08-31) and Experiments 7-8 (2026-09-09) reused
+Experiments 1-2 were run. Every later run (Experiments 3-6 on 2026-08-31, 7-8 on 2026-09-09,
+9-10 on 2026-09-10) reused
 that local cache; no re-download or update was performed in between, and `transformers` was not
 asked to check for a newer revision. Commit hashes were not pinned at download time and cannot
 be reconstructed after the fact, so "the Hub default revision as of 2026-07-13" is the most
@@ -85,7 +80,7 @@ python experiment_a4_relevance_gate.py; python experiment_a5_lexical_gate.py   #
 python experiment_a6_model_swap.py; python experiment_a7_single_head_decomposed.py  # Experiments 5-6
 python experiment_a8_polarity_blind_max.py; python audit_a8_intervals.py       # Experiment 7 + interval search
 python experiment_a10_crossed_frames.py --pass A   # Experiment 9, first head
-python experiment_a10_crossed_frames.py --pass B   # Experiment 9, second head + merge
+python experiment_a10_crossed_frames.py --pass B   # Experiment 9, second head; writes the CSV
 python experiment_a11_source_intervention.py  # Experiment 10 (pre-registered intervention)
 python experiment_a9_attribution_frames.py    # Experiment 8  (add --from-csv to rebuild its
                                               # summary from the released CSV, no model)

@@ -1,5 +1,5 @@
 # Verified working with these versions as of 2026-09-08. The exact library
-# versions used for the original experiment run (models retrieved 2026-08-31,
+# versions used for the original experiment run (models downloaded 2026-07-13 and reused from cache thereafter,
 # Section "Setup") were not pinned or logged at the time and cannot be
 # reconstructed retroactively -- this is a declared reproducibility gap, not a
 # claim that these are the original versions.

@@ -1,5 +1,6 @@
 """
-Figure 3 of the paper: the source-description intervention (Experiment 10, A11) and the
+Optional extra figure (not used in the manuscript): the source-description intervention
+(Experiment 10, A11) and the
 crossed factorial design (Experiment 9, A10).
 
 (a) Per-item gated F under the released refuting span and under the same span with its source
