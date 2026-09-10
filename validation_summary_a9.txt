@@ -1,6 +1,9 @@
 ================================================================================================
-EXPERIMENT A9 - Attribution-frame control (content fixed, frame varied), n=20 items per cell
+EXPERIMENT A9 - Attribution-frame control (content fixed, template varied), n=20 items per cell
 ================================================================================================
+
+Scope: the templates vary more than one element at a time; these are template contrasts,
+not identified mechanisms.
 
 polarity frame         entA    neuA    conA    entB    conB  conB>=.15  entA>=.15
 X     bare         0.999   0.001   0.000   0.989   0.002       0/20      20/20
@@ -16,3 +19,7 @@ notX  confirms     0.006   0.005   0.989   0.001   0.996      20/20       0/20
 notX  according    0.007   0.615   0.378   0.002   0.994      20/20       0/20
 notX  official     0.014   0.796   0.189   0.003   0.990      20/20       0/20
 notX  pamphlet     0.067   0.927   0.006   0.408   0.274      12/20       4/20
+
+Paired contrasts on Model A entailment, supporting content, per item:
+  official  - pamphlet  mean=+0.727580 min=+0.1455 max=+0.9415 positive=20/20
+  confirms  - claims    mean=+0.928110 min=+0.7830 max=+0.9741 positive=20/20

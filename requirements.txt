@@ -6,3 +6,4 @@
 transformers==5.5.3
 torch==2.11.0
 # Python 3.14.3 used for verification.
+matplotlib==3.10.8   # only needed by make_table6.py to regenerate Figure 1

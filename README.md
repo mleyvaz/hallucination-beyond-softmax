@@ -2,9 +2,9 @@
 
 Reference implementation, stimuli and raw scores for:
 
-> Leyva-Vázquez, M. Y., Matheu Pérez, A. & Smarandache, F. (2026). **Measuring Conflicting
-> Evidence with Decomposed NLI: A Controlled Diagnostic Study of a Measurement-Space Constraint
-> in Hallucination Detection.** Manuscript v1.8 (under review).
+> Leyva-Vázquez, M. Y., Piñero Pérez, P. Y., Pérez Pupo, I. & Smarandache, F. (2026).
+> **Measuring Conflicting Evidence with Decomposed NLI: A Controlled Diagnostic Study of a
+> Measurement-Space Constraint in Hallucination Detection.** Manuscript v1.10, submitted.
 
 ## The claim in one line
 
@@ -53,11 +53,13 @@ Models (public, CPU is enough): Model A `MoritzLaurer/DeBERTa-v3-large-mnli-feve
 8. `experiment_a9_attribution_frames.py` (Experiment 8, 2026-09-09)
 9. `make_table6.py` (Table 6 and Figure 1 from the CSV files; no model)
 
-Dates: Experiments 1-2 were run on 2026-07-13, Experiments 3-6 on 2026-08-31, Experiments 7-8 on
-2026-09-09, all against the Hugging Face Hub default revisions cached on the same machine at the
-first download; the paper's "as retrieved on 2026-08-31" refers to the revision, not to a re-download.
-
-Model revisions are the Hugging Face Hub defaults at the run dates; commit hashes were not pinned.
+Dates and model revisions. The two checkpoints were downloaded once, on 2026-07-13, when
+Experiments 1-2 were run. Experiments 3-6 (2026-08-31) and Experiments 7-8 (2026-09-09) reused
+that local cache; no re-download or update was performed in between, and `transformers` was not
+asked to check for a newer revision. Commit hashes were not pinned at download time and cannot
+be reconstructed after the fact, so "the Hub default revision as of 2026-07-13" is the most
+precise identification available; the paper states this as a declared reproducibility gap. A
+later default revision may give different scores.
 
 ## Reproducing
 
@@ -69,16 +71,15 @@ python experiment_a3_controls.py              # Experiment 3
 python experiment_a4_relevance_gate.py; python experiment_a5_lexical_gate.py   # Experiment 4
 python experiment_a6_model_swap.py; python experiment_a7_single_head_decomposed.py  # Experiments 5-6
 python experiment_a8_polarity_blind_max.py; python audit_a8_intervals.py       # Experiment 7 + interval search
-python experiment_a9_attribution_frames.py    # Experiment 8
+python experiment_a9_attribution_frames.py    # Experiment 8  (add --from-csv to rebuild its
+                                              # summary from the released CSV, no model)
 python make_table6.py                         # Table 6 + Figure 1 (no model)
-python experiment_a_real_models.py            # -> validation_results_real.csv
-python experiment_a2_conflicting_evidence.py  # -> validation_results_a2.csv
-python experiment_a3_controls.py              # -> validation_results_a3.csv
-python experiment_a4_relevance_gate.py        # -> validation_results_a4.csv
-python experiment_a5_lexical_gate.py          # -> validation_results_a5.csv (no models needed)
-python experiment_a6_model_swap.py            # -> validation_results_a6.csv
-python experiment_a7_single_head_decomposed.py # -> validation_results_a7.csv
 ```
+
+Aggregation-only scripts (no model, no GPU, seconds): `make_table6.py` rebuilds Table 6 and
+Figure 1 (Figure 1 needs matplotlib), `audit_a8_intervals.py` rebuilds the interval search of
+Table 7, and `experiment_a9_attribution_frames.py --from-csv` rebuilds Table 8. The remaining
+tables are the per-experiment summary files written next to each CSV.
 
 Each script prints its summary and writes it next to the CSV. All stimuli are inside the
 scripts, verbatim. The `synthetic_validation.py` numbers are heuristic (token overlap) and are
