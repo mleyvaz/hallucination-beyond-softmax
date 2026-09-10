@@ -8,3 +8,8 @@ __pycache__/
 .idea/
 .vscode/
 *.swp
+
+# A10 resumable checkpoints (intermediate, not part of the release)
+a10_partial_*.jsonl
+a10_keepalive.sh
+a10_pass*.log

@@ -38,9 +38,17 @@ DEFAULT_MODEL_B = "ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli"
 # NLI scoring helper (shared by every experiment script)
 # ---------------------------------------------------------------------------
 
-def build_pipe(model_name: str):
+def build_pipe(model_name: str, low_memory: bool = False):
+    """Build the shared text-classification pipeline.
+
+    `low_memory` only changes how the checkpoint is materialised while loading
+    (weights are streamed shard by shard instead of being held twice). Dtype,
+    weights and outputs are identical, so scores do not depend on this flag; it
+    exists so the larger experiments can run on a machine with little free RAM.
+    """
     from transformers import pipeline
-    return pipeline("text-classification", model=model_name, top_k=None)
+    kw = {"low_cpu_mem_usage": True} if low_memory else {}
+    return pipeline("text-classification", model=model_name, top_k=None, model_kwargs=kw)
 
 
 def nli_scores(pipe, premise: str, hypothesis: str) -> dict:

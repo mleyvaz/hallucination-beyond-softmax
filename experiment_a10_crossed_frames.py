@@ -26,10 +26,21 @@ Registered contrasts (paired by item, verb held fixed unless stated):
                            contradiction_B >= 0.15 for each source (verb "states")
 
 Output: validation_results_a10.csv, validation_summary_a10.txt
-Rebuild the summary from the CSV without any model: python experiment_a10_crossed_frames.py --from-csv
+Run: python experiment_a10_crossed_frames.py            (both heads, one at a time)
+     python experiment_a10_crossed_frames.py --pass A   (only the first head)
+     python experiment_a10_crossed_frames.py --pass B   (only the second; writes the CSV
+                                                         once both checkpoints exist)
+Each score is appended to a10_partial_{A,B}.jsonl as it is produced, so an interrupted run
+resumes from where it stopped instead of starting over.
+Rebuild the summary from the released CSV without any model: --from-csv
 """
 from __future__ import annotations
 import csv, gc, os, random, statistics, sys
+
+# one BLAS thread: this script is a long sequence of single-pair calls, so extra
+# threads buy no speed here and each one carries its own workspace.
+os.environ.setdefault("OMP_NUM_THREADS", "1")
+os.environ.setdefault("MKL_NUM_THREADS", "1")
 
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = HERE
 sys.path.insert(0, HERE)
@@ -97,7 +108,7 @@ def score_all(model_name: str, cells, keys, tag: str):
     if todo:
         from dual_nli import build_pipe, nli_scores
         print(f"Loading {model_name} ...", flush=True)
-        pipe = build_pipe(model_name)
+        pipe = build_pipe(model_name, low_memory=True)
         with open(path, "a", encoding="utf-8") as fh:
             for n, c in enumerate(todo, 1):
                 sc = nli_scores(pipe, c["premise"], c["claim"])
@@ -173,6 +184,18 @@ def summarize(rows):
             if m < 0.10: ok4 = False
             L.append(f"  {adj}-{noun}: mean {m:+.4f} CI[{ci[0]:+.3f},{ci[1]:+.3f}] positive {pos}/20")
     L.append(f"  -> factivity as a separate factor: {'MET' if ok4 else 'NOT MET'} (needs >= 0.10 under all four sources)")
+    # registered second half of Q4: does the verb contrast vary across sources?
+    vc = {}
+    for noun in NOUNS:
+        for adj in ADJ:
+            vc[(noun, adj)] = [f(idx[(i, "X", frame_id(noun, adj, "confirms"))], "entA")
+                               - f(idx[(i, "X", frame_id(noun, adj, "claims"))], "entA") for i in range(1, 21)]
+    dd4 = [vc[("document", "plain")][k] - vc[("pamphlet", "disputed")][k] for k in range(20)]
+    ci4 = boot_ci(dd4); m4 = statistics.mean(dd4)
+    flat = abs(m4) < 0.10 and ci4[0] <= 0 <= ci4[1]
+    L.append(f"  source x verb interaction (verb contrast under plain-document minus under disputed-pamphlet): "
+             f"mean {m4:+.4f} CI[{ci4[0]:+.3f},{ci4[1]:+.3f}] -> "
+             f"{'no interaction detected' if flat else 'INTERACTION: the verb effect depends on the source'}")
 
     L.append("Q5 polarity-blind contradiction cue on SUPPORTING content X (verb=states):")
     for noun in NOUNS:
