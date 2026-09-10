@@ -4,7 +4,7 @@ Reference implementation, stimuli and raw scores for:
 
 > Leyva-Vázquez, M. Y., Piñero Pérez, P. Y., Pérez Pupo, I. & Smarandache, F. (2026).
 > **Measuring Conflicting Evidence with Decomposed NLI: A Controlled Diagnostic Study of a
-> Measurement-Space Constraint in Hallucination Detection.** Manuscript v1.10, submitted.
+> Measurement-Space Constraint in Hallucination Detection.** Manuscript v1.11.
 
 ## The claim in one line
 
@@ -34,8 +34,10 @@ with a margin make the recovered region measure conflict rather than artifacts. 
 | `experiment_a9_attribution_frames.py` | Experiment 8: attribution-frame control (content fixed; bare / claims / confirms / according / official / pamphlet) |
 | `make_table6.py` | Rebuilds Table 6 and Figure 1, the (T, F) scatter, from the CSV files; no model needed |
 | `experiment_a11_source_intervention.py` | Experiment 9: pre-registered intervention on the released stimuli (source noun phrase replaced by "The document"; verb and content verbatim), four arms, decomposed and holistic |
-| `PREREGISTRATION_A10_A11.md` | Predictions registered before the Experiment 9 inference |
+| `PREREGISTRATION_A10_A11.md` | Predictions and decision rules registered before the first inference of Experiment 9 and of the crossed design below |
+| `experiment_a10_crossed_frames.py` | Crossed design (source noun x adjective x reporting verb, 480 sentences), registered in the same document. **Not run: no results are reported from it and the paper states this.** Included so the registered design can be read and executed as specified |
 | `make_fig_frames.py` | Rebuilds Figure 2, the per-item paired differences of Experiment 8; no model needed |
+| `make_fig_intervention.py` | Draws the Experiment 9 intervention per item, and the crossed contrasts if the crossed design is ever run; no model needed |
 | `table6_counts.txt` | Output of `make_table6.py` |
 | `validation_results_*.csv`, `validation_summary_*.txt` | Per-item scores and summaries for each experiment |
 | `figures/` | `fig_tf_scatter.{pdf,png}` (paper figure) plus earlier illustration scripts |
@@ -56,6 +58,11 @@ Models (public, CPU is enough): Model A `MoritzLaurer/DeBERTa-v3-large-mnli-feve
 8. `experiment_a9_attribution_frames.py` (Experiment 8, 2026-09-09)
 8b. `experiment_a11_source_intervention.py` (Experiment 9, 2026-09-10; predictions registered first)
 9. `make_table6.py` (Table 6 and Figure 1 from the CSV files; no model)
+
+The crossed design `experiment_a10_crossed_frames.py` was registered on 2026-09-10 together with
+Experiment 9 and was **not run**, so nothing in the paper rests on it. Its scoring is resumable:
+each score is appended to `a10_partial_{A,B}.jsonl` as it is produced and the two heads can be
+run separately with `--pass A` and `--pass B`. It needs roughly 3 GB of free memory.
 
 Dates and model revisions. The two checkpoints were downloaded once, on 2026-07-13, when
 Experiments 1-2 were run. Experiments 3-6 (2026-08-31) and Experiments 7-8 (2026-09-09) reused
