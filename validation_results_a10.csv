@@ -1,0 +1,481 @@
+item,polarity,noun,adjective,verb,frame,premise,entA,neuA,conA,entB,conB
+1,X,document,plain,states,plain_document_states,The document states that Paris is the capital of France.,0.187,0.8123,0.0007,0.9699,0.004
+1,X,document,plain,claims,plain_document_claims,The document claims that Paris is the capital of France.,0.0266,0.9727,0.0007,0.2716,0.0559
+1,X,document,plain,confirms,plain_document_confirms,The document confirms that Paris is the capital of France.,0.9866,0.0131,0.0004,0.9817,0.0025
+1,X,document,disputed,states,disputed_document_states,The disputed document states that Paris is the capital of France.,0.0062,0.9915,0.0024,0.2609,0.2983
+1,X,document,disputed,claims,disputed_document_claims,The disputed document claims that Paris is the capital of France.,0.0035,0.9922,0.0043,0.1392,0.2848
+1,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Paris is the capital of France.,0.8692,0.1303,0.0005,0.9636,0.0068
+1,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Paris is the capital of France.,0.1425,0.857,0.0005,0.8348,0.0159
+1,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Paris is the capital of France.,0.0217,0.9778,0.0005,0.1643,0.1111
+1,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Paris is the capital of France.,0.9794,0.0203,0.0003,0.9695,0.0037
+1,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Paris is the capital of France.,0.0061,0.9902,0.0037,0.2072,0.2962
+1,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Paris is the capital of France.,0.004,0.9881,0.0078,0.1173,0.3321
+1,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Paris is the capital of France.,0.8879,0.1117,0.0004,0.9493,0.008
+1,notX,document,plain,states,plain_document_states,The document states that Paris is not the capital of France.,0.0042,0.9287,0.0671,0.0008,0.9962
+1,notX,document,plain,claims,plain_document_claims,The document claims that Paris is not the capital of France.,0.0069,0.9832,0.01,0.2273,0.5837
+1,notX,document,plain,confirms,plain_document_confirms,The document confirms that Paris is not the capital of France.,0.0037,0.0039,0.9924,0.0006,0.9973
+1,notX,document,disputed,states,disputed_document_states,The disputed document states that Paris is not the capital of France.,0.013,0.9843,0.0026,0.2813,0.4198
+1,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that Paris is not the capital of France.,0.0678,0.9313,0.0009,0.427,0.2921
+1,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Paris is not the capital of France.,0.0051,0.3241,0.6708,0.0008,0.9956
+1,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Paris is not the capital of France.,0.0032,0.9288,0.0679,0.01,0.951
+1,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Paris is not the capital of France.,0.0081,0.9858,0.0061,0.3581,0.3772
+1,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Paris is not the capital of France.,0.0028,0.0038,0.9934,0.0007,0.9969
+1,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Paris is not the capital of France.,0.03,0.9682,0.0018,0.4208,0.2665
+1,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Paris is not the capital of France.,0.1561,0.843,0.0009,0.5037,0.2113
+1,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Paris is not the capital of France.,0.0037,0.2264,0.7698,0.0008,0.9952
+2,X,document,plain,states,plain_document_states,The document states that water boils at 100 degrees Celsius at sea level.,0.5726,0.4267,0.0007,0.9774,0.0041
+2,X,document,plain,claims,plain_document_claims,The document claims that water boils at 100 degrees Celsius at sea level.,0.1187,0.8806,0.0007,0.9175,0.0138
+2,X,document,plain,confirms,plain_document_confirms,The document confirms that water boils at 100 degrees Celsius at sea level.,0.9915,0.0081,0.0003,0.9823,0.0031
+2,X,document,disputed,states,disputed_document_states,The disputed document states that water boils at 100 degrees Celsius at sea level.,0.0604,0.9385,0.0012,0.5185,0.3419
+2,X,document,disputed,claims,disputed_document_claims,The disputed document claims that water boils at 100 degrees Celsius at sea level.,0.0151,0.9825,0.0025,0.459,0.3111
+2,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that water boils at 100 degrees Celsius at sea level.,0.9206,0.0788,0.0007,0.9743,0.0064
+2,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that water boils at 100 degrees Celsius at sea level.,0.5038,0.4955,0.0006,0.9689,0.0052
+2,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that water boils at 100 degrees Celsius at sea level.,0.1169,0.8825,0.0006,0.8264,0.024
+2,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that water boils at 100 degrees Celsius at sea level.,0.9867,0.0129,0.0003,0.9815,0.0031
+2,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that water boils at 100 degrees Celsius at sea level.,0.0466,0.9513,0.0021,0.4245,0.3734
+2,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that water boils at 100 degrees Celsius at sea level.,0.0161,0.9789,0.005,0.3424,0.3585
+2,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that water boils at 100 degrees Celsius at sea level.,0.964,0.0353,0.0007,0.9747,0.0054
+2,notX,document,plain,states,plain_document_states,The document states that water does not boil at 100 degrees Celsius at sea level.,0.0115,0.556,0.4326,0.0037,0.9905
+2,notX,document,plain,claims,plain_document_claims,The document claims that water does not boil at 100 degrees Celsius at sea level.,0.0111,0.9264,0.0625,0.0072,0.9776
+2,notX,document,plain,confirms,plain_document_confirms,The document confirms that water does not boil at 100 degrees Celsius at sea level.,0.0082,0.0065,0.9853,0.0039,0.9904
+2,notX,document,disputed,states,disputed_document_states,The disputed document states that water does not boil at 100 degrees Celsius at sea level.,0.0255,0.9582,0.0163,0.021,0.9373
+2,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that water does not boil at 100 degrees Celsius at sea level.,0.1205,0.8733,0.0062,0.0601,0.8501
+2,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that water does not boil at 100 degrees Celsius at sea level.,0.0099,0.0421,0.948,0.0033,0.9907
+2,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that water does not boil at 100 degrees Celsius at sea level.,0.0084,0.8118,0.1798,0.0048,0.9866
+2,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that water does not boil at 100 degrees Celsius at sea level.,0.0126,0.956,0.0314,0.031,0.9036
+2,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that water does not boil at 100 degrees Celsius at sea level.,0.0054,0.0045,0.99,0.0042,0.9898
+2,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that water does not boil at 100 degrees Celsius at sea level.,0.0816,0.9033,0.0151,0.107,0.7553
+2,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that water does not boil at 100 degrees Celsius at sea level.,0.3318,0.6601,0.0081,0.3089,0.4703
+2,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that water does not boil at 100 degrees Celsius at sea level.,0.0066,0.0114,0.982,0.0035,0.9902
+3,X,document,plain,states,plain_document_states,The document states that the Amazon rainforest is located in South America.,0.7056,0.2936,0.0009,0.9689,0.0028
+3,X,document,plain,claims,plain_document_claims,The document claims that the Amazon rainforest is located in South America.,0.1331,0.866,0.0008,0.4526,0.0297
+3,X,document,plain,confirms,plain_document_confirms,The document confirms that the Amazon rainforest is located in South America.,0.9967,0.003,0.0003,0.9822,0.0016
+3,X,document,disputed,states,disputed_document_states,The disputed document states that the Amazon rainforest is located in South America.,0.048,0.9506,0.0014,0.2149,0.2794
+3,X,document,disputed,claims,disputed_document_claims,The disputed document claims that the Amazon rainforest is located in South America.,0.0176,0.98,0.0024,0.1119,0.4458
+3,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the Amazon rainforest is located in South America.,0.9785,0.021,0.0005,0.958,0.0043
+3,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the Amazon rainforest is located in South America.,0.6442,0.3551,0.0007,0.936,0.0051
+3,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the Amazon rainforest is located in South America.,0.1542,0.8451,0.0007,0.3194,0.0678
+3,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the Amazon rainforest is located in South America.,0.994,0.0056,0.0003,0.9765,0.002
+3,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the Amazon rainforest is located in South America.,0.0887,0.9099,0.0014,0.194,0.2988
+3,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the Amazon rainforest is located in South America.,0.0283,0.9688,0.0029,0.0951,0.4869
+3,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the Amazon rainforest is located in South America.,0.981,0.0186,0.0004,0.9409,0.0057
+3,notX,document,plain,states,plain_document_states,The document states that the Amazon rainforest is not located in South America.,0.0125,0.926,0.0615,0.001,0.9965
+3,notX,document,plain,claims,plain_document_claims,The document claims that the Amazon rainforest is not located in South America.,0.0211,0.9684,0.0105,0.2255,0.5454
+3,notX,document,plain,confirms,plain_document_confirms,The document confirms that the Amazon rainforest is not located in South America.,0.0081,0.0093,0.9826,0.0006,0.9983
+3,notX,document,disputed,states,disputed_document_states,The disputed document states that the Amazon rainforest is not located in South America.,0.0648,0.9307,0.0045,0.377,0.2978
+3,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that the Amazon rainforest is not located in South America.,0.2355,0.7621,0.0024,0.6047,0.1574
+3,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the Amazon rainforest is not located in South America.,0.0109,0.12,0.8691,0.0006,0.997
+3,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the Amazon rainforest is not located in South America.,0.0304,0.9232,0.0463,0.0022,0.9886
+3,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the Amazon rainforest is not located in South America.,0.1324,0.8553,0.0123,0.4135,0.31
+3,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the Amazon rainforest is not located in South America.,0.0114,0.0276,0.961,0.0007,0.9979
+3,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the Amazon rainforest is not located in South America.,0.2558,0.7335,0.0107,0.4783,0.2126
+3,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the Amazon rainforest is not located in South America.,0.6936,0.303,0.0034,0.6766,0.1026
+3,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the Amazon rainforest is not located in South America.,0.0148,0.2576,0.7275,0.0008,0.9963
+4,X,document,plain,states,plain_document_states,The document states that Einstein developed the theory of general relativity.,0.5829,0.4166,0.0005,0.986,0.0022
+4,X,document,plain,claims,plain_document_claims,The document claims that Einstein developed the theory of general relativity.,0.0704,0.929,0.0006,0.5846,0.0406
+4,X,document,plain,confirms,plain_document_confirms,The document confirms that Einstein developed the theory of general relativity.,0.9967,0.003,0.0003,0.9881,0.0015
+4,X,document,disputed,states,disputed_document_states,The disputed document states that Einstein developed the theory of general relativity.,0.0184,0.9802,0.0014,0.4027,0.2476
+4,X,document,disputed,claims,disputed_document_claims,The disputed document claims that Einstein developed the theory of general relativity.,0.0084,0.9895,0.0021,0.1594,0.4727
+4,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Einstein developed the theory of general relativity.,0.9817,0.018,0.0004,0.9836,0.002
+4,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Einstein developed the theory of general relativity.,0.3513,0.6481,0.0005,0.961,0.0058
+4,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Einstein developed the theory of general relativity.,0.0668,0.9327,0.0005,0.2301,0.2413
+4,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Einstein developed the theory of general relativity.,0.9961,0.0037,0.0002,0.9835,0.0018
+4,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Einstein developed the theory of general relativity.,0.0234,0.9745,0.002,0.2563,0.3848
+4,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Einstein developed the theory of general relativity.,0.0098,0.9863,0.0039,0.1057,0.5517
+4,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Einstein developed the theory of general relativity.,0.9879,0.0119,0.0003,0.9819,0.0022
+4,notX,document,plain,states,plain_document_states,The document states that Einstein did not develop the theory of general relativity.,0.0387,0.9338,0.0275,0.0006,0.9978
+4,notX,document,plain,claims,plain_document_claims,The document claims that Einstein did not develop the theory of general relativity.,0.1184,0.8754,0.0062,0.0275,0.9061
+4,notX,document,plain,confirms,plain_document_confirms,The document confirms that Einstein did not develop the theory of general relativity.,0.0006,0.001,0.9983,0.0003,0.9989
+4,notX,document,disputed,states,disputed_document_states,The disputed document states that Einstein did not develop the theory of general relativity.,0.3497,0.6488,0.0015,0.1312,0.639
+4,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that Einstein did not develop the theory of general relativity.,0.5745,0.4245,0.001,0.3006,0.4081
+4,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Einstein did not develop the theory of general relativity.,0.0057,0.1436,0.8508,0.0003,0.9986
+4,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Einstein did not develop the theory of general relativity.,0.0785,0.9027,0.0187,0.0023,0.9904
+4,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Einstein did not develop the theory of general relativity.,0.277,0.7192,0.0038,0.2676,0.487
+4,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Einstein did not develop the theory of general relativity.,0.0006,0.001,0.9983,0.0003,0.9987
+4,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Einstein did not develop the theory of general relativity.,0.5976,0.4008,0.0016,0.3455,0.3366
+4,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Einstein did not develop the theory of general relativity.,0.8373,0.1618,0.0009,0.4887,0.1936
+4,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Einstein did not develop the theory of general relativity.,0.0067,0.1617,0.8316,0.0003,0.9983
+5,X,document,plain,states,plain_document_states,The document states that photosynthesis converts sunlight into chemical energy.,0.8467,0.1523,0.001,0.9771,0.0038
+5,X,document,plain,claims,plain_document_claims,The document claims that photosynthesis converts sunlight into chemical energy.,0.2128,0.7862,0.001,0.939,0.0088
+5,X,document,plain,confirms,plain_document_confirms,The document confirms that photosynthesis converts sunlight into chemical energy.,0.9958,0.0038,0.0004,0.9804,0.0028
+5,X,document,disputed,states,disputed_document_states,The disputed document states that photosynthesis converts sunlight into chemical energy.,0.1252,0.8713,0.0035,0.8688,0.0506
+5,X,document,disputed,claims,disputed_document_claims,The disputed document claims that photosynthesis converts sunlight into chemical energy.,0.0278,0.9673,0.0049,0.7534,0.109
+5,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that photosynthesis converts sunlight into chemical energy.,0.9875,0.0117,0.0008,0.979,0.0032
+5,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that photosynthesis converts sunlight into chemical energy.,0.6666,0.3323,0.0011,0.9701,0.0046
+5,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that photosynthesis converts sunlight into chemical energy.,0.1271,0.872,0.0009,0.8667,0.0183
+5,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that photosynthesis converts sunlight into chemical energy.,0.9935,0.0061,0.0004,0.9795,0.0029
+5,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that photosynthesis converts sunlight into chemical energy.,0.091,0.9023,0.0067,0.767,0.1031
+5,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that photosynthesis converts sunlight into chemical energy.,0.0201,0.9683,0.0117,0.5807,0.2158
+5,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that photosynthesis converts sunlight into chemical energy.,0.9933,0.0062,0.0005,0.9781,0.0033
+5,notX,document,plain,states,plain_document_states,The document states that photosynthesis does not convert sunlight into chemical energy.,0.0123,0.5445,0.4431,0.0015,0.9946
+5,notX,document,plain,claims,plain_document_claims,The document claims that photosynthesis does not convert sunlight into chemical energy.,0.015,0.9357,0.0493,0.0773,0.8116
+5,notX,document,plain,confirms,plain_document_confirms,The document confirms that photosynthesis does not convert sunlight into chemical energy.,0.0026,0.0014,0.996,0.0012,0.9956
+5,notX,document,disputed,states,disputed_document_states,The disputed document states that photosynthesis does not convert sunlight into chemical energy.,0.056,0.9218,0.0222,0.426,0.3038
+5,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that photosynthesis does not convert sunlight into chemical energy.,0.1935,0.7981,0.0084,0.5862,0.1727
+5,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that photosynthesis does not convert sunlight into chemical energy.,0.0046,0.0166,0.9788,0.0017,0.9939
+5,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that photosynthesis does not convert sunlight into chemical energy.,0.0101,0.8636,0.1264,0.0039,0.9868
+5,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that photosynthesis does not convert sunlight into chemical energy.,0.0275,0.9504,0.022,0.3698,0.3887
+5,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that photosynthesis does not convert sunlight into chemical energy.,0.0018,0.001,0.9972,0.0013,0.9954
+5,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that photosynthesis does not convert sunlight into chemical energy.,0.1341,0.8473,0.0186,0.4712,0.236
+5,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that photosynthesis does not convert sunlight into chemical energy.,0.4164,0.5753,0.0082,0.6264,0.1233
+5,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that photosynthesis does not convert sunlight into chemical energy.,0.0025,0.0074,0.9901,0.0015,0.9941
+6,X,document,plain,states,plain_document_states,The document states that the human heart has four chambers.,0.183,0.8161,0.0009,0.9779,0.0027
+6,X,document,plain,claims,plain_document_claims,The document claims that the human heart has four chambers.,0.0361,0.9632,0.0007,0.6415,0.0311
+6,X,document,plain,confirms,plain_document_confirms,The document confirms that the human heart has four chambers.,0.9863,0.0133,0.0005,0.981,0.0022
+6,X,document,disputed,states,disputed_document_states,The disputed document states that the human heart has four chambers.,0.0086,0.9898,0.0017,0.3937,0.2696
+6,X,document,disputed,claims,disputed_document_claims,The disputed document claims that the human heart has four chambers.,0.0044,0.9922,0.0034,0.2554,0.3248
+6,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the human heart has four chambers.,0.8699,0.1295,0.0006,0.9713,0.0038
+6,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the human heart has four chambers.,0.1583,0.8409,0.0008,0.9655,0.0038
+6,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the human heart has four chambers.,0.0371,0.9621,0.0007,0.4486,0.0616
+6,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the human heart has four chambers.,0.9741,0.0255,0.0005,0.9788,0.0024
+6,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the human heart has four chambers.,0.0089,0.9879,0.0033,0.3237,0.2955
+6,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the human heart has four chambers.,0.0056,0.9884,0.0061,0.2129,0.331
+6,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the human heart has four chambers.,0.8892,0.1102,0.0006,0.9705,0.0037
+6,notX,document,plain,states,plain_document_states,The document states that the human heart does not have four chambers.,0.0052,0.9355,0.0592,0.0038,0.9873
+6,notX,document,plain,claims,plain_document_claims,The document claims that the human heart does not have four chambers.,0.0077,0.9781,0.0143,0.2465,0.5193
+6,notX,document,plain,confirms,plain_document_confirms,The document confirms that the human heart does not have four chambers.,0.0063,0.0049,0.9888,0.0018,0.9933
+6,notX,document,disputed,states,disputed_document_states,The disputed document states that the human heart does not have four chambers.,0.0113,0.985,0.0037,0.5718,0.1617
+6,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that the human heart does not have four chambers.,0.0496,0.9492,0.0011,0.6874,0.1028
+6,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the human heart does not have four chambers.,0.0062,0.1984,0.7954,0.0027,0.9871
+6,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the human heart does not have four chambers.,0.005,0.9456,0.0495,0.0088,0.9655
+6,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the human heart does not have four chambers.,0.0114,0.9796,0.009,0.5473,0.2209
+6,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the human heart does not have four chambers.,0.0055,0.004,0.9906,0.0019,0.9931
+6,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the human heart does not have four chambers.,0.027,0.9702,0.0028,0.6528,0.1099
+6,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the human heart does not have four chambers.,0.1268,0.872,0.0012,0.7394,0.0743
+6,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the human heart does not have four chambers.,0.0061,0.0671,0.9268,0.0027,0.9877
+7,X,document,plain,states,plain_document_states,The document states that Mount Everest is the tallest mountain on Earth.,0.3098,0.6894,0.0008,0.9421,0.0056
+7,X,document,plain,claims,plain_document_claims,The document claims that Mount Everest is the tallest mountain on Earth.,0.0416,0.9578,0.0006,0.1944,0.0521
+7,X,document,plain,confirms,plain_document_confirms,The document confirms that Mount Everest is the tallest mountain on Earth.,0.9922,0.0073,0.0005,0.9852,0.002
+7,X,document,disputed,states,disputed_document_states,The disputed document states that Mount Everest is the tallest mountain on Earth.,0.0089,0.9885,0.0026,0.2314,0.2332
+7,X,document,disputed,claims,disputed_document_claims,The disputed document claims that Mount Everest is the tallest mountain on Earth.,0.0038,0.991,0.0051,0.125,0.2947
+7,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Mount Everest is the tallest mountain on Earth.,0.8937,0.1058,0.0005,0.9722,0.0043
+7,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Mount Everest is the tallest mountain on Earth.,0.1721,0.8274,0.0005,0.7402,0.017
+7,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Mount Everest is the tallest mountain on Earth.,0.0338,0.9658,0.0005,0.1414,0.115
+7,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Mount Everest is the tallest mountain on Earth.,0.9894,0.0102,0.0004,0.9772,0.0025
+7,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Mount Everest is the tallest mountain on Earth.,0.0086,0.9877,0.0036,0.1787,0.2747
+7,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Mount Everest is the tallest mountain on Earth.,0.0047,0.9846,0.0107,0.0975,0.3501
+7,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Mount Everest is the tallest mountain on Earth.,0.9208,0.0788,0.0004,0.9622,0.0048
+7,notX,document,plain,states,plain_document_states,The document states that Mount Everest is not the tallest mountain on Earth.,0.0053,0.908,0.0868,0.0064,0.9707
+7,notX,document,plain,claims,plain_document_claims,The document claims that Mount Everest is not the tallest mountain on Earth.,0.0097,0.974,0.0163,0.3932,0.3454
+7,notX,document,plain,confirms,plain_document_confirms,The document confirms that Mount Everest is not the tallest mountain on Earth.,0.002,0.0013,0.9966,0.0009,0.9965
+7,notX,document,disputed,states,disputed_document_states,The disputed document states that Mount Everest is not the tallest mountain on Earth.,0.0759,0.9213,0.0028,0.4038,0.2354
+7,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that Mount Everest is not the tallest mountain on Earth.,0.538,0.461,0.001,0.5265,0.1771
+7,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Mount Everest is not the tallest mountain on Earth.,0.0058,0.3984,0.5958,0.0015,0.9929
+7,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Mount Everest is not the tallest mountain on Earth.,0.0053,0.9385,0.0562,0.1904,0.5327
+7,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Mount Everest is not the tallest mountain on Earth.,0.034,0.9558,0.0102,0.4854,0.2028
+7,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Mount Everest is not the tallest mountain on Earth.,0.0018,0.0012,0.997,0.0011,0.9954
+7,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Mount Everest is not the tallest mountain on Earth.,0.5252,0.4726,0.0022,0.4837,0.1724
+7,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Mount Everest is not the tallest mountain on Earth.,0.8924,0.1067,0.0009,0.5821,0.1283
+7,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Mount Everest is not the tallest mountain on Earth.,0.0053,0.2241,0.7706,0.002,0.9907
+8,X,document,plain,states,plain_document_states,The document states that the Pacific is the largest ocean on Earth.,0.241,0.7584,0.0006,0.9659,0.0032
+8,X,document,plain,claims,plain_document_claims,The document claims that the Pacific is the largest ocean on Earth.,0.029,0.9705,0.0005,0.393,0.0314
+8,X,document,plain,confirms,plain_document_confirms,The document confirms that the Pacific is the largest ocean on Earth.,0.9878,0.0117,0.0005,0.9855,0.0017
+8,X,document,disputed,states,disputed_document_states,The disputed document states that the Pacific is the largest ocean on Earth.,0.0067,0.991,0.0023,0.3403,0.1629
+8,X,document,disputed,claims,disputed_document_claims,The disputed document claims that the Pacific is the largest ocean on Earth.,0.0028,0.9919,0.0053,0.1987,0.2129
+8,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the Pacific is the largest ocean on Earth.,0.8518,0.1476,0.0006,0.9755,0.0035
+8,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the Pacific is the largest ocean on Earth.,0.1872,0.8124,0.0004,0.8572,0.0098
+8,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the Pacific is the largest ocean on Earth.,0.0261,0.9736,0.0004,0.2374,0.0614
+8,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the Pacific is the largest ocean on Earth.,0.9833,0.0163,0.0004,0.9791,0.0021
+8,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the Pacific is the largest ocean on Earth.,0.0083,0.9889,0.0028,0.2743,0.186
+8,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the Pacific is the largest ocean on Earth.,0.0039,0.9871,0.0089,0.1617,0.2433
+8,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the Pacific is the largest ocean on Earth.,0.8918,0.1078,0.0005,0.9691,0.0038
+8,notX,document,plain,states,plain_document_states,The document states that the Pacific is not the largest ocean on Earth.,0.0051,0.9361,0.0588,0.006,0.9685
+8,notX,document,plain,claims,plain_document_claims,The document claims that the Pacific is not the largest ocean on Earth.,0.0086,0.9835,0.0079,0.3246,0.3644
+8,notX,document,plain,confirms,plain_document_confirms,The document confirms that the Pacific is not the largest ocean on Earth.,0.0034,0.0025,0.9941,0.0012,0.9953
+8,notX,document,disputed,states,disputed_document_states,The disputed document states that the Pacific is not the largest ocean on Earth.,0.0591,0.939,0.0019,0.409,0.2153
+8,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that the Pacific is not the largest ocean on Earth.,0.2096,0.7896,0.0008,0.5315,0.1546
+8,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the Pacific is not the largest ocean on Earth.,0.0056,0.6384,0.356,0.002,0.9902
+8,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the Pacific is not the largest ocean on Earth.,0.0052,0.9591,0.0357,0.1058,0.6167
+8,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the Pacific is not the largest ocean on Earth.,0.0159,0.9789,0.0052,0.4638,0.179
+8,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the Pacific is not the largest ocean on Earth.,0.0038,0.0047,0.9915,0.0015,0.9938
+8,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the Pacific is not the largest ocean on Earth.,0.2606,0.738,0.0014,0.5059,0.1397
+8,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the Pacific is not the largest ocean on Earth.,0.5735,0.4257,0.0008,0.5866,0.1032
+8,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the Pacific is not the largest ocean on Earth.,0.0057,0.657,0.3372,0.0023,0.9886
+9,X,document,plain,states,plain_document_states,The document states that Shakespeare wrote Hamlet.,0.3847,0.6148,0.0005,0.9626,0.0034
+9,X,document,plain,claims,plain_document_claims,The document claims that Shakespeare wrote Hamlet.,0.0271,0.9726,0.0004,0.397,0.0591
+9,X,document,plain,confirms,plain_document_confirms,The document confirms that Shakespeare wrote Hamlet.,0.996,0.0038,0.0002,0.9795,0.0019
+9,X,document,disputed,states,disputed_document_states,The disputed document states that Shakespeare wrote Hamlet.,0.0087,0.9901,0.0012,0.2839,0.2224
+9,X,document,disputed,claims,disputed_document_claims,The disputed document claims that Shakespeare wrote Hamlet.,0.0042,0.9945,0.0013,0.2027,0.2643
+9,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Shakespeare wrote Hamlet.,0.9621,0.0374,0.0005,0.958,0.0037
+9,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Shakespeare wrote Hamlet.,0.2199,0.7796,0.0005,0.7748,0.0194
+9,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Shakespeare wrote Hamlet.,0.0197,0.98,0.0003,0.1879,0.2072
+9,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Shakespeare wrote Hamlet.,0.9921,0.0076,0.0003,0.9748,0.0022
+9,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Shakespeare wrote Hamlet.,0.007,0.9912,0.0018,0.206,0.3254
+9,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Shakespeare wrote Hamlet.,0.0034,0.9942,0.0024,0.1446,0.3202
+9,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Shakespeare wrote Hamlet.,0.9782,0.0213,0.0004,0.9596,0.0037
+9,notX,document,plain,states,plain_document_states,The document states that Shakespeare did not write Hamlet.,0.0054,0.9216,0.0729,0.006,0.9805
+9,notX,document,plain,claims,plain_document_claims,The document claims that Shakespeare did not write Hamlet.,0.0087,0.979,0.0123,0.4894,0.3362
+9,notX,document,plain,confirms,plain_document_confirms,The document confirms that Shakespeare did not write Hamlet.,0.0009,0.0006,0.9985,0.0006,0.9973
+9,notX,document,disputed,states,disputed_document_states,The disputed document states that Shakespeare did not write Hamlet.,0.0258,0.9712,0.003,0.5973,0.1636
+9,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that Shakespeare did not write Hamlet.,0.0608,0.9377,0.0016,0.7122,0.1119
+9,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Shakespeare did not write Hamlet.,0.0009,0.0052,0.9939,0.0012,0.9946
+9,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Shakespeare did not write Hamlet.,0.0042,0.9503,0.0455,0.161,0.6741
+9,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Shakespeare did not write Hamlet.,0.0128,0.9803,0.0069,0.6338,0.2002
+9,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Shakespeare did not write Hamlet.,0.001,0.001,0.998,0.0008,0.9965
+9,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Shakespeare did not write Hamlet.,0.0291,0.9678,0.003,0.671,0.1119
+9,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Shakespeare did not write Hamlet.,0.0924,0.9059,0.0017,0.761,0.0807
+9,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Shakespeare did not write Hamlet.,0.0009,0.0071,0.992,0.0012,0.9945
+10,X,document,plain,states,plain_document_states,The document states that light travels faster than sound in air.,0.6064,0.3927,0.0009,0.9785,0.0052
+10,X,document,plain,claims,plain_document_claims,The document claims that light travels faster than sound in air.,0.0841,0.9151,0.0008,0.9574,0.0082
+10,X,document,plain,confirms,plain_document_confirms,The document confirms that light travels faster than sound in air.,0.9951,0.0046,0.0003,0.9824,0.0036
+10,X,document,disputed,states,disputed_document_states,The disputed document states that light travels faster than sound in air.,0.0334,0.9645,0.0021,0.913,0.0296
+10,X,document,disputed,claims,disputed_document_claims,The disputed document claims that light travels faster than sound in air.,0.0094,0.9865,0.004,0.8595,0.0465
+10,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that light travels faster than sound in air.,0.9808,0.0187,0.0005,0.9803,0.0048
+10,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that light travels faster than sound in air.,0.4023,0.5969,0.0008,0.9752,0.0049
+10,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that light travels faster than sound in air.,0.0627,0.9366,0.0007,0.9358,0.0094
+10,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that light travels faster than sound in air.,0.9925,0.0072,0.0003,0.9823,0.0033
+10,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that light travels faster than sound in air.,0.0186,0.9777,0.0037,0.8732,0.0346
+10,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that light travels faster than sound in air.,0.0072,0.985,0.0078,0.7906,0.0609
+10,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that light travels faster than sound in air.,0.9888,0.0107,0.0004,0.9808,0.0043
+10,notX,document,plain,states,plain_document_states,The document states that light does not travel faster than sound in air.,0.0085,0.1306,0.8609,0.0012,0.9974
+10,notX,document,plain,claims,plain_document_claims,The document claims that light does not travel faster than sound in air.,0.0045,0.9324,0.0631,0.0018,0.9947
+10,notX,document,plain,confirms,plain_document_confirms,The document confirms that light does not travel faster than sound in air.,0.0042,0.002,0.9937,0.0008,0.9981
+10,notX,document,disputed,states,disputed_document_states,The disputed document states that light does not travel faster than sound in air.,0.008,0.9716,0.0204,0.0045,0.9857
+10,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that light does not travel faster than sound in air.,0.0566,0.9397,0.0037,0.012,0.9647
+10,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that light does not travel faster than sound in air.,0.0056,0.0091,0.9853,0.0008,0.9978
+10,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that light does not travel faster than sound in air.,0.0047,0.3479,0.6474,0.0014,0.9965
+10,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that light does not travel faster than sound in air.,0.0052,0.9754,0.0194,0.0059,0.9812
+10,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that light does not travel faster than sound in air.,0.0027,0.0014,0.9959,0.0008,0.9981
+10,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that light does not travel faster than sound in air.,0.0186,0.9674,0.014,0.028,0.9248
+10,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that light does not travel faster than sound in air.,0.1364,0.8601,0.0035,0.111,0.7624
+10,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that light does not travel faster than sound in air.,0.0034,0.0039,0.9927,0.0008,0.9978
+11,X,document,plain,states,plain_document_states,The document states that Cuba is an island nation in the Caribbean.,0.5783,0.421,0.0008,0.9802,0.0021
+11,X,document,plain,claims,plain_document_claims,The document claims that Cuba is an island nation in the Caribbean.,0.0569,0.9421,0.001,0.4043,0.0412
+11,X,document,plain,confirms,plain_document_confirms,The document confirms that Cuba is an island nation in the Caribbean.,0.9936,0.0061,0.0003,0.9826,0.0018
+11,X,document,disputed,states,disputed_document_states,The disputed document states that Cuba is an island nation in the Caribbean.,0.0206,0.9773,0.0022,0.38,0.1352
+11,X,document,disputed,claims,disputed_document_claims,The disputed document claims that Cuba is an island nation in the Caribbean.,0.007,0.9854,0.0077,0.1602,0.2873
+11,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Cuba is an island nation in the Caribbean.,0.9505,0.049,0.0005,0.9706,0.0033
+11,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Cuba is an island nation in the Caribbean.,0.4802,0.5192,0.0007,0.9611,0.0035
+11,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Cuba is an island nation in the Caribbean.,0.0461,0.953,0.0009,0.2761,0.0853
+11,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Cuba is an island nation in the Caribbean.,0.9907,0.009,0.0003,0.9773,0.0022
+11,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Cuba is an island nation in the Caribbean.,0.0163,0.9793,0.0044,0.3492,0.1322
+11,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Cuba is an island nation in the Caribbean.,0.0074,0.9757,0.0168,0.1249,0.309
+11,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Cuba is an island nation in the Caribbean.,0.9493,0.0503,0.0004,0.9684,0.0033
+11,notX,document,plain,states,plain_document_states,The document states that Cuba is not an island nation in the Caribbean.,0.0081,0.4655,0.5264,0.0019,0.9938
+11,notX,document,plain,claims,plain_document_claims,The document claims that Cuba is not an island nation in the Caribbean.,0.0052,0.9462,0.0486,0.223,0.6039
+11,notX,document,plain,confirms,plain_document_confirms,The document confirms that Cuba is not an island nation in the Caribbean.,0.0058,0.0055,0.9886,0.0015,0.9955
+11,notX,document,disputed,states,disputed_document_states,The disputed document states that Cuba is not an island nation in the Caribbean.,0.0057,0.9806,0.0137,0.2474,0.4788
+11,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that Cuba is not an island nation in the Caribbean.,0.0242,0.9723,0.0034,0.6001,0.1754
+11,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Cuba is not an island nation in the Caribbean.,0.0074,0.0421,0.9505,0.0016,0.994
+11,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Cuba is not an island nation in the Caribbean.,0.007,0.4793,0.5137,0.0043,0.9829
+11,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Cuba is not an island nation in the Caribbean.,0.0053,0.9546,0.0401,0.5297,0.2498
+11,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Cuba is not an island nation in the Caribbean.,0.0048,0.0043,0.9908,0.0019,0.9945
+11,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Cuba is not an island nation in the Caribbean.,0.0109,0.9769,0.0121,0.4319,0.2752
+11,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Cuba is not an island nation in the Caribbean.,0.0642,0.9325,0.0033,0.6847,0.1033
+11,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Cuba is not an island nation in the Caribbean.,0.0053,0.0177,0.977,0.0019,0.9928
+12,X,document,plain,states,plain_document_states,The document states that Tokyo is the most populous metropolitan area.,0.3034,0.6959,0.0007,0.9658,0.0041
+12,X,document,plain,claims,plain_document_claims,The document claims that Tokyo is the most populous metropolitan area.,0.0313,0.9682,0.0005,0.3851,0.0384
+12,X,document,plain,confirms,plain_document_confirms,The document confirms that Tokyo is the most populous metropolitan area.,0.9873,0.0121,0.0006,0.9815,0.0022
+12,X,document,disputed,states,disputed_document_states,The disputed document states that Tokyo is the most populous metropolitan area.,0.017,0.9816,0.0013,0.2514,0.2015
+12,X,document,disputed,claims,disputed_document_claims,The disputed document claims that Tokyo is the most populous metropolitan area.,0.0037,0.9944,0.0019,0.1219,0.1911
+12,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Tokyo is the most populous metropolitan area.,0.916,0.0834,0.0006,0.9656,0.0053
+12,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Tokyo is the most populous metropolitan area.,0.2187,0.7808,0.0005,0.8845,0.0105
+12,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Tokyo is the most populous metropolitan area.,0.0291,0.9706,0.0004,0.201,0.0605
+12,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Tokyo is the most populous metropolitan area.,0.9821,0.0174,0.0005,0.9742,0.0027
+12,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Tokyo is the most populous metropolitan area.,0.0144,0.9842,0.0014,0.193,0.214
+12,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Tokyo is the most populous metropolitan area.,0.0043,0.9924,0.0033,0.0997,0.231
+12,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Tokyo is the most populous metropolitan area.,0.9319,0.0676,0.0005,0.9537,0.0059
+12,notX,document,plain,states,plain_document_states,The document states that Tokyo is not the most populous metropolitan area.,0.0053,0.8798,0.1149,0.0013,0.9933
+12,notX,document,plain,claims,plain_document_claims,The document claims that Tokyo is not the most populous metropolitan area.,0.0067,0.9719,0.0214,0.0243,0.8258
+12,notX,document,plain,confirms,plain_document_confirms,The document confirms that Tokyo is not the most populous metropolitan area.,0.0036,0.0021,0.9943,0.0007,0.996
+12,notX,document,disputed,states,disputed_document_states,The disputed document states that Tokyo is not the most populous metropolitan area.,0.0445,0.9524,0.0031,0.0905,0.5111
+12,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that Tokyo is not the most populous metropolitan area.,0.1693,0.8297,0.0009,0.2035,0.3736
+12,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that Tokyo is not the most populous metropolitan area.,0.0084,0.1194,0.8722,0.0008,0.995
+12,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that Tokyo is not the most populous metropolitan area.,0.0048,0.8891,0.1061,0.0024,0.9824
+12,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that Tokyo is not the most populous metropolitan area.,0.0101,0.9758,0.014,0.1644,0.4178
+12,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that Tokyo is not the most populous metropolitan area.,0.003,0.002,0.995,0.0008,0.9954
+12,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that Tokyo is not the most populous metropolitan area.,0.1427,0.8546,0.0027,0.1957,0.335
+12,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that Tokyo is not the most populous metropolitan area.,0.314,0.6846,0.0013,0.3052,0.2466
+12,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that Tokyo is not the most populous metropolitan area.,0.0051,0.0393,0.9555,0.0009,0.9944
+13,X,document,plain,states,plain_document_states,The document states that gold is denser than iron.,0.306,0.693,0.001,0.9683,0.0036
+13,X,document,plain,claims,plain_document_claims,The document claims that gold is denser than iron.,0.0415,0.9579,0.0006,0.5561,0.0246
+13,X,document,plain,confirms,plain_document_confirms,The document confirms that gold is denser than iron.,0.9889,0.0105,0.0005,0.978,0.0024
+13,X,document,disputed,states,disputed_document_states,The disputed document states that gold is denser than iron.,0.0193,0.9782,0.0025,0.3831,0.1038
+13,X,document,disputed,claims,disputed_document_claims,The disputed document claims that gold is denser than iron.,0.0069,0.9891,0.0039,0.1917,0.1584
+13,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that gold is denser than iron.,0.9209,0.0785,0.0006,0.9664,0.0039
+13,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that gold is denser than iron.,0.1907,0.8084,0.0009,0.9175,0.0062
+13,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that gold is denser than iron.,0.0297,0.9698,0.0005,0.3511,0.0379
+13,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that gold is denser than iron.,0.983,0.0165,0.0005,0.9736,0.0026
+13,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that gold is denser than iron.,0.0154,0.9807,0.0039,0.2256,0.177
+13,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that gold is denser than iron.,0.0062,0.9863,0.0075,0.1242,0.2121
+13,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that gold is denser than iron.,0.9402,0.0592,0.0006,0.9621,0.0038
+13,notX,document,plain,states,plain_document_states,The document states that gold is not denser than iron.,0.007,0.7832,0.2098,0.0047,0.9855
+13,notX,document,plain,claims,plain_document_claims,The document claims that gold is not denser than iron.,0.0059,0.9428,0.0513,0.0604,0.7579
+13,notX,document,plain,confirms,plain_document_confirms,The document confirms that gold is not denser than iron.,0.0094,0.0058,0.9848,0.0021,0.9937
+13,notX,document,disputed,states,disputed_document_states,The disputed document states that gold is not denser than iron.,0.0163,0.9749,0.0088,0.1093,0.5794
+13,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that gold is not denser than iron.,0.0394,0.9582,0.0025,0.2265,0.3313
+13,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that gold is not denser than iron.,0.0147,0.3641,0.6212,0.0032,0.9886
+13,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that gold is not denser than iron.,0.0048,0.8838,0.1114,0.0109,0.95
+13,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that gold is not denser than iron.,0.0058,0.969,0.0253,0.2454,0.311
+13,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that gold is not denser than iron.,0.0076,0.0042,0.9883,0.0027,0.9915
+13,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that gold is not denser than iron.,0.0265,0.9668,0.0067,0.2645,0.247
+13,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that gold is not denser than iron.,0.0575,0.9399,0.0026,0.3607,0.1579
+13,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that gold is not denser than iron.,0.0119,0.1764,0.8116,0.0037,0.9866
+14,X,document,plain,states,plain_document_states,The document states that vaccines prevent infectious diseases.,0.5461,0.4532,0.0007,0.9801,0.0017
+14,X,document,plain,claims,plain_document_claims,The document claims that vaccines prevent infectious diseases.,0.0609,0.9385,0.0006,0.8541,0.0093
+14,X,document,plain,confirms,plain_document_confirms,The document confirms that vaccines prevent infectious diseases.,0.9945,0.0051,0.0003,0.9862,0.001
+14,X,document,disputed,states,disputed_document_states,The disputed document states that vaccines prevent infectious diseases.,0.0401,0.9578,0.0021,0.5318,0.1132
+14,X,document,disputed,claims,disputed_document_claims,The disputed document claims that vaccines prevent infectious diseases.,0.0086,0.9875,0.0039,0.3416,0.171
+14,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that vaccines prevent infectious diseases.,0.9841,0.0153,0.0007,0.9824,0.0017
+14,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that vaccines prevent infectious diseases.,0.2526,0.7468,0.0006,0.9754,0.0018
+14,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that vaccines prevent infectious diseases.,0.0281,0.9714,0.0005,0.8208,0.0107
+14,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that vaccines prevent infectious diseases.,0.9898,0.0099,0.0003,0.986,0.001
+14,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that vaccines prevent infectious diseases.,0.0147,0.9801,0.0053,0.3817,0.1493
+14,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that vaccines prevent infectious diseases.,0.0059,0.9834,0.0107,0.2656,0.1815
+14,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that vaccines prevent infectious diseases.,0.9881,0.0113,0.0006,0.9822,0.0016
+14,notX,document,plain,states,plain_document_states,The document states that vaccines do not prevent infectious diseases.,0.0061,0.739,0.2549,0.0012,0.996
+14,notX,document,plain,claims,plain_document_claims,The document claims that vaccines do not prevent infectious diseases.,0.0102,0.9687,0.0212,0.0192,0.9322
+14,notX,document,plain,confirms,plain_document_confirms,The document confirms that vaccines do not prevent infectious diseases.,0.004,0.0046,0.9914,0.001,0.9968
+14,notX,document,disputed,states,disputed_document_states,The disputed document states that vaccines do not prevent infectious diseases.,0.0453,0.9473,0.0074,0.1092,0.7337
+14,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that vaccines do not prevent infectious diseases.,0.1533,0.8445,0.0023,0.2366,0.5113
+14,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that vaccines do not prevent infectious diseases.,0.0033,0.0722,0.9245,0.0008,0.9968
+14,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that vaccines do not prevent infectious diseases.,0.005,0.8514,0.1436,0.0013,0.9957
+14,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that vaccines do not prevent infectious diseases.,0.0144,0.9664,0.0192,0.0752,0.7839
+14,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that vaccines do not prevent infectious diseases.,0.0038,0.004,0.9923,0.0011,0.9966
+14,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that vaccines do not prevent infectious diseases.,0.1571,0.8351,0.0078,0.1797,0.6039
+14,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that vaccines do not prevent infectious diseases.,0.4098,0.5871,0.0031,0.3486,0.357
+14,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that vaccines do not prevent infectious diseases.,0.0025,0.0439,0.9536,0.0009,0.9967
+15,X,document,plain,states,plain_document_states,The document states that the Earth orbits the Sun.,0.2699,0.7295,0.0006,0.9808,0.0023
+15,X,document,plain,claims,plain_document_claims,The document claims that the Earth orbits the Sun.,0.0512,0.9483,0.0004,0.5627,0.0212
+15,X,document,plain,confirms,plain_document_confirms,The document confirms that the Earth orbits the Sun.,0.983,0.0166,0.0005,0.9892,0.0014
+15,X,document,disputed,states,disputed_document_states,The disputed document states that the Earth orbits the Sun.,0.0085,0.9906,0.0009,0.334,0.2515
+15,X,document,disputed,claims,disputed_document_claims,The disputed document claims that the Earth orbits the Sun.,0.0042,0.9942,0.0016,0.1999,0.3967
+15,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the Earth orbits the Sun.,0.8396,0.1599,0.0005,0.9854,0.0019
+15,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the Earth orbits the Sun.,0.155,0.8446,0.0004,0.9409,0.0049
+15,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the Earth orbits the Sun.,0.0443,0.9553,0.0004,0.2712,0.0674
+15,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the Earth orbits the Sun.,0.9761,0.0235,0.0004,0.9848,0.0018
+15,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the Earth orbits the Sun.,0.0078,0.9908,0.0014,0.1948,0.4354
+15,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the Earth orbits the Sun.,0.0047,0.9922,0.003,0.1401,0.4606
+15,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the Earth orbits the Sun.,0.8716,0.1279,0.0005,0.9826,0.0021
+15,notX,document,plain,states,plain_document_states,The document states that the Earth does not orbit the Sun.,0.0049,0.9703,0.0248,0.0009,0.998
+15,notX,document,plain,claims,plain_document_claims,The document claims that the Earth does not orbit the Sun.,0.0065,0.9906,0.0029,0.2964,0.5752
+15,notX,document,plain,confirms,plain_document_confirms,The document confirms that the Earth does not orbit the Sun.,0.0074,0.0109,0.9817,0.0005,0.9988
+15,notX,document,disputed,states,disputed_document_states,The disputed document states that the Earth does not orbit the Sun.,0.0116,0.9869,0.0015,0.4548,0.3486
+15,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that the Earth does not orbit the Sun.,0.0289,0.9705,0.0006,0.719,0.1456
+15,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the Earth does not orbit the Sun.,0.0061,0.798,0.1958,0.0006,0.9982
+15,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the Earth does not orbit the Sun.,0.0054,0.9776,0.0171,0.0101,0.9717
+15,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the Earth does not orbit the Sun.,0.0099,0.9882,0.0019,0.7062,0.1699
+15,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the Earth does not orbit the Sun.,0.0083,0.0186,0.9731,0.0005,0.9986
+15,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the Earth does not orbit the Sun.,0.0222,0.9765,0.0014,0.6561,0.1601
+15,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the Earth does not orbit the Sun.,0.0585,0.9408,0.0007,0.8045,0.0767
+15,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the Earth does not orbit the Sun.,0.0066,0.7854,0.208,0.0007,0.9979
+16,X,document,plain,states,plain_document_states,The document states that oranges contain vitamin C.,0.7868,0.2126,0.0007,0.9839,0.0022
+16,X,document,plain,claims,plain_document_claims,The document claims that oranges contain vitamin C.,0.0675,0.932,0.0005,0.7737,0.0143
+16,X,document,plain,confirms,plain_document_confirms,The document confirms that oranges contain vitamin C.,0.9955,0.0042,0.0003,0.9848,0.0018
+16,X,document,disputed,states,disputed_document_states,The disputed document states that oranges contain vitamin C.,0.053,0.9452,0.0017,0.563,0.0873
+16,X,document,disputed,claims,disputed_document_claims,The disputed document claims that oranges contain vitamin C.,0.0123,0.985,0.0027,0.3015,0.1719
+16,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that oranges contain vitamin C.,0.9801,0.0194,0.0005,0.9787,0.0025
+16,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that oranges contain vitamin C.,0.5563,0.4431,0.0006,0.978,0.0025
+16,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that oranges contain vitamin C.,0.0451,0.9545,0.0004,0.6217,0.0248
+16,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that oranges contain vitamin C.,0.9915,0.0082,0.0003,0.9829,0.0019
+16,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that oranges contain vitamin C.,0.0311,0.9662,0.0027,0.4715,0.1078
+16,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that oranges contain vitamin C.,0.0092,0.9853,0.0055,0.2479,0.1834
+16,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that oranges contain vitamin C.,0.985,0.0146,0.0004,0.9773,0.0024
+16,notX,document,plain,states,plain_document_states,The document states that oranges do not contain vitamin C.,0.0054,0.9154,0.0792,0.0014,0.995
+16,notX,document,plain,claims,plain_document_claims,The document claims that oranges do not contain vitamin C.,0.016,0.9636,0.0205,0.4083,0.319
+16,notX,document,plain,confirms,plain_document_confirms,The document confirms that oranges do not contain vitamin C.,0.0075,0.0094,0.9831,0.001,0.9963
+16,notX,document,disputed,states,disputed_document_states,The disputed document states that oranges do not contain vitamin C.,0.1058,0.8898,0.0044,0.5802,0.1319
+16,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that oranges do not contain vitamin C.,0.4782,0.519,0.0028,0.7514,0.06
+16,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that oranges do not contain vitamin C.,0.0059,0.5459,0.4482,0.0016,0.9943
+16,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that oranges do not contain vitamin C.,0.0061,0.9452,0.0487,0.0051,0.9815
+16,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that oranges do not contain vitamin C.,0.0342,0.9543,0.0114,0.5397,0.1834
+16,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that oranges do not contain vitamin C.,0.0041,0.0062,0.9897,0.0011,0.9959
+16,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that oranges do not contain vitamin C.,0.3352,0.6602,0.0046,0.6549,0.0805
+16,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that oranges do not contain vitamin C.,0.7372,0.2601,0.0027,0.7823,0.039
+16,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that oranges do not contain vitamin C.,0.006,0.3565,0.6374,0.0016,0.9941
+17,X,document,plain,states,plain_document_states,The document states that the bridge can support heavy trucks.,0.5197,0.4797,0.0006,0.9675,0.002
+17,X,document,plain,claims,plain_document_claims,The document claims that the bridge can support heavy trucks.,0.0383,0.9614,0.0004,0.753,0.0085
+17,X,document,plain,confirms,plain_document_confirms,The document confirms that the bridge can support heavy trucks.,0.9889,0.0103,0.0007,0.9759,0.0015
+17,X,document,disputed,states,disputed_document_states,The disputed document states that the bridge can support heavy trucks.,0.0168,0.9824,0.0008,0.5765,0.0232
+17,X,document,disputed,claims,disputed_document_claims,The disputed document claims that the bridge can support heavy trucks.,0.0032,0.9954,0.0014,0.3058,0.036
+17,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the bridge can support heavy trucks.,0.9397,0.0597,0.0006,0.9528,0.0032
+17,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the bridge can support heavy trucks.,0.4069,0.5926,0.0006,0.9308,0.0035
+17,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the bridge can support heavy trucks.,0.049,0.9507,0.0004,0.5179,0.0151
+17,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the bridge can support heavy trucks.,0.9799,0.0196,0.0005,0.9705,0.0017
+17,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the bridge can support heavy trucks.,0.0113,0.9869,0.0018,0.4221,0.0323
+17,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the bridge can support heavy trucks.,0.0044,0.9917,0.004,0.2543,0.0452
+17,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the bridge can support heavy trucks.,0.9322,0.0673,0.0005,0.9558,0.0027
+17,notX,document,plain,states,plain_document_states,The document states that the bridge cannot support heavy trucks.,0.0225,0.4704,0.5071,0.0005,0.9984
+17,notX,document,plain,claims,plain_document_claims,The document claims that the bridge cannot support heavy trucks.,0.0034,0.9526,0.044,0.0011,0.9921
+17,notX,document,plain,confirms,plain_document_confirms,The document confirms that the bridge cannot support heavy trucks.,0.0321,0.0075,0.9605,0.0006,0.9982
+17,notX,document,disputed,states,disputed_document_states,The disputed document states that the bridge cannot support heavy trucks.,0.0037,0.9767,0.0196,0.005,0.9466
+17,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that the bridge cannot support heavy trucks.,0.0071,0.9906,0.0023,0.0217,0.7778
+17,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the bridge cannot support heavy trucks.,0.0191,0.1244,0.8564,0.0007,0.9975
+17,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the bridge cannot support heavy trucks.,0.0141,0.6331,0.3529,0.0008,0.9957
+17,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the bridge cannot support heavy trucks.,0.0038,0.9706,0.0256,0.0148,0.8595
+17,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the bridge cannot support heavy trucks.,0.0203,0.0088,0.971,0.0007,0.9978
+17,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the bridge cannot support heavy trucks.,0.008,0.9794,0.0126,0.036,0.6989
+17,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the bridge cannot support heavy trucks.,0.0277,0.9696,0.0027,0.0824,0.4913
+17,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the bridge cannot support heavy trucks.,0.0117,0.0762,0.9121,0.0007,0.9973
+18,X,document,plain,states,plain_document_states,The document states that global temperatures rose over the last decade.,0.6407,0.3587,0.0006,0.9778,0.0026
+18,X,document,plain,claims,plain_document_claims,The document claims that global temperatures rose over the last decade.,0.0734,0.9261,0.0005,0.8656,0.0085
+18,X,document,plain,confirms,plain_document_confirms,The document confirms that global temperatures rose over the last decade.,0.9963,0.0033,0.0004,0.985,0.0016
+18,X,document,disputed,states,disputed_document_states,The disputed document states that global temperatures rose over the last decade.,0.0126,0.9844,0.003,0.5638,0.0823
+18,X,document,disputed,claims,disputed_document_claims,The disputed document claims that global temperatures rose over the last decade.,0.0051,0.9877,0.0072,0.3613,0.0877
+18,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that global temperatures rose over the last decade.,0.9745,0.025,0.0006,0.9776,0.0031
+18,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that global temperatures rose over the last decade.,0.537,0.4625,0.0005,0.9625,0.0033
+18,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that global temperatures rose over the last decade.,0.0673,0.9322,0.0005,0.5905,0.0216
+18,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that global temperatures rose over the last decade.,0.9937,0.006,0.0003,0.9826,0.0017
+18,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that global temperatures rose over the last decade.,0.0129,0.9826,0.0045,0.4491,0.0796
+18,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that global temperatures rose over the last decade.,0.0052,0.9821,0.0126,0.2417,0.1027
+18,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that global temperatures rose over the last decade.,0.9774,0.0221,0.0005,0.9765,0.003
+18,notX,document,plain,states,plain_document_states,The document states that global temperatures did not rise over the last decade.,0.0029,0.6213,0.3757,0.0015,0.9963
+18,notX,document,plain,claims,plain_document_claims,The document claims that global temperatures did not rise over the last decade.,0.0038,0.9563,0.04,0.0124,0.9181
+18,notX,document,plain,confirms,plain_document_confirms,The document confirms that global temperatures did not rise over the last decade.,0.0014,0.0011,0.9974,0.0007,0.9981
+18,notX,document,disputed,states,disputed_document_states,The disputed document states that global temperatures did not rise over the last decade.,0.0036,0.9639,0.0324,0.1205,0.4011
+18,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that global temperatures did not rise over the last decade.,0.0185,0.9669,0.0146,0.1954,0.3105
+18,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that global temperatures did not rise over the last decade.,0.0022,0.0875,0.9104,0.0007,0.9979
+18,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that global temperatures did not rise over the last decade.,0.0024,0.7153,0.2823,0.0024,0.9908
+18,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that global temperatures did not rise over the last decade.,0.0035,0.9569,0.0396,0.1649,0.4007
+18,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that global temperatures did not rise over the last decade.,0.0012,0.0011,0.9977,0.0008,0.9977
+18,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that global temperatures did not rise over the last decade.,0.0049,0.9698,0.0254,0.2828,0.2189
+18,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that global temperatures did not rise over the last decade.,0.0424,0.9467,0.0109,0.36,0.1718
+18,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that global temperatures did not rise over the last decade.,0.0014,0.0397,0.959,0.0008,0.9975
+19,X,document,plain,states,plain_document_states,The document states that the drug reduces blood pressure.,0.5452,0.4542,0.0006,0.9728,0.0025
+19,X,document,plain,claims,plain_document_claims,The document claims that the drug reduces blood pressure.,0.0537,0.9458,0.0004,0.5981,0.017
+19,X,document,plain,confirms,plain_document_confirms,The document confirms that the drug reduces blood pressure.,0.9882,0.0109,0.0009,0.9801,0.0017
+19,X,document,disputed,states,disputed_document_states,The disputed document states that the drug reduces blood pressure.,0.0308,0.9684,0.0008,0.2149,0.1702
+19,X,document,disputed,claims,disputed_document_claims,The disputed document claims that the drug reduces blood pressure.,0.0051,0.9938,0.0011,0.1431,0.15
+19,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the drug reduces blood pressure.,0.9443,0.0549,0.0008,0.9511,0.0051
+19,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the drug reduces blood pressure.,0.3493,0.6501,0.0006,0.9496,0.0038
+19,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the drug reduces blood pressure.,0.0394,0.9603,0.0004,0.4271,0.0194
+19,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the drug reduces blood pressure.,0.9727,0.0267,0.0006,0.9802,0.0015
+19,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the drug reduces blood pressure.,0.0121,0.9865,0.0014,0.18,0.1818
+19,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the drug reduces blood pressure.,0.0037,0.9929,0.0034,0.1205,0.1521
+19,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the drug reduces blood pressure.,0.9196,0.0797,0.0007,0.9569,0.0039
+19,notX,document,plain,states,plain_document_states,The document states that the drug does not reduce blood pressure.,0.0108,0.4524,0.5367,0.0023,0.9939
+19,notX,document,plain,claims,plain_document_claims,The document claims that the drug does not reduce blood pressure.,0.0035,0.9496,0.0469,0.0283,0.8756
+19,notX,document,plain,confirms,plain_document_confirms,The document confirms that the drug does not reduce blood pressure.,0.0157,0.0081,0.9762,0.0016,0.9957
+19,notX,document,disputed,states,disputed_document_states,The disputed document states that the drug does not reduce blood pressure.,0.009,0.9787,0.0123,0.1449,0.3409
+19,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that the drug does not reduce blood pressure.,0.0293,0.9683,0.0023,0.2476,0.2219
+19,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the drug does not reduce blood pressure.,0.0096,0.3184,0.672,0.0019,0.9934
+19,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the drug does not reduce blood pressure.,0.0101,0.2701,0.7198,0.0033,0.9898
+19,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the drug does not reduce blood pressure.,0.0036,0.9501,0.0462,0.0831,0.6048
+19,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the drug does not reduce blood pressure.,0.0097,0.004,0.9863,0.0016,0.9957
+19,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the drug does not reduce blood pressure.,0.0153,0.9721,0.0126,0.22,0.2536
+19,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the drug does not reduce blood pressure.,0.0607,0.9354,0.0039,0.3205,0.1739
+19,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the drug does not reduce blood pressure.,0.0079,0.0927,0.8994,0.002,0.9935
+20,X,document,plain,states,plain_document_states,The document states that the company paid its taxes in full.,0.3313,0.668,0.0006,0.9827,0.002
+20,X,document,plain,claims,plain_document_claims,The document claims that the company paid its taxes in full.,0.0169,0.9827,0.0004,0.7726,0.0135
+20,X,document,plain,confirms,plain_document_confirms,The document confirms that the company paid its taxes in full.,0.991,0.0086,0.0004,0.9871,0.0014
+20,X,document,disputed,states,disputed_document_states,The disputed document states that the company paid its taxes in full.,0.0076,0.9909,0.0014,0.4378,0.1876
+20,X,document,disputed,claims,disputed_document_claims,The disputed document claims that the company paid its taxes in full.,0.0026,0.9944,0.003,0.2344,0.1342
+20,X,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the company paid its taxes in full.,0.9433,0.056,0.0007,0.9632,0.0072
+20,X,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the company paid its taxes in full.,0.2129,0.7865,0.0006,0.9644,0.0034
+20,X,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the company paid its taxes in full.,0.015,0.9847,0.0003,0.4158,0.0292
+20,X,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the company paid its taxes in full.,0.9874,0.0122,0.0004,0.9826,0.0017
+20,X,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the company paid its taxes in full.,0.0072,0.9906,0.0022,0.3709,0.1462
+20,X,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the company paid its taxes in full.,0.003,0.9904,0.0065,0.1846,0.1562
+20,X,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the company paid its taxes in full.,0.9494,0.0502,0.0005,0.9721,0.0037
+20,notX,document,plain,states,plain_document_states,The document states that the company did not pay its taxes in full.,0.0053,0.0965,0.8982,0.0002,0.9992
+20,notX,document,plain,claims,plain_document_claims,The document claims that the company did not pay its taxes in full.,0.002,0.8389,0.1591,0.0002,0.9987
+20,notX,document,plain,confirms,plain_document_confirms,The document confirms that the company did not pay its taxes in full.,0.0026,0.0024,0.995,0.0002,0.9992
+20,notX,document,disputed,states,disputed_document_states,The disputed document states that the company did not pay its taxes in full.,0.002,0.9515,0.0465,0.0014,0.9808
+20,notX,document,disputed,claims,disputed_document_claims,The disputed document claims that the company did not pay its taxes in full.,0.0033,0.9847,0.012,0.0027,0.9673
+20,notX,document,disputed,confirms,disputed_document_confirms,The disputed document confirms that the company did not pay its taxes in full.,0.002,0.0134,0.9846,0.0002,0.9991
+20,notX,pamphlet,plain,states,plain_pamphlet_states,The pamphlet states that the company did not pay its taxes in full.,0.0029,0.0615,0.9356,0.0002,0.9987
+20,notX,pamphlet,plain,claims,plain_pamphlet_claims,The pamphlet claims that the company did not pay its taxes in full.,0.0018,0.8236,0.1746,0.003,0.9633
+20,notX,pamphlet,plain,confirms,plain_pamphlet_confirms,The pamphlet confirms that the company did not pay its taxes in full.,0.001,0.0013,0.9977,0.0002,0.9992
+20,notX,pamphlet,disputed,states,disputed_pamphlet_states,The disputed pamphlet states that the company did not pay its taxes in full.,0.0021,0.9459,0.052,0.0195,0.8135
+20,notX,pamphlet,disputed,claims,disputed_pamphlet_claims,The disputed pamphlet claims that the company did not pay its taxes in full.,0.0039,0.9797,0.0165,0.0204,0.8098
+20,notX,pamphlet,disputed,confirms,disputed_pamphlet_confirms,The disputed pamphlet confirms that the company did not pay its taxes in full.,0.0009,0.0042,0.9949,0.0002,0.9992

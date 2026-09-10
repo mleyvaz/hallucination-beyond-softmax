@@ -1,0 +1,48 @@
+Experiment A10 - crossed source x verb (pre-registered 2026-09-10)
+
+pol   frame                         entA    neuA    conA    entB    conB  conB>=.15
+X     plain_document_states        0.472   0.527   0.001   0.973   0.003       0/20
+X     plain_document_claims        0.064   0.936   0.001   0.614   0.026       0/20
+X     plain_document_confirms      0.992   0.008   0.000   0.983   0.002       0/20
+X     disputed_document_states     0.028   0.971   0.002   0.433   0.175      12/20
+X     disputed_document_claims     0.008   0.989   0.003   0.281   0.228      15/20
+X     disputed_document_confirms   0.934   0.065   0.001   0.970   0.004       0/20
+X     plain_pamphlet_states        0.340   0.659   0.001   0.922   0.007       0/20
+X     plain_pamphlet_claims        0.053   0.947   0.001   0.443   0.064       2/20
+X     plain_pamphlet_confirms      0.986   0.013   0.000   0.979   0.002       0/20
+X     disputed_pamphlet_states     0.023   0.974   0.003   0.347   0.211      12/20
+X     disputed_pamphlet_claims     0.008   0.985   0.007   0.223   0.264      17/20
+X     disputed_pamphlet_confirms   0.946   0.053   0.000   0.968   0.004       0/20
+notX  plain_document_states        0.009   0.706   0.285   0.002   0.991      20/20
+notX  plain_document_claims        0.014   0.951   0.035   0.155   0.709      20/20
+notX  plain_document_confirms      0.006   0.005   0.989   0.001   0.996      20/20
+notX  disputed_document_states     0.047   0.942   0.011   0.254   0.491      19/20
+notX  disputed_document_claims     0.153   0.844   0.004   0.383   0.363      16/20
+notX  disputed_document_confirms   0.007   0.219   0.774   0.001   0.995      20/20
+notX  plain_pamphlet_states        0.011   0.764   0.225   0.027   0.926      20/20
+notX  plain_pamphlet_claims        0.031   0.942   0.026   0.305   0.460      20/20
+notX  plain_pamphlet_confirms      0.005   0.005   0.990   0.001   0.996      20/20
+notX  disputed_pamphlet_states     0.134   0.855   0.010   0.355   0.348      16/20
+notX  disputed_pamphlet_claims     0.302   0.695   0.004   0.473   0.244      11/20
+notX  disputed_pamphlet_confirms   0.006   0.163   0.831   0.001   0.994      20/20
+
+Q1 adjective, isolated (entailment A on X, verb=states):
+  plain-document minus disputed-document: mean +0.4448 CI[+0.369,+0.522] range [+0.174,+0.734] positive 20/20 -> criterion 1 MET
+  plain-pamphlet minus disputed-pamphlet: mean +0.3179 CI[+0.253,+0.385] range [+0.136,+0.576] positive 20/20 -> criterion 1 MET
+  -> adjective may be named as a factor: YES
+Q2 noun, isolated (entailment A on X, verb=states, no adjective):
+  document minus pamphlet: mean +0.1320 CI[+0.102,+0.163] range [+0.025,+0.294] positive 20/20
+Q3 interaction adjective x noun (difference of the two Q1 differences):
+  mean +0.1269 CI[+0.100,+0.155] -> additivity NOT MET (interaction)
+Q4 verb: confirms minus claims (entailment A on X), within each source:
+  plain-document: mean +0.9280 CI[+0.907,+0.945] positive 20/20
+  disputed-document: mean +0.9267 CI[+0.907,+0.944] positive 20/20
+  plain-pamphlet: mean +0.9334 CI[+0.917,+0.947] positive 20/20
+  disputed-pamphlet: mean +0.9385 CI[+0.923,+0.953] positive 20/20
+  -> factivity as a separate factor: MET (needs >= 0.10 under all four sources)
+  source x verb interaction (verb contrast under plain-document minus under disputed-pamphlet): mean -0.0105 CI[-0.041,+0.017] -> no interaction detected
+Q5 polarity-blind contradiction cue on SUPPORTING content X (verb=states):
+  plain_document_states      mean conB 0.003   conB>=.15 in 0/20
+  disputed_document_states   mean conB 0.175   conB>=.15 in 12/20
+  plain_pamphlet_states      mean conB 0.007   conB>=.15 in 0/20
+  disputed_pamphlet_states   mean conB 0.211   conB>=.15 in 12/20

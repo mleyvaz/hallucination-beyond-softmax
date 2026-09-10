@@ -33,7 +33,8 @@ with a margin make the recovered region measure conflict rather than artifacts. 
 | `audit_a8_intervals.py` | Exhaustive interval search on the collapsed scalar D (gated and ungated) under stated objectives and FP budgets; output `audit_a8_intervals.txt` |
 | `experiment_a9_attribution_frames.py` | Experiment 8: attribution-frame control (content fixed; bare / claims / confirms / according / official / pamphlet) |
 | `make_table6.py` | Rebuilds Table 6 and Figure 1, the (T, F) scatter, from the CSV files; no model needed |
-| `experiment_a11_source_intervention.py` | Experiment 9: pre-registered intervention on the released stimuli (source noun phrase replaced by "The document"; verb and content verbatim), four arms, decomposed and holistic |
+| `experiment_a10_crossed_frames.py` | Experiment 9: pre-registered crossed design, source noun x adjective x verb (12 templates, 480 sentences), two resumable passes (`--pass A`, `--pass B`, `--merge`), `--from-csv` for the summary |
+| `experiment_a11_source_intervention.py` | Experiment 10: pre-registered intervention on the released stimuli (source noun phrase replaced by "The document"; verb and content verbatim), four arms, decomposed and holistic |
 | `PREREGISTRATION_A10_A11.md` | Predictions and decision rules registered before the first inference of Experiment 9 and of the crossed design below |
 | `experiment_a10_crossed_frames.py` | Crossed design (source noun x adjective x reporting verb, 480 sentences), registered in the same document. **Not run: no results are reported from it and the paper states this.** Included so the registered design can be read and executed as specified |
 | `make_fig_frames.py` | Rebuilds Figure 2, the per-item paired differences of Experiment 8; no model needed |
@@ -56,7 +57,8 @@ Models (public, CPU is enough): Model A `MoritzLaurer/DeBERTa-v3-large-mnli-feve
 6. `experiment_a6_model_swap.py` (Experiment 5), `experiment_a7_single_head_decomposed.py` (Experiment 6)
 7. `experiment_a8_polarity_blind_max.py` (Experiment 7, 2026-09-09), then `audit_a8_intervals.py` (no model)
 8. `experiment_a9_attribution_frames.py` (Experiment 8, 2026-09-09)
-8b. `experiment_a11_source_intervention.py` (Experiment 9, 2026-09-10; predictions registered first)
+8b. `experiment_a10_crossed_frames.py` (Experiment 9, 2026-09-10; contrasts registered first)
+8c. `experiment_a11_source_intervention.py` (Experiment 10, 2026-09-10; predictions registered first)
 9. `make_table6.py` (Table 6 and Figure 1 from the CSV files; no model)
 
 The crossed design `experiment_a10_crossed_frames.py` was registered on 2026-09-10 together with
@@ -82,7 +84,9 @@ python experiment_a3_controls.py              # Experiment 3
 python experiment_a4_relevance_gate.py; python experiment_a5_lexical_gate.py   # Experiment 4
 python experiment_a6_model_swap.py; python experiment_a7_single_head_decomposed.py  # Experiments 5-6
 python experiment_a8_polarity_blind_max.py; python audit_a8_intervals.py       # Experiment 7 + interval search
-python experiment_a11_source_intervention.py  # Experiment 9  (pre-registered intervention)
+python experiment_a10_crossed_frames.py --pass A   # Experiment 9, first head
+python experiment_a10_crossed_frames.py --pass B   # Experiment 9, second head + merge
+python experiment_a11_source_intervention.py  # Experiment 10 (pre-registered intervention)
 python experiment_a9_attribution_frames.py    # Experiment 8  (add --from-csv to rebuild its
                                               # summary from the released CSV, no model)
 python make_table6.py                         # Table 6 + Figure 1 (no model)
