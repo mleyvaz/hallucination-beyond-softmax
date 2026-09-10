@@ -3,8 +3,8 @@
 Reference implementation, stimuli and raw scores for:
 
 > Leyva-Vázquez, M. Y., Piñero Pérez, P. Y., Pérez Pupo, I. & Smarandache, F. (2026).
-> **Measuring Conflicting Evidence with Decomposed NLI: A Controlled Diagnostic Study of a
-> Measurement-Space Constraint in Hallucination Detection.** Manuscript v1.13, submitted.
+> **What Decomposed NLI Measures in Conflicting Evidence: Source Descriptions, Decision Rules
+> and a Measurement-Space Constraint.** Manuscript v1.14, under submission.
 
 ## The claim in one line
 
@@ -13,8 +13,9 @@ from one softmax-normalized NLI head (or reads one and treats the other as its c
 `T + N + F = 1` implies `T + F <= 1`. The state in which evidence both supports and contradicts a
 claim is unreachable by construction (Theorem 1). Reading T and F from two separate NLI calls
 removes the constraint; evidence decomposition, a lexical topicality gate and a bilateral rule
-with a margin make the recovered region measure conflict rather than artifacts. The controls
-(Experiments 3-7) delimit what each part of the rule contributes.
+with a margin populate the excluded region. The controls (Experiments 3-10) characterize what the
+protocol detects and how much of it is residual sensitivity to how the sources are described on
+these curated stimuli.
 
 ## Contents
 
@@ -36,7 +37,7 @@ with a margin make the recovered region measure conflict rather than artifacts. 
 | `experiment_a10_crossed_frames.py` | Experiment 9: pre-registered crossed design, source noun x adjective x verb (12 templates, 480 sentences), two resumable passes (`--pass A` then `--pass B`), `--from-csv` for the summary |
 | `experiment_a11_source_intervention.py` | Experiment 10: pre-registered intervention on the released stimuli (source noun phrase replaced by "The document"; verb and content verbatim), four arms, decomposed and holistic |
 | `PREREGISTRATION_A10_A11.md` | Contrasts, decision rules and predictions registered before the first inference of Experiments 9 and 10 below |
-| `make_fig_frames.py` | Rebuilds Figure 2, the per-item paired differences of Experiment 8; no model needed |
+| `make_fig_frames.py` | Rebuilds Figure 2, the per-item paired differences of Experiment 8 (Table 8); no model needed |
 | `make_fig_intervention.py` | Optional extra figure: the Experiment 10 intervention per item and the crossed contrasts. Not used in the manuscript |
 | `table6_counts.txt` | Output of `make_table6.py` |
 | `validation_results_*.csv`, `validation_summary_*.txt` | Per-item scores and summaries for each experiment |
@@ -90,8 +91,9 @@ python make_fig_frames.py                     # Figure 2 (no model)
 
 Aggregation-only scripts (no model, no GPU, seconds): `make_table6.py` rebuilds Table 6 and
 Figure 1 (Figure 1 needs matplotlib), `audit_a8_intervals.py` rebuilds the interval search of
-Table 7, `experiment_a9_attribution_frames.py --from-csv` rebuilds Table 8, and
-`make_fig_frames.py` rebuilds Figure 2. The remaining
+Table 7, `experiment_a9_attribution_frames.py --from-csv` rebuilds Table 8,
+`experiment_a10_crossed_frames.py --from-csv` rebuilds Table 9, and
+`make_fig_frames.py` rebuilds Figure 2. Table 10 is the summary written by Experiment 10. The remaining
 tables are the per-experiment summary files written next to each CSV.
 
 Each script prints its summary and writes it next to the CSV. All stimuli are inside the
