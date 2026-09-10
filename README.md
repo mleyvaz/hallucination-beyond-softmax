@@ -32,7 +32,8 @@ with a margin make the recovered region measure conflict rather than artifacts. 
 | `experiment_a8_polarity_blind_max.py` | Experiment 7: polarity-blind max-per-channel selection (HallDetect-style) and the collapsed difference score |
 | `audit_a8_intervals.py` | Exhaustive interval search on the collapsed scalar D (gated and ungated) under stated objectives and FP budgets; output `audit_a8_intervals.txt` |
 | `experiment_a9_attribution_frames.py` | Experiment 8: attribution-frame control (content fixed; bare / claims / confirms / according / official / pamphlet) |
-| `make_table6.py` | Rebuilds Table 6 and the (T, F) scatter figure from the CSV files; no model needed |
+| `make_table6.py` | Rebuilds Table 6 and Figure 1, the (T, F) scatter, from the CSV files; no model needed |
+| `make_fig_frames.py` | Rebuilds Figure 2, the per-item paired differences of Experiment 8; no model needed |
 | `table6_counts.txt` | Output of `make_table6.py` |
 | `validation_results_*.csv`, `validation_summary_*.txt` | Per-item scores and summaries for each experiment |
 | `figures/` | `fig_tf_scatter.{pdf,png}` (paper figure) plus earlier illustration scripts |
@@ -74,11 +75,13 @@ python experiment_a8_polarity_blind_max.py; python audit_a8_intervals.py       #
 python experiment_a9_attribution_frames.py    # Experiment 8  (add --from-csv to rebuild its
                                               # summary from the released CSV, no model)
 python make_table6.py                         # Table 6 + Figure 1 (no model)
+python make_fig_frames.py                     # Figure 2 (no model)
 ```
 
 Aggregation-only scripts (no model, no GPU, seconds): `make_table6.py` rebuilds Table 6 and
 Figure 1 (Figure 1 needs matplotlib), `audit_a8_intervals.py` rebuilds the interval search of
-Table 7, and `experiment_a9_attribution_frames.py --from-csv` rebuilds Table 8. The remaining
+Table 7, `experiment_a9_attribution_frames.py --from-csv` rebuilds Table 8, and
+`make_fig_frames.py` rebuilds Figure 2. The remaining
 tables are the per-experiment summary files written next to each CSV.
 
 Each script prints its summary and writes it next to the CSV. All stimuli are inside the

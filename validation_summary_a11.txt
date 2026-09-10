@@ -1,0 +1,42 @@
+Experiment A11 - source-description intervention on the released stimuli (pre-registered 2026-09-10)
+
+arm             meanT   meanF   margin  holistic
+original        0.853   0.498    15/20      3/20
+ref_neutral     0.853   0.847    20/20      9/20
+sup_neutral     0.835   0.498    15/20      1/20
+both_neutral    0.835   0.847    19/20      6/20
+
+P1  F above the margin under ref_neutral on items 5, 11, 16 (the three the paper attributes to the marker):
+   item  5: F 0.0486 -> 0.3772  (gate J 1.00 -> 1.00)  above tau
+   item 11: F 0.0287 -> 0.9938  (gate J 1.00 -> 1.00)  above tau
+   item 16: F 0.0371 -> 0.3190  (gate J 0.75 -> 1.00)  above tau
+   -> P1 SUPPORTED (3/3)
+P2  margin rule: original 15/20 -> ref_neutral 20/20, both_neutral 19/20  -> P2 SUPPORTED
+P3  items 1 and 8 (attributed to a weak supporting span):
+   item 1: T 0.4653 -> 0.1870 (sup_neutral) | margin orig 0 ref_neutral 1 sup_neutral 0 both 0
+   item 8: T 0.6487 -> 0.6423 (sup_neutral) | margin orig 0 ref_neutral 1 sup_neutral 0 both 1
+   -> P3 NOT SUPPORTED
+P4  holistic: original 3/20 -> ref_neutral 9/20, both_neutral 6/20  -> P4 SUPPORTED
+
+Per-item F under each refuting variant (gated):
+item   F orig  F neutral    delta
+   1   0.1583     0.5837  +0.4254
+   2   0.9919     0.9907  -0.0012
+   3   0.6348     0.8841  +0.2493
+   4   0.6688     0.9828  +0.3140
+   5   0.0486     0.3772  +0.3286
+   6   0.3100     0.9425  +0.6325
+   7   0.2183     0.5700  +0.3517
+   8   0.2232     0.6236  +0.4004
+   9   0.2531     0.9236  +0.6705
+  10   0.9821     0.9973  +0.0152
+  11   0.0287     0.9938  +0.9651
+  12   0.9752     0.9940  +0.0188
+  13   0.7478     0.9798  +0.2320
+  14   0.2450     0.9322  +0.6872
+  15   0.2136     0.8867  +0.6731
+  16   0.0371     0.3190  +0.2819
+  17   0.9952     0.9971  +0.0019
+  18   0.2305     0.9661  +0.7356
+  19   0.9906     0.9944  +0.0038
+  20   0.9987     0.9988  +0.0001
