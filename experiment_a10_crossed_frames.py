@@ -223,7 +223,8 @@ def main() -> None:
     if only in (None, "B"):
         score_all(MODEL_B, cells, {"entB": "entailment", "conB": "contradiction"}, "B")
     if only is not None:
-        print(f"pass {only} complete; run with --pass {'B' if only == 'A' else 'A'} and then --merge")
+        other = 'B' if only == 'A' else 'A'
+        print(f'pass {only} complete; run --pass {other} to finish, which also writes the CSV')
         if not (os.path.exists(part_path("A")) and os.path.exists(part_path("B"))):
             return
         score_all(MODEL_A, cells, {"entA": "entailment", "neuA": "neutral", "conA": "contradiction"}, "A")
