@@ -75,20 +75,46 @@ def build_sentences():
     return cells
 
 
-def score_all(model_name: str, cells, keys):
-    """Load one model, score every cell, release it before returning."""
-    from dual_nli import build_pipe, nli_scores
-    print(f"Loading {model_name} ...", flush=True)
-    pipe = build_pipe(model_name)
-    for n, c in enumerate(cells, 1):
-        s = nli_scores(pipe, c["premise"], c["claim"])
-        for out_key, in_key in keys.items():
-            c[out_key] = round(s.get(in_key, 0.0), 4)
-        if n % 60 == 0:
-            print(f"  {n}/{len(cells)}", flush=True)
-    del pipe
-    gc.collect()
-    print(f"  released {model_name}", flush=True)
+def part_path(tag: str) -> str:
+    return os.path.join(ROOT, f"a10_partial_{tag}.jsonl")
+
+
+def score_all(model_name: str, cells, keys, tag: str):
+    """Load one model, score every cell, append each result immediately so the pass is resumable.
+
+    Peak memory is one model. If the process is killed, rerunning resumes from the checkpoint.
+    """
+    import json
+    path = part_path(tag)
+    done = {}
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as fh:
+            for line in fh:
+                r = json.loads(line)
+                done[(r["item"], r["polarity"], r["frame"])] = r
+    todo = [c for c in cells if (c["item"], c["polarity"], c["frame"]) not in done]
+    print(f"pass {tag}: {len(done)} cached, {len(todo)} to score", flush=True)
+    if todo:
+        from dual_nli import build_pipe, nli_scores
+        print(f"Loading {model_name} ...", flush=True)
+        pipe = build_pipe(model_name)
+        with open(path, "a", encoding="utf-8") as fh:
+            for n, c in enumerate(todo, 1):
+                sc = nli_scores(pipe, c["premise"], c["claim"])
+                rec = {"item": c["item"], "polarity": c["polarity"], "frame": c["frame"]}
+                for out_key, in_key in keys.items():
+                    rec[out_key] = round(sc.get(in_key, 0.0), 4)
+                fh.write(json.dumps(rec) + chr(10)); fh.flush()
+                done[(c["item"], c["polarity"], c["frame"])] = rec
+                if n % 40 == 0:
+                    print(f"  {n}/{len(todo)}", flush=True)
+        del pipe
+        gc.collect()
+        print(f"  released {model_name}", flush=True)
+    for c in cells:
+        r = done[(c["item"], c["polarity"], c["frame"])]
+        for k in keys:
+            c[k] = r[k]
 
 
 def boot_ci(d, n=5000, seed=7):
@@ -166,8 +192,19 @@ def main() -> None:
         return
     cells = build_sentences()
     print(f"{len(cells)} sentences", flush=True)
-    score_all(MODEL_A, cells, {"entA": "entailment", "neuA": "neutral", "conA": "contradiction"})
-    score_all(MODEL_B, cells, {"entB": "entailment", "conB": "contradiction"})
+    only = None
+    if "--pass" in sys.argv:
+        only = sys.argv[sys.argv.index("--pass") + 1]
+    if only in (None, "A"):
+        score_all(MODEL_A, cells, {"entA": "entailment", "neuA": "neutral", "conA": "contradiction"}, "A")
+    if only in (None, "B"):
+        score_all(MODEL_B, cells, {"entB": "entailment", "conB": "contradiction"}, "B")
+    if only is not None:
+        print(f"pass {only} complete; run with --pass {'B' if only == 'A' else 'A'} and then --merge")
+        if not (os.path.exists(part_path("A")) and os.path.exists(part_path("B"))):
+            return
+        score_all(MODEL_A, cells, {"entA": "entailment", "neuA": "neutral", "conA": "contradiction"}, "A")
+        score_all(MODEL_B, cells, {"entB": "entailment", "conB": "contradiction"}, "B")
     fields = ["item", "polarity", "noun", "adjective", "verb", "frame", "premise",
               "entA", "neuA", "conA", "entB", "conB"]
     with open(OUT_CSV, "w", encoding="utf-8", newline="") as fh:

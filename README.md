@@ -33,6 +33,8 @@ with a margin make the recovered region measure conflict rather than artifacts. 
 | `audit_a8_intervals.py` | Exhaustive interval search on the collapsed scalar D (gated and ungated) under stated objectives and FP budgets; output `audit_a8_intervals.txt` |
 | `experiment_a9_attribution_frames.py` | Experiment 8: attribution-frame control (content fixed; bare / claims / confirms / according / official / pamphlet) |
 | `make_table6.py` | Rebuilds Table 6 and Figure 1, the (T, F) scatter, from the CSV files; no model needed |
+| `experiment_a11_source_intervention.py` | Experiment 9: pre-registered intervention on the released stimuli (source noun phrase replaced by "The document"; verb and content verbatim), four arms, decomposed and holistic |
+| `PREREGISTRATION_A10_A11.md` | Predictions registered before the Experiment 9 inference |
 | `make_fig_frames.py` | Rebuilds Figure 2, the per-item paired differences of Experiment 8; no model needed |
 | `table6_counts.txt` | Output of `make_table6.py` |
 | `validation_results_*.csv`, `validation_summary_*.txt` | Per-item scores and summaries for each experiment |
@@ -52,6 +54,7 @@ Models (public, CPU is enough): Model A `MoritzLaurer/DeBERTa-v3-large-mnli-feve
 6. `experiment_a6_model_swap.py` (Experiment 5), `experiment_a7_single_head_decomposed.py` (Experiment 6)
 7. `experiment_a8_polarity_blind_max.py` (Experiment 7, 2026-09-09), then `audit_a8_intervals.py` (no model)
 8. `experiment_a9_attribution_frames.py` (Experiment 8, 2026-09-09)
+8b. `experiment_a11_source_intervention.py` (Experiment 9, 2026-09-10; predictions registered first)
 9. `make_table6.py` (Table 6 and Figure 1 from the CSV files; no model)
 
 Dates and model revisions. The two checkpoints were downloaded once, on 2026-07-13, when
@@ -72,6 +75,7 @@ python experiment_a3_controls.py              # Experiment 3
 python experiment_a4_relevance_gate.py; python experiment_a5_lexical_gate.py   # Experiment 4
 python experiment_a6_model_swap.py; python experiment_a7_single_head_decomposed.py  # Experiments 5-6
 python experiment_a8_polarity_blind_max.py; python audit_a8_intervals.py       # Experiment 7 + interval search
+python experiment_a11_source_intervention.py  # Experiment 9  (pre-registered intervention)
 python experiment_a9_attribution_frames.py    # Experiment 8  (add --from-csv to rebuild its
                                               # summary from the released CSV, no model)
 python make_table6.py                         # Table 6 + Figure 1 (no model)
